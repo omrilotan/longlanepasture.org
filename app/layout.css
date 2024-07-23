@@ -1,0 +1,163 @@
+:root {
+	--text-color: #333;
+	--text-highlight: #000;
+	--text-shadow-color: hsl(0, 0%, 100%);
+	--backgound-color: #fff;
+	--foreground-transparent: rgba(0, 0, 0, 0.95);
+	--background-transparent: rgba(255, 255, 255, 0.95);
+	--background-highlight: #f0f0f0;
+}
+@media (prefers-color-scheme: dark) {
+	:root {
+		--text-color: #f0f0f0;
+		--text-highlight: #fff;
+		--text-shadow-color: #000;
+		--backgound-color: #000;
+		--foreground-transparent: rgba(255, 255, 255, 0.95);
+		--background-transparent: rgba(0, 0, 0, 0.95);
+		--background-highlight: #333;
+	}
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+body,
+html {
+	height: 100%;
+}
+html {
+	height: 100%;
+}
+body {
+	display: grid;
+	grid-template-rows: auto 1fr;
+	height: 100vh;
+	font: 1rem/1.5 serif;
+	color: var(--text-color);
+}
+video {
+	object-fit: cover;
+}
+header {
+	color: var(--text-color);
+	background: var(--backgound-color);
+	position: sticky;
+	top: 0;
+
+	h1 {
+		text-align: center;
+		text-shadow: var(--text-shadow-color) 1px 1px 0;
+		font-size: 2rem;
+		padding: 0.5rem 1rem;
+	}
+}
+nav ul,
+article {
+	max-width: 1280px;
+	margin: 0 auto;
+}
+nav {
+	.hamburger {
+		display: none;
+	}
+	li {
+		display: inline-block;
+		a {
+			color: inherit;
+			display: inline-block;
+			text-decoration: none;
+			padding: 1rem;
+			transition: background 0.1s linear;
+		}
+		a:hover {
+			color: var(--text-highlight);
+			background: var(--background-highlight);
+			text-shadow: none;
+		}
+	}
+}
+@media (max-width: 840px) {
+	nav {
+		ul {
+			position: fixed;
+			top: 0;
+			left: -80%;
+			width: 80%;
+			height: 100%;
+			background: var(--backgound-color);
+			transition: left 0.3s ease-in-out;
+			box-shadow: 0 0 2em rgba(0, 0, 0, 0.5);
+			li {
+				display: block;
+				text-align: center;
+				border-bottom: 1px solid var(--background-highlight);
+				a {
+					display: block;
+				}
+			}
+		}
+		.hamburger {
+			display: block;
+			text-decoration: none;
+			padding: 0.5rem 1rem;
+			font-size: 2rem;
+			position: absolute;
+			top: 0;
+			left: 0;
+			cursor: pointer;
+			transition: transform 0.1s ease-in-out;
+		}
+	}
+	nav:focus-within {
+		ul {
+			left: 0;
+		}
+		.hamburger {
+			transform: rotatez(90deg);
+		}
+	}
+}
+main {
+	overflow: auto;
+	background: var(--backgound-color) url("./images/grass-pattern.jpg") center
+		center repeat;
+	grid-row: 2;
+	padding: 1em;
+}
+article {
+	padding: 1rem;
+	background: var(--background-transparent);
+	margin-top: 1em;
+	border-radius: 0.5em;
+	overflow: auto;
+
+	> * {
+		max-width: 100%;
+	}
+}
+
+a {
+	color: var(--text-highlight);
+}
+p {
+	margin-bottom: 0.5em;
+}
+ul {
+	list-style-position: inside;
+	li::marker {
+		color: var(--text-highlight);
+	}
+}
+
+table.data {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 1em;
+	tr:nth-child(odd) {
+		background: var(--background-highlight);
+	}
+	td {
+		padding: 0.5em;
+	}
+}

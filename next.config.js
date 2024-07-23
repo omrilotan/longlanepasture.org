@@ -3,8 +3,12 @@
 /**
  * @type {import('next').NextConfig}
  **/
-const nextConfig = {
-  output: "export",
+export default {
+	output: "export",
+	generateEtags: false,
+	poweredByHeader: false,
+	trailingSlash: true,
+	experimental: {
+		webVitalsAttribution: ["CLS", "LCP"],
+	},
 };
-
-module.exports = nextConfig;
