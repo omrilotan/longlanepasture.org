@@ -1,14 +1,14 @@
-import Link from "next/link";
+import { links } from "../src/data";
+
 import "./layout.css";
-import { navigation } from "../src/data";
 
 export default function RootLayout({
 	children,
 }: {
-	children: React.ReactNode;
+	children: React.ReactElement;
 }) {
 	const title = "Long Lane Pasture";
-	const description = "Long Lane Pasture.";
+	const description = "Long Lane Pasture";
 	return (
 		<html lang="en-GB">
 			<head>
@@ -32,14 +32,8 @@ export default function RootLayout({
 							☰
 						</a>
 						<ul>
-							{navigation.map(({ path, name }) => (
-								<li key={name}>
-									<Link
-										href={path || "/" + name.toLowerCase().replace(/\s/g, "-")}
-									>
-										{name}
-									</Link>
-								</li>
+							{links.map((link) => (
+								<li key={link.props.href}>{link}</li>
 							))}
 						</ul>
 					</nav>

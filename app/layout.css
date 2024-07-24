@@ -2,20 +2,24 @@
 	--text-color: #333;
 	--text-highlight: #000;
 	--text-shadow-color: hsl(0, 0%, 100%);
-	--backgound-color: #fff;
+	--background-color: #fff;
 	--foreground-transparent: rgba(0, 0, 0, 0.95);
 	--background-transparent: rgba(255, 255, 255, 0.95);
-	--background-highlight: #f0f0f0;
+	--background-highlight: #f1fcff;
+	--background-mark: rgb(255, 255, 200);
+	--main-background-color: #2095e3;
 }
 @media (prefers-color-scheme: dark) {
 	:root {
 		--text-color: #f0f0f0;
 		--text-highlight: #fff;
 		--text-shadow-color: #000;
-		--backgound-color: #000;
+		--background-color: #000;
 		--foreground-transparent: rgba(255, 255, 255, 0.95);
 		--background-transparent: rgba(0, 0, 0, 0.95);
-		--background-highlight: #333;
+		--background-highlight: #2f3038;
+		--background-mark: rgb(65, 65, 52);
+		--main-background-color: #025288;
 	}
 }
 * {
@@ -33,7 +37,7 @@ body {
 	display: grid;
 	grid-template-rows: auto 1fr;
 	height: 100vh;
-	font: 1rem/1.5 serif;
+	font: 1.2rem/1.5 serif;
 	color: var(--text-color);
 }
 video {
@@ -41,9 +45,10 @@ video {
 }
 header {
 	color: var(--text-color);
-	background: var(--backgound-color);
+	background: var(--background-color);
 	position: sticky;
 	top: 0;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 
 	h1 {
 		text-align: center;
@@ -82,12 +87,12 @@ nav {
 		ul {
 			position: fixed;
 			top: 0;
-			left: -80%;
+			left: -100%;
 			width: 80%;
+			padding-left: 20%;
 			height: 100%;
-			background: var(--backgound-color);
-			transition: left 0.3s ease-in-out;
-			box-shadow: 0 0 2em rgba(0, 0, 0, 0.5);
+			background: var(--background-color);
+			transition: left 0.3s cubic-bezier(0.6, -0.6, 0.6, 1.3);
 			li {
 				display: block;
 				text-align: center;
@@ -111,7 +116,8 @@ nav {
 	}
 	nav:focus-within {
 		ul {
-			left: 0;
+			left: -20%;
+			box-shadow: 0 0 2em rgba(0, 0, 0, 0.5);
 		}
 		.hamburger {
 			transform: rotatez(90deg);
@@ -120,15 +126,14 @@ nav {
 }
 main {
 	overflow: auto;
-	background: var(--backgound-color) url("./images/grass-pattern.jpg") center
-		center repeat;
+	background: var(--main-background-color);
 	grid-row: 2;
-	padding: 1em;
+	padding: 1em 1em 0;
 }
 article {
 	padding: 1rem;
-	background: var(--background-transparent);
-	margin-top: 1em;
+	background: var(--background-color);
+	margin-bottom: 1em;
 	border-radius: 0.5em;
 	overflow: auto;
 
@@ -140,7 +145,10 @@ article {
 a {
 	color: var(--text-highlight);
 }
-p {
+p,
+h2,
+h3,
+ul {
 	margin-bottom: 0.5em;
 }
 ul {
@@ -148,6 +156,10 @@ ul {
 	li::marker {
 		color: var(--text-highlight);
 	}
+}
+mark {
+	color: var(--text-highlight);
+	background: var(--background-mark);
 }
 
 table.data {
