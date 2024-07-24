@@ -1,5 +1,3 @@
-console.log("Hello from the content script!");
-
 Object.defineProperty(globalThis, "start", {
 	value: async function start() {
 		const video = document.querySelector("video");
@@ -9,3 +7,5 @@ Object.defineProperty(globalThis, "start", {
 	enumerable: true,
 	configurable: false,
 });
+
+export {}
