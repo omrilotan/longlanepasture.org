@@ -8,4 +8,4 @@ Object.defineProperty(globalThis, "start", {
 	configurable: false,
 });
 
-export {}
+export {};

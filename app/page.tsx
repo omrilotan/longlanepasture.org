@@ -20,8 +20,12 @@ export default () => {
 			<article>
 				<h2>Volunteers are welcome — Just Turn Up!</h2>
 				<p>
-					We meet every<mark> <strong>Saturday 10am—12noon</strong> </mark>and have a break for buiscuits and
-					chatting at 11am.
+					We meet every
+					<mark>
+						{" "}
+						<strong>Saturday 10am—12noon</strong>{" "}
+					</mark>
+					and have a break for buiscuits and chatting at 11am.
 				</p>
 				<p>
 					Help with the maintenance of the pasture. Trim, Weed, Cut, Rake, Mow,

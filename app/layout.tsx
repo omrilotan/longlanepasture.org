@@ -23,6 +23,7 @@ export default function RootLayout({
 				<meta name="geo.placename" content="London Borough of Barnet" />
 				<title>{title}</title>
 				<meta name="description" content={description} />
+				<meta name="robots" content="noindex" />
 			</head>
 			<body>
 				<header>

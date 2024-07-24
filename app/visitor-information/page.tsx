@@ -60,7 +60,10 @@ export default () => (
 				<li>No ball games</li>
 				<li>No fires</li>
 			</ul>
-			<img src="/images/long-lane-pasture-map.svg" alt="Long Lane Pasture Map" />
+			<img
+				src="/images/long-lane-pasture-map.svg"
+				alt="Long Lane Pasture Map"
+			/>
 		</article>
 		<article>
 			<h2>Location</h2>
