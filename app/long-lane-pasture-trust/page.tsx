@@ -1,4 +1,4 @@
-import { getLink } from "../../src/data/navigation";
+import { linkToPage } from "../components/navigation";
 
 export default () => (
 	<>
@@ -37,7 +37,7 @@ export default () => (
 			</p>
 			<p>
 				We appreciate all donations, large or small. If you would like to make a
-				donation, please visit our {getLink("donations")} page.
+				donation, please visit our {linkToPage("donations")} page.
 			</p>
 		</article>
 	</>

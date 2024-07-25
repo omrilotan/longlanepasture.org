@@ -5,3 +5,7 @@
 /out/
 /build
 next-env.d.ts
+
+# public dynamic files
+/public/humans.txt
+/public/sitemap.xml

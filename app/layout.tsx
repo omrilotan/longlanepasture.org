@@ -1,4 +1,4 @@
-import { links } from "../src/data";
+import { allLinks } from "./components/navigation";
 
 import "./layout.css";
 
@@ -23,7 +23,7 @@ export default function RootLayout({
 				<meta name="geo.placename" content="London Borough of Barnet" />
 				<title>{title}</title>
 				<meta name="description" content={description} />
-				<meta name="robots" content="noindex" />
+				<meta name="robots" content="noindex, nofollow" />
 			</head>
 			<body>
 				<header>
@@ -33,7 +33,7 @@ export default function RootLayout({
 							☰
 						</a>
 						<ul>
-							{links.map((link) => (
+							{allLinks.map((link) => (
 								<li key={link.props.href}>{link}</li>
 							))}
 						</ul>

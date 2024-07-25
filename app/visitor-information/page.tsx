@@ -1,3 +1,5 @@
+import { linkToPage } from "../components/navigation";
+
 export default () => (
 	<>
 		<article>
@@ -28,9 +30,9 @@ export default () => (
 				from you.
 			</p>
 			<p>
-				Access is free of charge, but as a small registered charity we rely on
-				donations and the support of our Friends to maintain and restore the
-				Pasture.
+				Access is free of charge, but as a small registered charity we rely on{" "}
+				{linkToPage("donations", "donations and the support of our Friends")} to
+				maintain and restore the Pasture.
 			</p>
 			<h3>Opening Times</h3>
 			<table className="data">
@@ -61,7 +63,7 @@ export default () => (
 				<li>No fires</li>
 			</ul>
 			<img
-				src="/images/long-lane-pasture-map.svg"
+				src="/assets/long-lane-pasture-map.svg"
 				alt="Long Lane Pasture Map"
 			/>
 		</article>

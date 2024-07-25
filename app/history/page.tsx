@@ -1,4 +1,5 @@
-import { getLink } from "../../src/data/navigation";
+import { linkToPage } from "../components/navigation";
+import { VideoApplication } from "../components/videoApplication";
 
 export default () => (
 	<>
@@ -26,10 +27,25 @@ export default () => (
 				community use.
 			</p>
 			<p>
-				In 2005 the {getLink("trust")} was granted a licence to access the land,
-				and work began to restore the Pasture, clear rubbish and improve the
-				land for wildlife.
+				In 2005 the {linkToPage("trust")} was granted a licence to access the
+				land, and work began to restore the Pasture, clear rubbish and improve
+				the land for wildlife.
 			</p>
+		</article>
+		<article>
+			<VideoApplication playbackRate={0.75}>
+				<video
+					autoPlay
+					muted
+					loop
+					playsInline
+					controls={false}
+					className="backgound"
+					id={Math.random().toString(36).replace(/^\d\./, "")}
+				>
+					<source src="/assets/llp.mp4" type="video/mp4" />
+				</video>
+			</VideoApplication>
 		</article>
 	</>
 );
