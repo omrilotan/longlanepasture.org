@@ -1,11 +1,12 @@
 "use client";
-import React, { useEffect } from "react";
+import type { ReactElement } from "react";
+import { useEffect } from "react";
 
-export function VideoApplication({
+export function VideoWrapper({
 	children,
 	playbackRate,
 }: {
-	children: React.ReactElement;
+	children: ReactElement;
 	playbackRate?: number;
 }) {
 	useEffect(() => {

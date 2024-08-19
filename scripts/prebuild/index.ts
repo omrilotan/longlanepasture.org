@@ -1,6 +1,6 @@
 import { writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
-import { linksList } from "../../app/components/data/navigation/index.ts";
+import { linksList } from "../../lib/data/navigation/index.ts";
 
 /**
  * Example: 1970-01-01

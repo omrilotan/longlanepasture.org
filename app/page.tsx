@@ -1,3 +1,11 @@
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "Long Lane Pasture. A wildlife haven in the heart of Finchley.",
+	description:
+		"Come enjoy the tranquility of the pasture and the wildlife. It is a haven for birds, butterflies and wild flowers.",
+};
+
 export default () => (
 	<>
 		<article>
@@ -37,8 +45,6 @@ export default () => (
 				</li>
 			</ul>
 		</article>
-		<article>
-			<iframe src="https://photos.app.goo.gl/zpc9Rumha2ZyE8oy6" />
-		</article>
+		<article>TBD Pictures or something</article>
 	</>
 );

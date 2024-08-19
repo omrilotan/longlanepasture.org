@@ -1,5 +1,12 @@
 import { linkToPage } from "../components/navigation";
-import { VideoApplication } from "../components/videoApplication";
+import { VideoWrapper } from "../components/VideoWrapper";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "Long Lane Pasture: About the Pasture",
+	description:
+		"The Pasture is a meadow, which has remained largely undisturbed for centuries.",
+};
 
 export default () => (
 	<>
@@ -33,7 +40,7 @@ export default () => (
 			</p>
 		</article>
 		<article>
-			<VideoApplication playbackRate={0.75}>
+			<VideoWrapper playbackRate={0.75}>
 				<video
 					autoPlay
 					muted
@@ -45,7 +52,7 @@ export default () => (
 				>
 					<source src="/assets/llp.mp4" type="video/mp4" />
 				</video>
-			</VideoApplication>
+			</VideoWrapper>
 		</article>
 	</>
 );

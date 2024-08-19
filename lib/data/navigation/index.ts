@@ -18,6 +18,13 @@ const pages: {
 	{
 		name: "Donations",
 	},
+	{
+		name: "Friends",
+	},
+	{
+		name: "X",
+		path: "https://x.com/LLPasture",
+	},
 ];
 
 export const linksList = pages.map(({ name, path }) => ({
@@ -26,10 +33,12 @@ export const linksList = pages.map(({ name, path }) => ({
 }));
 
 function normalizePath(path: string): string {
-	return path
-		.toLowerCase()
-		.replace(/^\//, "")
-		.replace(/[^a-z0-9]/gi, "-")
-		.replace(/-+/, "-")
-		.replace(/^\/*/, "/");
+	return path.startsWith("http")
+		? path
+		: path
+				.toLowerCase()
+				.replace(/^\//, "")
+				.replace(/[^a-z0-9]/gi, "-")
+				.replace(/-+/, "-")
+				.replace(/^\/*/, "/");
 }

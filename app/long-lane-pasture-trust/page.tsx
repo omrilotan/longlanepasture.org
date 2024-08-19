@@ -1,4 +1,11 @@
 import { linkToPage } from "../components/navigation";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+	title: "Long Lane Pasture Trust",
+	description:
+		"Long Lane Pasture Trust is a charity registered in England & Wales (№ 1122236) and is run in accordance with its Trust Deed.",
+};
 
 export default () => (
 	<>
@@ -10,7 +17,7 @@ export default () => (
 				are available on{" "}
 				<a
 					href="https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/4035882"
-					rel="noreferrer nofollow"
+					rel="noopener"
 				>
 					the registry
 				</a>

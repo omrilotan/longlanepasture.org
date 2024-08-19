@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { linksList } from "../data";
+import { linksList } from "../../../lib/data";
 
 export const allLinks = linksList.map((link) => createPageLink(link));
 
@@ -28,5 +28,9 @@ function createPageLink(
 	{ name, path }: ArrayElement<typeof linksList>,
 	text?: string,
 ): JSX.Element {
-	return <Link href={path}>{text ?? name}</Link>;
+	return (
+		<Link href={path} rel={path.startsWith("http") ? "noopener" : "next"}>
+			{text ?? name}
+		</Link>
+	);
 }

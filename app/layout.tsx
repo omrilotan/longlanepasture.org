@@ -1,5 +1,5 @@
 import { allLinks } from "./components/navigation";
-
+import { CustomScriptLoader } from "./components/CustomScriptLoader";
 import "./layout.css";
 
 export default function RootLayout({
@@ -7,8 +7,6 @@ export default function RootLayout({
 }: {
 	children: React.ReactElement;
 }) {
-	const title = "Long Lane Pasture";
-	const description = "Long Lane Pasture";
 	return (
 		<html lang="en-GB">
 			<head>
@@ -21,13 +19,11 @@ export default function RootLayout({
 				<meta name="theme-color" content="#FFFFFF" />
 				<meta name="geo.region" content="GB" />
 				<meta name="geo.placename" content="London Borough of Barnet" />
-				<title>{title}</title>
-				<meta name="description" content={description} />
 				<meta name="robots" content="noindex, nofollow" />
 			</head>
 			<body>
 				<header>
-					<h1>{title}</h1>
+					<h1>Long Lane Pasture</h1>
 					<nav>
 						<a className="hamburger" href="#!">
 							☰
@@ -40,6 +36,7 @@ export default function RootLayout({
 					</nav>
 				</header>
 				<main>{children}</main>
+				<CustomScriptLoader path="scripts" />
 			</body>
 		</html>
 	);
