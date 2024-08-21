@@ -78,7 +78,7 @@ export default () => {
 	return (
 		<>
 			<article>
-				<h2>The Pasture</h2>
+				<h2>Come visit the Pasture</h2>
 				<p>
 					The Pasture is a wild meadow. It is a bit rough in places and can be
 					very wet after rain and in the late autumn/winter/early spring months.
@@ -106,7 +106,7 @@ export default () => {
 				</p>
 				<p>
 					Access is free of charge, but as a small registered charity we rely on{" "}
-					{linkToPage("donations", "donations and the support of our Friends")}{" "}
+					{linkToPage("contribute", "donations and the support of our Friends")}{" "}
 					to maintain and restore the Pasture.
 				</p>
 				<h3>Opening Times</h3>
@@ -185,12 +185,12 @@ export default () => {
 			<article>
 				<h2>Ammenities</h2>
 				{ammenities.map((ammenity) => (
-					<>
+					<div key={ammenity.name}>
 						<h4 className={ammenity.available ? "check" : "uncheck"}>
 							{ammenity.name}
 						</h4>
 						<p>{ammenity.description}</p>
-					</>
+					</div>
 				))}
 			</article>
 		</>

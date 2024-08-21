@@ -1,59 +1,39 @@
-import { writeFile } from "node:fs/promises";
-import { resolve } from "node:path";
-import { linksList } from "../../lib/data/navigation/index.ts";
+import { mkdir, writeFile } from "node:fs/promises";
+import { dirname, resolve } from "node:path";
+import { sitemap } from "./sitemap/index.ts";
+import { humans } from "./humans/index.ts";
+import { pictures } from "./pictures/index.ts";
+import { records } from "./records/index.ts";
+import { volunteers } from "./volunteers/index.ts";
 
 /**
  * Example: 1970-01-01
  */
-const datestamp = new Date().toISOString().split("T").shift();
+const datestamp = new Date().toISOString().split("T").shift() as string;
+
+const setups: [string, Promise<string>][] = [
+	["./public/humans.txt", humans({ datestamp })],
+	[
+		"./public/sitemap.xml",
+		sitemap({ base: "https://longlanepasture.org", datestamp }),
+	],
+	["./dynamic/pictures.ts", pictures()],
+	["./dynamic/records.ts", records()],
+	["./dynamic/volunteers.ts", volunteers()],
+];
 
 Promise.all(
-	[
-		["humans.txt", humans()],
-		["sitemap.xml", sitemap("https://longlanepasture.org")],
-	].map(([path, content]) => writeFile(resolve("./public", path), content)),
+	setups.map(
+		async ([path, content]): Promise<void> =>
+			await writeFileWithDirs(resolve(path), await content),
+	),
 );
 
-/**
- * humans.txt
- */
-function humans(): string {
-	return Object.entries({
-		TEAM: {
-			"Long Lane Pasture Trust": null,
-			Contact: "longlanepasture@gmail.com",
-			X: "@LLPasture",
-			From: "Finchley, London, UK",
-		},
-		SITE: {
-			"Last update": datestamp,
-			Language: "en-GB",
-			Doctype: "HTML5",
-		},
-	})
-		.map(([section, data]) =>
-			[
-				`/* ${section} */`,
-				...Object.entries(data).map(([key, value]) =>
-					[`\t${key}`, value].filter(Boolean).join(": "),
-				),
-				"",
-			].join("\n"),
-		)
-		.join("\n");
-}
-
-/**
- * sitemap.xml
- */
-function sitemap(base: string): string {
-	return [
-		'<?xml version="1.0" encoding="UTF-8"?>',
-		'<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">',
-		...linksList.map(
-			({ path }) =>
-				`\t<url><loc>${[base, path].join("")}</loc><lastmod>${datestamp}</lastmod></url>`,
-		),
-		"</urlset>",
-	].join("\n");
+async function writeFileWithDirs(
+	filePath: string,
+	data: string,
+): Promise<void> {
+	const dir = dirname(filePath);
+	await mkdir(dir, { recursive: true });
+	await writeFile(filePath, data);
 }

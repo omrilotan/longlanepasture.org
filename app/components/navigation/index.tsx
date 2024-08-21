@@ -1,7 +1,9 @@
 import Link from "next/link";
 import { linksList } from "../../../lib/data";
 
-export const allLinks = linksList.map((link) => createPageLink(link));
+export const allLinks = linksList
+	.filter(({ nav }) => nav)
+	.map((link) => createPageLink(link));
 
 /**
  * Get Link element for a page by substring of the page name or path.

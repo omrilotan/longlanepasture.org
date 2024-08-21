@@ -1,6 +1,7 @@
 const pages: {
 	name: string;
 	path?: string;
+	nav?: boolean;
 }[] = [
 	{
 		name: "Home",
@@ -10,13 +11,13 @@ const pages: {
 		name: "Visitor Information",
 	},
 	{
+		name: "Contribute",
+	},
+	{
 		name: "History",
 	},
 	{
 		name: "Long Lane Pasture Trust",
-	},
-	{
-		name: "Donations",
 	},
 	{
 		name: "Friends",
@@ -27,9 +28,10 @@ const pages: {
 	},
 ];
 
-export const linksList = pages.map(({ name, path }) => ({
+export const linksList = pages.map(({ name, path, nav = true }) => ({
 	name,
 	path: normalizePath(path || name),
+	nav,
 }));
 
 function normalizePath(path: string): string {

@@ -1,31 +1,43 @@
+@import "~react-image-gallery/styles/css/image-gallery.css";
+
 :root {
+	--brand-colour: rgb(32, 149, 227);
+
 	--text-color: #333;
 	--text-color-light: #666;
 	--text-highlight: #000;
 	--text-shadow-color: hsl(0, 0%, 100%);
+	--headlines-color: var(--brand-colour);
 	--background-color: #fff;
 	--foreground-transparent: rgba(0, 0, 0, 0.95);
 	--background-transparent: rgba(255, 255, 255, 0.95);
 	--background-highlight: #f1fcff;
 	--background-mark: rgb(255, 255, 200);
-	--main-background-color: #2095e3;
+	--box-shadow-color: rgba(32, 149, 227, 0.1);
+	--main-background-color: var(--background-color);
 }
 @media (prefers-color-scheme: dark) {
 	:root {
 		--text-color: #f0f0f0;
 		--text-highlight: #fff;
 		--text-shadow-color: #000;
+		--headlines-color: var(--brand-colour);
 		--background-color: #000;
 		--foreground-transparent: rgba(255, 255, 255, 0.95);
 		--background-transparent: rgba(0, 0, 0, 0.95);
 		--background-highlight: #2f3038;
 		--background-mark: rgb(65, 65, 52);
-		--main-background-color: #025288;
+		--box-shadow-color: rgba(2, 82, 136, 0.2);
+		--main-background-color: var(--background-color);
 	}
 }
 * {
 	margin: 0;
 	padding: 0;
+}
+::selection {
+	color: white;
+	background: var(--headlines-color);
 }
 body,
 html {
@@ -44,12 +56,15 @@ body {
 video {
 	object-fit: cover;
 }
+img {
+	max-width: 100%;
+}
 header {
 	color: var(--text-color);
 	background: var(--background-color);
 	position: sticky;
 	top: 0;
-	box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0 1em var(--box-shadow-color);
 
 	h1 {
 		text-align: center;
@@ -61,6 +76,7 @@ header {
 nav ul,
 article {
 	max-width: 1280px;
+	box-sizing: border-box;
 	margin: 0 auto;
 }
 nav {
@@ -130,7 +146,7 @@ nav {
 	nav:focus-within {
 		ul {
 			left: -20%;
-			box-shadow: 0 0 2em rgba(0, 0, 0, 0.5);
+			box-shadow: 0 0 2em var(--box-shadow-color);
 		}
 		.hamburger {
 			transform: rotatez(90deg);
@@ -149,12 +165,33 @@ article {
 	margin-bottom: 1em;
 	border-radius: 0.5em;
 	overflow: auto;
+	box-shadow: 0 0 1em var(--box-shadow-color);
 
 	> * {
 		max-width: 100%;
 	}
+	&.banner {
+		position: relative;
+		padding: 0;
+		img {
+			height: 100%;
+			border-radius: 0.5em;
+		}
+		h2 {
+			position: absolute;
+			bottom: 0.5em;
+			color: white;
+			text-shadow: 0 0 1em black;
+			margin: 0;
+			padding: 0 0.5em;
+		}
+	}
 }
-
+h1,
+h2,
+h3 {
+	color: var(--headlines-color);
+}
 a {
 	color: var(--text-highlight);
 }
@@ -214,5 +251,58 @@ table {
 	th,
 	td {
 		padding: 0.5em;
+	}
+}
+.grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, 33%);
+	grid-gap: 0;
+}
+@media (max-width: 840px) {
+	.grid {
+		grid-template-columns: repeat(auto-fill, 100%);
+	}
+}
+.spread {
+	display: flex;
+	justify-content: space-around;
+}
+.figures {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	figure {
+		text-align: center;
+		position: relative;
+		flex: 1 1 25%;
+		max-width: 200px;
+		padding: 0.5em;
+		img {
+			border-radius: 50%;
+			box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+		}
+		figcaption {
+			position: absolute;
+			display: inline-block;
+			bottom: 1em;
+			left: 50%;
+			transform: translateX(-50%);
+			white-space: nowrap;
+			padding: 0 1em;
+			color: white;
+			text-shadow: 1px 1px 0 black;
+			background-color: rgba(0, 0, 0, 0.5);
+			border-radius: 1em;
+			box-shadow: 1px 1px 0 black;
+		}
+	}
+}
+
+@media (max-width: 840px) {
+	.figures {
+		figure {
+			flex: 0 0 40%;
+			max-width: 40%;
+		}
 	}
 }

@@ -1,4 +1,6 @@
 import { linkToPage } from "../components/navigation";
+import { records } from "../../dynamic/records.ts";
+import { VideoWrapper } from "../components/VideoWrapper";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -44,8 +46,48 @@ export default () => (
 			</p>
 			<p>
 				We appreciate all donations, large or small. If you would like to make a
-				donation, please visit our {linkToPage("donations")} page.
+				donation, please visit our {linkToPage("contribute")} page.
 			</p>
+		</article>
+		<article>
+			<VideoWrapper playbackRate={0.75}>
+				<video
+					autoPlay
+					muted
+					loop
+					playsInline
+					controls={false}
+					className="backgound"
+					id={Math.random().toString(36).replace(/^\d\./, "")}
+				>
+					<source src="/assets/llp.mp4" type="video/mp4" />
+				</video>
+			</VideoWrapper>
+		</article>
+		<article>
+			<h3>Annual Reports and Accounts</h3>
+			<p>
+				Details of the Trust's achievements and finances are available in its
+				annual reports and accounts.
+			</p>
+			<div className="grid">
+				{records.map(([year, { account, report }]) => (
+					<p key={year}>
+						<strong>{year}</strong>:{" "}
+						{report ? (
+							<a href={report} target="_blank">
+								Annual Reports
+							</a>
+						) : null}
+						{account && report ? ", " : null}
+						{account ? (
+							<a href={account} target="_blank">
+								Accounts
+							</a>
+						) : null}
+					</p>
+				))}
+			</div>
 		</article>
 	</>
 );

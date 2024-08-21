@@ -1,5 +1,4 @@
 import { linkToPage } from "../components/navigation";
-import { VideoWrapper } from "../components/VideoWrapper";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -25,6 +24,23 @@ export default () => (
 				popular place. There is evidence of many activities on the land: kite
 				flying, picnics, pony riding, and nature walks by school children.
 			</p>
+			<p className="spread">
+				<img
+					src="/assets/july1917.jpg"
+					alt="Long Lane Pasture in July 1917"
+					loading="lazy"
+				/>
+				<img
+					src="/assets/april1977.jpg"
+					alt="Long Lane Pasture in April 1977"
+					loading="lazy"
+				/>
+				<img
+					src="/assets/february2004.jpg"
+					alt="Long Lane Pasture in February 2004"
+					loading="lazy"
+				/>
+			</p>
 			<p>The wildlife here is now of considerable local importance.</p>
 			<p>
 				In 1999, after years of neglect, the Council decided that the land was
@@ -37,22 +53,12 @@ export default () => (
 				In 2005 the {linkToPage("trust")} was granted a licence to access the
 				land, and work began to restore the Pasture, clear rubbish and improve
 				the land for wildlife.
+				<img
+					src="/assets/LLP-RestorationPlan.webp"
+					alt="Long Lane Pasture Restoration Plan"
+					loading="lazy"
+				/>
 			</p>
-		</article>
-		<article>
-			<VideoWrapper playbackRate={0.75}>
-				<video
-					autoPlay
-					muted
-					loop
-					playsInline
-					controls={false}
-					className="backgound"
-					id={Math.random().toString(36).replace(/^\d\./, "")}
-				>
-					<source src="/assets/llp.mp4" type="video/mp4" />
-				</video>
-			</VideoWrapper>
 		</article>
 	</>
 );

@@ -3,13 +3,16 @@
   "type": "module",
   "license": "UNLICENSED",
   "scripts": {
+    "prepare": "node --experimental-strip-types ./scripts/prebuild/index.ts",
+    "predev": "npm run prepare",
     "dev": "next",
-    "prebuild": "NODE_OPTIONS=\"--loader ts-node/esm\" ts-node ./scripts/prebuild/index.ts",
+    "prebuild": "npm run prepare",
     "build": "next build",
     "start": "serve out",
     "format": "prettier --write ."
   },
   "dependencies": {
+    "react-image-gallery": "^1.3.0",
     "serve": "^14.2.0"
   },
   "devDependencies": {
