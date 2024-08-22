@@ -1,0 +1,30 @@
+name: Publish
+on:
+  - push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: write
+    strategy:
+      matrix:
+        node-version:
+          - "22"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
+        with:
+          node-version: "22"
+      - run: node --version
+      - run: npm i
+      - run: npm run format
+      - name: commit auto fixes
+        env:
+          BRANCH: ${{ github.ref_name }}
+        run: |
+          if [ "$(git diff --quiet && echo 0 || echo $?)" -gt 0 ]; then
+            git commit -am "😎 Autofix"
+            git push origin $BRANCH
+            exit 1
+          fi

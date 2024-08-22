@@ -1,5 +1,5 @@
-import Link from "next/link";
 import { linksList } from "../../../lib/data";
+import Link from "next/link";
 
 export const allLinks = linksList
 	.filter(({ nav }) => nav)

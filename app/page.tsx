@@ -1,6 +1,6 @@
-import type { Metadata } from "next";
 import { pictures } from "../dynamic/pictures.ts";
 import { PicturesGallery } from "./components/PicturesGallery/index.tsx";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
 	title: "Long Lane Pasture. A wildlife haven in the heart of Finchley.",
@@ -10,12 +10,16 @@ export const metadata: Metadata = {
 
 export default () => (
 	<>
-		<article className="banner">
-			<h2>A wildlife haven in the heart of Finchley.</h2>
-			<img
-				src="/assets/banner 2024-05-07 at 19.49.48.jpeg"
-				alt="A path in Long Lane Pasture"
-			/>
+		<article id="a-wildlife-haven" className="banner">
+			<figure>
+				<img
+					src="/assets/banner 2024-05-07 at 19.49.48.jpeg"
+					alt="A path in Long Lane Pasture"
+				/>
+				<figcaption>
+					<h2>A wildlife haven in the heart of Finchley.</h2>
+				</figcaption>
+			</figure>
 		</article>
 		<article>
 			<p>
@@ -30,7 +34,7 @@ export default () => (
 				wildlife and keep dogs on a lead.
 			</p>
 		</article>
-		<article>
+		<article id="volunteers-are-welcome">
 			<h2>Volunteers are welcome — Just Turn Up!</h2>
 			<p>
 				We meet every

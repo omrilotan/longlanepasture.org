@@ -112,6 +112,15 @@ nav {
 	}
 }
 @media (max-width: 840px) {
+	header,
+	nav,
+	nav ul {
+		z-index: 7;
+	}
+	main,
+	article {
+		z-index: 1;
+	}
 	nav {
 		ul {
 			position: fixed;
@@ -146,7 +155,7 @@ nav {
 	nav:focus-within {
 		ul {
 			left: -20%;
-			box-shadow: 0 0 2em var(--box-shadow-color);
+			box-shadow: 0 0 2em rgba(0, 0, 0, 0.3);
 		}
 		.hamburger {
 			transform: rotatez(90deg);
@@ -171,19 +180,34 @@ article {
 		max-width: 100%;
 	}
 	&.banner {
-		position: relative;
 		padding: 0;
-		img {
-			height: 100%;
-			border-radius: 0.5em;
+		figure {
+			position: relative;
+			img {
+				height: 100%;
+				border-radius: 0.5em;
+			}
+			figcaption {
+				position: absolute;
+				bottom: 0.5em;
+				color: white;
+				text-shadow: 0 0 1em black;
+				margin: 0;
+				padding: 0 0.5em;
+				* {
+					color: inherit;
+				}
+			}
 		}
+		p {
+			padding: 1rem 1rem 0;
+		}
+	}
+}
+@media (min-width: 840px) {
+	.banner {
 		h2 {
-			position: absolute;
-			bottom: 0.5em;
-			color: white;
-			text-shadow: 0 0 1em black;
-			margin: 0;
-			padding: 0 0.5em;
+			font-size: 2rem;
 		}
 	}
 }
@@ -194,6 +218,10 @@ h3 {
 }
 a {
 	color: var(--text-highlight);
+}
+summary {
+	cursor: pointer;
+	text-decoration: underline;
 }
 a[href^="http"]::after {
 	content: "⬈";
@@ -242,8 +270,15 @@ table {
 	border-collapse: collapse;
 	margin-bottom: 1em;
 	th {
-		background: var(--background-mark);
+		background: var(--headlines-color);
+		color: white;
 		text-align: inherit;
+	}
+	th:nth-child(1) {
+		border-radius: 0.5em 0 0 0;
+	}
+	th:nth-last-child(1) {
+		border-radius: 0 0.5em 0 0;
 	}
 	tr:nth-child(odd) {
 		background: var(--background-highlight);
@@ -266,6 +301,15 @@ table {
 .spread {
 	display: flex;
 	justify-content: space-around;
+}
+@media (max-width: 840px) {
+	.spread {
+		display: block;
+		* {
+			display: block;
+			margin: 0 auto;
+		}
+	}
 }
 .figures {
 	display: flex;

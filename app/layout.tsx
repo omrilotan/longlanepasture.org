@@ -1,5 +1,5 @@
-import { allLinks } from "./components/navigation";
 import { CustomScriptLoader } from "./components/CustomScriptLoader";
+import { allLinks } from "./components/navigation";
 import "./layout.css";
 
 export default function RootLayout({

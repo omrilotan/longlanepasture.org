@@ -1,6 +1,7 @@
-import type { Metadata } from "next";
-import { ContactUsLink } from "../components/ContactUsLink";
 import { volunteers } from "../../dynamic/volunteers.ts";
+import { ContactUsLink } from "../components/ContactUsLink";
+import { Randomise } from "../components/Randomise";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
 	title: "Contribute to Long Lane Pasture",
@@ -10,15 +11,18 @@ export const metadata: Metadata = {
 
 export default () => (
 	<>
-		<article className="banner">
-			<h2>Contribute to Long Lane Pasture</h2>
-			<img
-				src="/assets/volunteering-banner.jpeg"
-				alt="Volunteering in the pasture"
-				loading="lazy"
-			/>
+		<article id="contribute-to-long-lane-pasture" className="banner">
+			<figure>
+				<img
+					src="/assets/volunteering-banner.jpeg"
+					alt="Volunteering in the pasture"
+				/>
+				<figcaption>
+					<h2>Contribute to Long Lane Pasture</h2>
+				</figcaption>
+			</figure>
 		</article>
-		<article>
+		<article id="the-pasture-is-a-community-space">
 			<p>
 				The pasture is a community space maintained by community members to the
 				benefit of all. There are many ways you can take part in caring for the
@@ -41,8 +45,13 @@ export default () => (
 				>
 					the registry
 				</a>
-				. We accept donations of any size. If you would like to make a donation,
-				please contact us at <ContactUsLink />
+				.{" "}
+				<strong>
+					We receive no funding from the local council and rely on donations to
+					undertake our work.
+				</strong>{" "}
+				We accept donations of any size. If you would like to make a donation,
+				please contact us at <ContactUsLink />.
 			</p>
 			<h3>Initiate educational or community projects</h3>
 			<p>
@@ -51,15 +60,21 @@ export default () => (
 				you'd like us to assist with, please <ContactUsLink />.
 			</p>
 		</article>
-		<article>
+		<article id="meet-some-of-our-volunteers">
 			<h3>Meet some of our volunteers</h3>
+			<p>
+				Here are some of the faces you might see on a Saturday morning. Come
+				have a buiscuit with us! 🍪
+			</p>
 			<div className="figures">
-				{volunteers.map(({ src, alt }) => (
-					<figure key={alt}>
-						<img src={src} alt={alt} loading="lazy" />
-						<figcaption>{alt}</figcaption>
-					</figure>
-				))}
+				<Randomise>
+					{volunteers.map(({ src, alt }) => (
+						<figure key={alt}>
+							<img src={src} alt={alt} loading="lazy" />
+							<figcaption>{alt}</figcaption>
+						</figure>
+					))}
+				</Randomise>
 			</div>
 		</article>
 	</>

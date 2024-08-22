@@ -1,6 +1,6 @@
-import { linkToPage } from "../components/navigation";
 import { records } from "../../dynamic/records.ts";
 import { VideoWrapper } from "../components/VideoWrapper";
+import { linkToPage } from "../components/navigation";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -11,7 +11,27 @@ export const metadata: Metadata = {
 
 export default () => (
 	<>
-		<article>
+		<article id="green-flag-award-winners" className="banner">
+			<figure>
+				<img
+					src="/assets/green-flag-award-2024-25.jpeg"
+					alt="Green Flag Award 2024-25"
+				/>
+				<figcaption>
+					<h2>
+						<a
+							href="https://www.greenflagaward.org/park-summary/?park=1920"
+							target="_blank"
+							rel="noopener"
+						>
+							Green Flag Award Winners
+						</a>
+					</h2>
+				</figcaption>
+			</figure>
+			<p>We are absolutely delighted to have been awarded a Green Flag.</p>
+		</article>
+		<article id="long-lane-pasture-trust">
 			<h2>Long Lane Pasture Trust</h2>
 			<p>
 				Long Lane Pasture Trust is a charity registered in England & Wales (№
@@ -49,7 +69,7 @@ export default () => (
 				donation, please visit our {linkToPage("contribute")} page.
 			</p>
 		</article>
-		<article>
+		<article id="aerial">
 			<VideoWrapper playbackRate={0.75}>
 				<video
 					autoPlay
@@ -64,7 +84,7 @@ export default () => (
 				</video>
 			</VideoWrapper>
 		</article>
-		<article>
+		<article id="annual-reports-and-accounts">
 			<h3>Annual Reports and Accounts</h3>
 			<p>
 				Details of the Trust's achievements and finances are available in its

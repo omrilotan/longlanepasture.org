@@ -1,4 +1,5 @@
 "use client";
+
 import { useEffect } from "react";
 
 export const CustomScriptLoader = ({ path }: { path: string }) => {

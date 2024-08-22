@@ -17,6 +17,12 @@ export default () => {
 		},
 		{
 			available: true,
+			name: "Sheltered Gazebos",
+			description:
+				"Our accesisble pathway reached the main pond, where the gazebo provides a place to sit and enjoy the view.",
+		},
+		{
+			available: true,
 			name: "Seating Areas",
 			description:
 				"Benches are placed at various points around the pasture, offering visitors a place to sit, relax, and enjoy the surroundings.",
@@ -44,6 +50,12 @@ export default () => {
 			name: "Wildflower Meadows",
 			description:
 				"Wildflower meadows are a key attraction. They are carefully managed to encourage biodiversity and provide a beautiful display, especially in the spring and summer.",
+		},
+		{
+			available: true,
+			name: "Trees and Bushes",
+			description:
+				"A variety of plant life provide shade, shelter, and food for wildlife. They also add to the beauty of the pasture.",
 		},
 		{
 			available: false,
@@ -77,7 +89,7 @@ export default () => {
 	];
 	return (
 		<>
-			<article>
+			<article id="come-visit-the-pasture">
 				<h2>Come visit the Pasture</h2>
 				<p>
 					The Pasture is a wild meadow. It is a bit rough in places and can be
@@ -142,7 +154,7 @@ export default () => {
 					alt="Long Lane Pasture Map"
 				/>
 			</article>
-			<article>
+			<article id="location">
 				<h2>Location</h2>
 				<p>
 					Long Lane Pasture lies in North London, in the London Borough of
@@ -182,7 +194,7 @@ export default () => {
 					householder only.
 				</p>
 			</article>
-			<article>
+			<article id="ammenities">
 				<h2>Ammenities</h2>
 				{ammenities.map((ammenity) => (
 					<div key={ammenity.name}>

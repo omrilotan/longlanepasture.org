@@ -1,10 +1,11 @@
-import { mkdir, writeFile } from "node:fs/promises";
-import { dirname, resolve } from "node:path";
-import { sitemap } from "./sitemap/index.ts";
 import { humans } from "./humans/index.ts";
+import { newsletters } from "./newsletters/index.ts";
 import { pictures } from "./pictures/index.ts";
 import { records } from "./records/index.ts";
+import { sitemap } from "./sitemap/index.ts";
 import { volunteers } from "./volunteers/index.ts";
+import { mkdir, writeFile } from "node:fs/promises";
+import { dirname, resolve } from "node:path";
 
 /**
  * Example: 1970-01-01
@@ -20,6 +21,7 @@ const setups: [string, Promise<string>][] = [
 	["./dynamic/pictures.ts", pictures()],
 	["./dynamic/records.ts", records()],
 	["./dynamic/volunteers.ts", volunteers()],
+	["./dynamic/newsletters.ts", newsletters()],
 ];
 
 Promise.all(

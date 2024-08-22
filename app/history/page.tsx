@@ -1,3 +1,5 @@
+import { newsletters } from "../../dynamic/newsletters";
+import { ContactUsLink } from "../components/ContactUsLink";
 import { linkToPage } from "../components/navigation";
 import type { Metadata } from "next";
 
@@ -9,13 +11,13 @@ export const metadata: Metadata = {
 
 export default () => (
 	<>
-		<article>
+		<article id="about-the-pasture">
 			<h2>About the Pasture</h2>
 			<p>
 				The Pasture (1.05 ha, 2.6 acres) is a meadow, which has remained largely
 				undisturbed for centuries (apart from a small area under cultivation
 				during World War 2). It has never been built on. It is within an area
-				defined as being ‘deprived of public open space’.
+				defined as being 'deprived of public open space'.
 			</p>
 			<p>
 				Up to the early 1980s (when it was closed to the public because of
@@ -58,6 +60,37 @@ export default () => (
 					alt="Long Lane Pasture Restoration Plan"
 					loading="lazy"
 				/>
+			</p>
+		</article>
+		<article id="newsletters">
+			<h2>📰 Newsletters</h2>
+			<p>
+				We publish newsletters.
+				<br />
+				You can read the latest issue, {newsletters[0].date}:{" "}
+				<a href={newsletters[0].url} target="_black">
+					Issue № {newsletters[0].issue}
+				</a>
+				.
+			</p>
+			<p>
+				<details>
+					<summary>Previous newsletters are available (click here)</summary>
+					<ul>
+						{newsletters.unshift() &&
+							newsletters.map(({ issue, url, date }) => (
+								<li key={date}>
+									{date}:{" "}
+									<a href={url} target="_blank">
+										Issue № {issue}
+									</a>{" "}
+								</li>
+							))}
+					</ul>
+				</details>
+			</p>
+			<p>
+				To receive the newsletter by email, please <ContactUsLink />.
 			</p>
 		</article>
 	</>

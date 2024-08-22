@@ -14,6 +14,17 @@ export default () => {
 				"Beautiful local historic garden and public park. Donated benches to the Pasture.",
 		},
 		{
+			name: "Coppetts Wood",
+			href: "https://coppettswood.wordpress.com/",
+			description: "A nature reserve on the North Circular",
+		},
+		{
+			name: "Green Flag Award",
+			href: "https://www.greenflagaward.org/park-summary/?park=1920",
+			description:
+				"We are absolutely delighted to have been awarded a Green Flag.",
+		},
+		{
 			name: "Awards For All",
 			href: "https://www.tnlcommunityfund.org.uk/funding/programmes/celebratenationallottery25",
 			description: "Provided funding the pond, fencing and hedges.",
@@ -48,12 +59,12 @@ export default () => {
 		},
 		{
 			name: "The City Bridge Trust",
-			href: "http://www.bridgehousetrust.org.uk/citybridgetrust/",
+			href: "https://www.citybridgefoundation.org.uk/",
 			description: "Major funder of fencing viewpoint and pathwork.",
 		},
 		{
 			name: "Finchley Society",
-			href: "http://www.finchleysociety.org.uk/",
+			href: "https://www.finchleysociety.org.uk/long-lane-pasture/",
 			description:
 				"Regular donor and supporter which protects areas of historic or public interest in Finchley.",
 		},
@@ -75,13 +86,13 @@ export default () => {
 		},
 		{
 			name: "Octavia Hill Society",
-			href: "http://www.octaviahill.org/",
+			href: "https://octaviahill.org/the-society/",
 			description:
 				"National Trust founder and greenspace pioneer who lived locally.",
 		},
 		{
 			name: "Pointalls Allotments",
-			href: "http://www.pointalls.org/",
+			href: "https://pointallscommunityvolunteers.co.uk/",
 			description:
 				"Self managed local allotment society. Established for over 90 years.",
 		},
@@ -99,8 +110,17 @@ export default () => {
 	];
 	return (
 		<>
-			<article>
+			<article id="friends-of-long-lane-pasture">
 				<h2>Friends of Long Lane Pasture</h2>
+				<p>
+					Friends and donors of Long Lane Pasture play a vital role in
+					maintaining this unique green space. Their support enables dedicated
+					volunteers to protect wildlife habitats, manage the beautiful
+					wildflower meadows, and ensure the site remains accessible to the
+					community. Thanks to their contributions, Long Lane Pasture continues
+					to thrive as a peaceful haven for nature and a place of learning for
+					visitors of all ages.
+				</p>
 				<table className="links">
 					<thead>
 						<tr>
@@ -112,7 +132,7 @@ export default () => {
 						{friends.map(({ name, href, description }) => (
 							<tr key={name}>
 								<td>
-									<a href={href} rel="noopener">
+									<a href={href} target="_blank" rel="noopener">
 										{name}
 									</a>
 								</td>
