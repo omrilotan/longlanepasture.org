@@ -2,6 +2,7 @@ import { volunteers } from "../../dynamic/volunteers.ts";
 import { ContactUsLink } from "../components/ContactUsLink";
 import { Randomise } from "../components/Randomise";
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
 	title: "Contribute to Long Lane Pasture",
@@ -23,12 +24,12 @@ export default () => (
 			</figure>
 		</article>
 		<article id="the-pasture-is-a-community-space">
+			<h2>Volunteer — Just Turn Up!</h2>
 			<p>
 				The pasture is a community space maintained by community members to the
 				benefit of all. There are many ways you can take part in caring for the
 				pasture.
 			</p>
-			<h3>Volunteer — Just Turn Up!</h3>
 			<p>
 				We meet every Saturday 10am—12noon and have a break for biscuits and
 				chatting at 11am. Help with the maintenance of the pasture. Trim, Weed,
@@ -59,9 +60,14 @@ export default () => (
 				benefit the Long Lane Pasture Trust. If you have an idea for a project
 				you'd like us to assist with, please <ContactUsLink />.
 			</p>
+			<h3>Contibute to the website</h3>
+			<p>
+				This website is maintained as an open source project, and contributions
+				are welcome. If you have an idea for a feature, please.
+			</p>
 		</article>
 		<article id="meet-some-of-our-volunteers">
-			<h3>Meet some of our volunteers</h3>
+			<h2>Meet some of our volunteers</h2>
 			<p>
 				Here are some of the faces you might see on a Saturday morning. Come
 				have a buiscuit with us! 🍪

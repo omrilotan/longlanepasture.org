@@ -1,6 +1,6 @@
 import { records } from "../../dynamic/records.ts";
 import { VideoWrapper } from "../components/VideoWrapper";
-import { linkToPage } from "../components/navigation";
+import { PageLink } from "../components/navigation";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -66,7 +66,7 @@ export default () => (
 			</p>
 			<p>
 				We appreciate all donations, large or small. If you would like to make a
-				donation, please visit our {linkToPage("contribute")} page.
+				donation, please visit our <PageLink to="contribute" /> page.
 			</p>
 		</article>
 		<article id="aerial">
@@ -85,7 +85,7 @@ export default () => (
 			</VideoWrapper>
 		</article>
 		<article id="annual-reports-and-accounts">
-			<h3>Annual Reports and Accounts</h3>
+			<h2>Annual Reports and Accounts</h2>
 			<p>
 				Details of the Trust's achievements and finances are available in its
 				annual reports and accounts.

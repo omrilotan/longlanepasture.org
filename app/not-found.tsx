@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 export default () => (
 	<>
-		<article>
+		<article id="page-not-found">
 			<h2>Page not found</h2>
 			<p>404 - Page not found</p>
 		</article>

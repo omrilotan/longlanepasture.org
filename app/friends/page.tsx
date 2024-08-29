@@ -121,6 +121,10 @@ export default () => {
 					to thrive as a peaceful haven for nature and a place of learning for
 					visitors of all ages.
 				</p>
+				<img
+					src="/assets/cwhbrown-panoramic-llp.jpg"
+					alt="Panoramic view from Octavia Hill in Long Lane Pasture"
+				/>
 				<table className="links">
 					<thead>
 						<tr>
@@ -132,7 +136,12 @@ export default () => {
 						{friends.map(({ name, href, description }) => (
 							<tr key={name}>
 								<td>
-									<a href={href} target="_blank" rel="noopener">
+									<a
+										href={href}
+										target="_blank"
+										rel="noopener"
+										aria-label={[name, description].join(": ")}
+									>
 										{name}
 									</a>
 								</td>

@@ -9,6 +9,7 @@
     "prebuild": "npm run prepare",
     "build": "next build",
     "start": "serve out",
+    "pages": "npx wrangler pages dev out",
     "format": "prettier --write ."
   },
   "dependencies": {
@@ -16,6 +17,7 @@
     "serve": "^14.2.0"
   },
   "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240821.1",
     "@trivago/prettier-plugin-sort-imports": "^4.3.0",
     "@types/node": "^20.14.12",
     "@types/react": "^18.0.23",
@@ -26,6 +28,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "ts-node": "^10.9.2",
-    "typescript": "^5.5.4"
+    "typescript": "^5.5.4",
+    "yaml": "^2.5.0"
   }
 }

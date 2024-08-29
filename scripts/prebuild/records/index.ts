@@ -30,8 +30,11 @@ export async function records(): Promise<string> {
 	});
 
 	return [
-		"export const records: [number,{account?:string,report?:string}][] = ",
-		JSON.stringify(Array.from(collection).sort(([a], [b]) => b - a)),
-		";\n",
-	].join("");
+		"/* This file is generated automatically from '/public/records' */",
+		`export const records: [number,{account?:string,report?:string}][] = ${JSON.stringify(
+			Array.from(collection).sort(([a], [b]) => b - a),
+			null,
+			2,
+		)};`,
+	].join("\n");
 }

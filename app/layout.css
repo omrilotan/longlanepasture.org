@@ -65,16 +65,22 @@ header {
 	position: sticky;
 	top: 0;
 	box-shadow: 0 0 1em var(--box-shadow-color);
+	padding: 0 1em; /* Leave room for the hamburger (☰) */
 
 	h1 {
 		text-align: center;
 		text-shadow: var(--text-shadow-color) 1px 1px 0;
 		font-size: 2rem;
 		padding: 0.5rem 1rem;
+		a {
+			text-decoration: none;
+			color: inherit;
+		}
 	}
 }
 nav ul,
-article {
+article,
+footer {
 	max-width: 1280px;
 	box-sizing: border-box;
 	margin: 0 auto;
@@ -118,7 +124,8 @@ nav {
 		z-index: 7;
 	}
 	main,
-	article {
+	article,
+	footer {
 		z-index: 1;
 	}
 	nav {
@@ -168,8 +175,11 @@ main {
 	grid-row: 2;
 	padding: 1em 1em 0;
 }
-article {
+article,
+footer {
 	padding: 1rem;
+}
+article {
 	background: var(--background-color);
 	margin-bottom: 1em;
 	border-radius: 0.5em;
@@ -211,10 +221,25 @@ article {
 		}
 	}
 }
+h1 {
+	font-size: 1.5em;
+}
+h2 {
+	font-size: 1.25em;
+}
+h3 {
+	font-size: 1.1em;
+}
 h1,
 h2,
 h3 {
 	color: var(--headlines-color);
+	small {
+		color: var(--text-color-light);
+		font-weight: normal;
+		font-size: 0.75em;
+		vertical-align: sub;
+	}
 }
 a {
 	color: var(--text-highlight);
@@ -235,11 +260,22 @@ h2,
 h3,
 ul {
 	margin-bottom: 0.5em;
+	ul {
+		margin-left: 1.5em;
+	}
 }
 ul {
 	list-style-position: inside;
 	li::marker {
 		color: var(--text-highlight);
+	}
+}
+ol {
+	list-style-position: outside;
+	li {
+		counter-increment: list;
+		margin-inline-start: 1.5em;
+		text-indent: 0.5em;
 	}
 }
 
@@ -301,6 +337,13 @@ table {
 .spread {
 	display: flex;
 	justify-content: space-around;
+	&.start {
+		justify-content: flex-start;
+
+		* {
+			margin-inline-end: 2em;
+		}
+	}
 }
 @media (max-width: 840px) {
 	.spread {
@@ -324,6 +367,8 @@ table {
 		img {
 			border-radius: 50%;
 			box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.3);
+			border: 10px solid white;
+			box-sizing: border-box;
 		}
 		figcaption {
 			position: absolute;
@@ -347,6 +392,23 @@ table {
 		figure {
 			flex: 0 0 40%;
 			max-width: 40%;
+		}
+	}
+}
+
+.hidden {
+	display: none;
+}
+
+footer {
+	margin: 2em auto;
+	font-size: 0.9em;
+	ul {
+		list-style: none;
+		text-align: center;
+		li {
+			display: inline-block;
+			margin: 0 0.5em;
 		}
 	}
 }

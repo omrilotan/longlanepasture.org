@@ -1,4 +1,4 @@
-import { pictures } from "../dynamic/pictures.ts";
+import { pictures } from "../dynamic/gallery.ts";
 import { PicturesGallery } from "./components/PicturesGallery/index.tsx";
 import type { Metadata } from "next";
 
@@ -13,7 +13,7 @@ export default () => (
 		<article id="a-wildlife-haven" className="banner">
 			<figure>
 				<img
-					src="/assets/banner 2024-05-07 at 19.49.48.jpeg"
+					src="/assets/homepage-banner.jpeg"
 					alt="A path in Long Lane Pasture"
 				/>
 				<figcaption>
@@ -21,7 +21,7 @@ export default () => (
 				</figcaption>
 			</figure>
 		</article>
-		<article>
+		<article id="nature-reserve">
 			<p>
 				The pasture is a nature reserve. It is managed by the Long Lane Pasture
 				Trust and is maintained by volunteers. Purchased for public recreation
@@ -57,7 +57,7 @@ export default () => (
 				</li>
 			</ul>
 		</article>
-		<article>
+		<article id="pictures-gallery">
 			<PicturesGallery pictures={pictures} />
 		</article>
 	</>

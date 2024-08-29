@@ -1,7 +1,8 @@
 import { newsletters } from "../../dynamic/newsletters";
 import { ContactUsLink } from "../components/ContactUsLink";
-import { linkToPage } from "../components/navigation";
+import { PageLink } from "../components/navigation";
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
 	title: "Long Lane Pasture: About the Pasture",
@@ -28,17 +29,17 @@ export default () => (
 			</p>
 			<p className="spread">
 				<img
-					src="/assets/july1917.jpg"
+					src="/assets/history-july1917.jpg"
 					alt="Long Lane Pasture in July 1917"
 					loading="lazy"
 				/>
 				<img
-					src="/assets/april1977.jpg"
+					src="/assets/history-april1977.jpg"
 					alt="Long Lane Pasture in April 1977"
 					loading="lazy"
 				/>
 				<img
-					src="/assets/february2004.jpg"
+					src="/assets/history-february2004.jpg"
 					alt="Long Lane Pasture in February 2004"
 					loading="lazy"
 				/>
@@ -52,7 +53,7 @@ export default () => (
 				community use.
 			</p>
 			<p>
-				In 2005 the {linkToPage("trust")} was granted a licence to access the
+				In 2005 the <PageLink to="trust" /> was granted a licence to access the
 				land, and work began to restore the Pasture, clear rubbish and improve
 				the land for wildlife.
 				<img
@@ -60,6 +61,61 @@ export default () => (
 					alt="Long Lane Pasture Restoration Plan"
 					loading="lazy"
 				/>
+			</p>
+			<p>
+				In June 2009 a 25-year lease to manage the Pasture was granted to the
+				Long Lane Pasture Trust (to an agreed Management Plan) for the benefit
+				of wildlife and the community.
+			</p>
+		</article>
+		<article id="a-public-greenspace">
+			<h2>A Public Greenspace for a Century</h2>
+			<p>
+				Long Lane Pasture was purchased by the Finchley Urban District Council
+				for public enjoyment and recreation on 22 February 1912. On 22 February
+				2012 the Mayor of Barnet planted an oak tree on the embankment area to
+				commemorate this landmark. It is an English oak, grown locally by one of
+				our <PageLink to="contribute">Friends</PageLink>.
+			</p>
+			<p>
+				The Pasture has changed little in 100 years, except that its cut hay no
+				longer provides fodder for London's horses, and horses no longer graze
+				here. Many of the wildflowers on the restored damp meadowland are now
+				thriving again and although there is no public footpath leading to a
+				bridge across the railway (one of its old names was Iron Bridge Field),
+				there is a network of paths for visitors to make a less hurried visits.
+				Some Finchley residents can recall varied leisure activities here: it
+				was the home ground of the local football team 'Squires United; many
+				enjoyed family picnics; children used to fly their kites; and classes
+				from Manorside School came for nature study and afterwards made displays
+				of grasses and wild flowers. It is proving as popular today as it was at
+				the turn of the 20th century. The Pasture has outlived many threats and
+				is now half its original size, but continues as a delightful greenspace
+				for both people and wildlife.
+			</p>
+			<p>
+				In 2012 Long Lane Pasture has launched a Centenary Photo & Art
+				Competition to create a visual record of the Pasture. An Exhibition of
+				over one hundred photographs and paintings of Long Lane Pasture was held
+				at the Finchley ArtsDepot in October.
+			</p>
+			<p>
+				In 2012 / 2013 Long Lane Pasture was awarded a prestigious Community
+				Green Flag Award — the national award for well managed, high quality
+				green spaces. The Pasture is one of 43 community green flags awarded
+				across London, and that year the only one in London Borough of Barnet.
+				For more information visit:{" "}
+				<Link
+					href="https://www.greenflagaward.org/"
+					rel="noopener"
+					target="_blank"
+					aria-label="Green Flag Award — the national award for well managed, high quality
+				green spaces"
+				>
+					The Green Flag Award
+				</Link>
+				. We have since repeatedly been awarded the Green Flag, and are very
+				proud of this achievement.
 			</p>
 		</article>
 		<article id="newsletters">
@@ -73,22 +129,20 @@ export default () => (
 				</a>
 				.
 			</p>
-			<p>
-				<details>
-					<summary>Previous newsletters are available (click here)</summary>
-					<ul>
-						{newsletters.unshift() &&
-							newsletters.map(({ issue, url, date }) => (
-								<li key={date}>
-									{date}:{" "}
-									<a href={url} target="_blank">
-										Issue № {issue}
-									</a>{" "}
-								</li>
-							))}
-					</ul>
-				</details>
-			</p>
+			<details>
+				<summary>Previous newsletters are available (click here)</summary>
+				<ul>
+					{newsletters.unshift() &&
+						newsletters.map(({ issue, url, date }) => (
+							<li key={date}>
+								{date}:{" "}
+								<a href={url} target="_blank">
+									Issue № {issue}
+								</a>{" "}
+							</li>
+						))}
+				</ul>
+			</details>
 			<p>
 				To receive the newsletter by email, please <ContactUsLink />.
 			</p>

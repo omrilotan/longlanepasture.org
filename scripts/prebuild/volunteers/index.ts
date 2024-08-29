@@ -9,5 +9,8 @@ export async function volunteers(): Promise<string> {
 			src: `/volunteers/${file}`,
 			alt: file.replace(/\.\w+$/, ""),
 		}));
-	return `export const volunteers = ${JSON.stringify(files)};`;
+	return [
+		"/* This file is generated automatically from '/public/volunteers' */",
+		`export const volunteers = ${JSON.stringify(files, null, 2)};`,
+	].join("\n");
 }

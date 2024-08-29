@@ -1,4 +1,4 @@
-import { linkToPage } from "../components/navigation";
+import { PageLink } from "../components/navigation";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -118,10 +118,12 @@ export default () => {
 				</p>
 				<p>
 					Access is free of charge, but as a small registered charity we rely on{" "}
-					{linkToPage("contribute", "donations and the support of our Friends")}{" "}
-					to maintain and restore the Pasture.
+					<PageLink to="contribute">donations and support</PageLink> to maintain
+					and restore the Pasture.
 				</p>
-				<h3>Opening Times</h3>
+				<h3>
+					Opening Times <small>† unless too wet</small>
+				</h3>
 				<table className="data">
 					<tbody>
 						<tr>
@@ -143,16 +145,36 @@ export default () => {
 				</table>
 				<p>Please,</p>
 				<ul>
-					<li>Dogs welcome on leads</li>
+					<li>
+						Dogs welcome <strong>on leads</strong>
+					</li>
 					<li>Collect your litter and waste</li>
 					<li>No bicycles or motorbikes</li>
 					<li>No ball games</li>
 					<li>No fires</li>
 				</ul>
+				<p>
+					<PageLink to="regulations">Read the full regulations</PageLink> if you
+					are not sure your activity is allowed.
+				</p>
 				<img
 					src="/assets/long-lane-pasture-map.svg"
 					alt="Long Lane Pasture Map"
 				/>
+			</article>
+			<article id="wildlife you might see">
+				<h2>Wildlife you might see</h2>
+				<h3>Meadow</h3>
+				<p>Butterflies, Grasshopper, Wasp Spider, Ladybird</p>
+				<h3>Pond</h3>
+				<p>Moorhen, Frog/tadpole, Toad, Newt, Dragonfly, Water Boatman</p>
+				<h3>Throughout the Pasture</h3>
+				<p>Birds, Fox, Bank Vole, Field Mouse</p>
+				<p>
+					Check out our full <PageLink to="species">species checklist</PageLink>{" "}
+					for a complete list of wildlife spotted at Long Lane Pasture.
+				</p>
+				<p>Seen something unusual? Let us know!</p>
 			</article>
 			<article id="location">
 				<h2>Location</h2>
@@ -173,6 +195,7 @@ export default () => {
 					loading="lazy"
 					frameBorder={0}
 					referrerPolicy="no-referrer-when-downgrade"
+					title="Long Lane Pasture Location on Google Maps"
 				></iframe>
 				<h4>Get Here By Bus</h4>
 				<p>

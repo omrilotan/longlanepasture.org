@@ -1,0 +1,310 @@
+Birds:
+  - Blackcap: Sylvia atricapilla
+  - Blackbird *: Turdus merula
+  - Blue Tit: Parus caeruleus
+  - Bullfinch *: Pyrrhula pyrrhula
+  - Canada Goose: Branta canadiensis
+  - Collard Dove: Streptopelia decaocto
+  - Carrion Crow: Corvus corone
+  - Chaffinch: Fringilla coelebs
+  - Dunnock *: Prunella modularis
+  - Feral Pigeon: Columba livia
+  - Fieldfare: Turdus pilaris
+  - Goldcrest: Regulus regulus
+  - Goldfinch: Carduelis carduelis
+  - Great Tit: Parus major
+  - Greenfinch: Carduelis chloris
+  - Greater Spotted Woodpecker: Dendrocopos major
+  - Green Woodpecker: Picus viridis
+  - Grey Wagtail: Motacilla cinerea
+  - Heron: Ardea cinerea
+  - House Sparrow *: Passer domesticus
+  - Jackdaw: Corvus monedula
+  - Jay: Garrulus glandarius
+  - Kestrel (hovering): Falco tinnunculus
+  - Lesser Whitethroat: Sylvia curruca
+  - Long-tailed Tit: Aegithalos caudatus
+  - Magpie: Pica Pica
+  - Mallard: Anas platyrhnchos
+  - Mistle Thrush: Turdus viscivorus
+  - Moorhen: Gallinula chloropus
+  - Green Parakeet: Aratinga holochlora
+  - Pied wagtail: Motacilla alba
+  - Redwing: Turdus iliacus
+  - Robin *: Erithacus rubecula
+  - Song Thrush: Turdus philomelos
+  - Sparrowhawk: Accipiter nisus
+  - Starling: Sturnus vulgaris
+  - Swift (flying over pond): Apus apus
+  - Whitethroat *: Sylvia communis
+  - Wood Pigeon: Columba palumbus
+  - Wren: Troglodytes troglodytes
+Butterflies:
+  - Brimstone: Gonepteryx rhamni
+  - Comma: Polygonia c-album
+  - Common Blue: Polyommatus icarus
+  - Essex Skipper: Thymelicus lineola
+  - Gatekeeper: Pyronia tithonus
+  - Green-veined White: Pieris napi
+  - Holly Blue: Celastrina argiolus
+  - Large Skipper: Ochlodes venata
+  - Large White: Pieris brassicae
+  - Meadow Brown: Maniola jurtina
+  - Orange Tip: Anthocharis cardamines
+  - Painted Lady: Cynthia cardui
+  - Peacock: Inachis io
+  - Red Admiral: Vanessa atalanta
+  - Small Copper: Lycaena phlaeas
+  - Small Heath: Coenonympha pamphilus
+  - Small Skipper: Thymelicus sylvestris
+  - Small Tortoiseshell: Aglais urticae
+  - Small White: Pieris rapae
+  - Speckled Wood: Pararge aegeria
+  - White-letter Hairstreak: Strymonidia w-album
+Moths:
+  - Angle Shades: Phlogophora meticulosa
+  - Beaded Chestnut: Agrochola lychnidis
+  - Bird's Wing: Dypterygia scabriuscula
+  - Blood Vein: Timandra griseata
+  - Bright line brown eye: Mythimna conigera
+  - Brimstone Moth: Opisthograptis luteolata
+  - Brown House-moth: Hofmannophilia pseudospretella
+  - Brown Rustic: Rusina ferruginea
+  - Buff Ermine: Spilosoma luteum
+  - Button Snout: Hypena rostralis
+  - Cinnabar: Tyria jacobaeae
+  - Clay: Mythimna ferrago
+  - Clay Fan Foot: Paracolax tristalis
+  - Common Brown Plume: Emmelina mododactyla
+  - Common Carpet: Epirrhoe alternate
+  - Common Quaker: Orthosia cerasi
+  - Common Marbled Carpet: Chloroclysta truncata
+  - Common Rustic: Mesapamea secalis
+  - Common Wainscot: Mythimna pallens
+  - Common White Plume: Pterophorus pentadactyla
+  - Common Swift: Hepialus lupulinus
+  - Common Snout: Hypena proboscidalis
+  - Dark Arches: Apamea monoglypha
+  - Dark Brocade: Blepharita adusta
+  - Dark Spectacle: Abrostola triplasia
+  - Dark Swordgrass: Agrotis ipsilon
+  - Dot Moth: Melanchra persicariae
+  - Early Thorn: Selenia dentaria
+  - Elephant Hawk Moth (caterpillar): Deilephila elpenor
+  - Flame Shoulder: Orchropleura plecta
+  - Garden Dart: Euxoa nigricans
+  - Green Arches: Anaplectoides prasina
+  - Grey Arches: Polia nebulosa
+  - Heart and Dart: Agrotis exclamationis
+  - Ingrailed Clay: Diarsia mendica
+  - Large Yellow Under-wing: Noctua pronuba
+  - Lesser Broad-bordered Yellow Underwing: Noctua janthina
+  - Lesser Yellow Underwing: Noctua comes
+  - Light Arches: Apamea lithoxylaea
+  - Light Emerald: Campaea margaritata
+  - Lime hawk moth: Mimas tiliae
+  - Lunar Underwing: Omphaloscelis lunosa
+  - Marbled Minor: Oligia strigilis
+  - Mother of Pearl: Pleuroptya ruralis
+  - Mottled Beauty: Alcis repandata
+  - Mottled Rustic: Caradrina morpheus
+  - Mouse Moth: Amphipyra tragopognis
+  - Mullein (caterpillar): Shargacucullia verbasci
+  - Muslin moth: Diaphora mendica
+  - Narrow-bordered 5 spot Burnet: Zygaena lonicera
+  - Pale Prominent: Pterostoma palpina
+  - Poplar Grey: Acronicta aceris
+  - Poplar Hawk Moth: Laothoe populi
+  - Purple Clay: Diarsia brunnea
+  - Red Underwing: Catocala nupta
+  - Riband Wave: Idaea degeneraria
+  - Rosy Rustic: Hydraecia micacea
+  - Ruby Tiger: Phragmatobia fuliginosa
+  - Rustic: Hoplodrina blanda
+  - Sallow: Xanthia icteritia
+  - Scalloped Oak: Crocallis elinguaria
+  - Scorched Carpet: Ligdia adustata
+  - Setaceous Hebrew Character: Xestia c-nigram
+  - Shuttle-shaped Dart: Agrotis puta
+  - Silver-ground Carpet: Xanthorhoe montanata
+  - Silver Y: Autographa gamma
+  - Six-spot Burnet: Zygaena filipendulae
+  - Small Magpie: Eurrhypara hortulata
+  - Snout: Hypena proboscidalis
+  - Spectacle: Abrostola tripartita
+  - Square Spot Rustic: Xestia xanthographa
+  - Straw Dot: Rivula sericealis
+  - Straw Underwing: Thalpophila matura
+  - Tawny Marbled Minor: Oligia latruncula
+  - Turnip Moth: Agrotis segetum
+  - Uncertain: Hoplodrina alsines
+  - Vapourer (caterpillar): Orgyia antiqua
+  - White Ermine: Spilosoma lubricpeda
+  - Willow Beauty: Peribatodes thomboidaria
+  - Yellow Shell: Camptogramma bilineata
+Amphibians:
+  - Common Frog: Rana temporaria
+  - Smooth Newt: Lissotriton vulgaris
+  - Toad: Bufo bufo
+reptiles:
+  - Slow Worm: Anguis fragilis
+Mammels:
+  - bat:
+      - Pipistrelle Soprano: Pipistrellus pygmaeus
+  - Brown Rat: Rattus norvegicus
+  - Grey Squirrel: Neosciurus carolinensis
+  - Hedgehog: Erinaceus europaeus
+  - Red Fox: Vulpes vulpes
+  - Vole:
+      - Bank: Clethrionomys glareolus
+      - Field/short-tailed: Microtus agrestis
+  - Wood mouse: Sylvaemus sylvaticus
+Flowering Plants:
+  - Alkanet: Anchusa officinalis
+  - Bindweed:
+      - Hedge: Calystegia sepium
+      - Field: Calystegia soldanella
+  - Bittercress, Narrow-leaved: Cardamine impatiens
+  - Bluebell:
+      - English: Hyacinthoides non-scripta
+      - Spanish: Endymion hispanicus
+  - Bullrush/Reedmace: Typha latifolia
+  - Burdock: Arctium minus
+  - Campion, Red: Silene dioica
+  - Chamomile, Wild (Scented Mayweed): Chamomilla recutita
+  - Charlock: Sinapsis arvensis
+  - Cleavers, Goosegrass: Gallium aparine
+  - Clover:
+      - Red: Trifolium pratense
+      - White: Trifoleum repens
+  - Comfrey: Symphytum offianale
+  - Cow Parsley (Queen Anne's Lace): Anthriscus sylvestris
+  - Cranesbill:
+      - Cut-leaved: Geranium dissectum
+      - Meadow: Geranium pratense
+  - Daffodil: Narcissus sp.
+  - Daisy, Dog (Ox Eye): Leucanthemum vulgare
+  - Dandelion: Taraxacum officinale
+  - Deadnettle:
+      - Red: Lamium alba
+      - White: Lamium album
+  - Dock, broad-leaved: Rumex obtusifolius
+  - Dogwood: Cornus sanguinea
+  - Fat Hen: Chenopodium album
+  - Flag, Yellow: Iris pseudocorus
+  - Forget-me-not: Myosotis arvensis
+  - Foxglove: Digitalis purpurea
+  - Groundsel: Senecio vulgaris
+  - Hemlock: Conium maculatum
+  - Hemp Agrimony: Eupatorium cannabinum
+  - Herb Robert: Geranium robertianum
+  - Hogweed: Heracleum sphondyleum
+  - Horse-radish: Armoracia rusticana
+  - Iris:
+      - Yellow: Iris pseudocorus
+      - Blue: Iris foetidissima
+  - Jack by the Hedge / Garlic Mustard: Alliana petiolata
+  - Knotgrass: Polygonum aviculare
+  - Lesser Celandine: Ranunculus ficaria
+  - Lesser Knapweed or Hardheads: Centaurea nigra
+  - Lungwort: Pulmonana officinalis
+  - Meadow Vetchling: Lathyrus pratensis
+  - Michaelmas Daisy: Aster novi-belgii
+  - Mugwort: Artemisia vulgaris
+  - Mullein: Verbascum thapsus
+  - Nettle, Stinging: Urtica dioica
+  - Nipplewort: Lapsana communis
+  - Poppy:
+      - Common: Papaver rhoeas
+      - Opium: Papaver somniferum
+  - Prickly Lettuce: Lactuca serriola
+  - Primrose: Primula vulgaris
+  - Purple Loosestrife: Lythrum salicaria
+  - Ragwort: Senecio jacobaea
+  - Rape (oilseed): Brassica napus
+  - Red shank or Persicaria: Polygonum persicaria
+  - Rush:
+      - Soft: Juncus effusus
+      - Flowering: Juncus glomeratus
+  - Salsify: Trapopogon porrifolius
+  - Sedge, Giant: Carex
+  - Shepherd's Purse: Capsella bursa-pasroris
+  - Snowdrop: Galanthus nivalis
+  - Sorrel, Common: Rumex acetosa
+  - Sow Thistle:
+      - Prickly: Sonchus apper
+      - Smooth: Sonchus oleraceus
+  - Spearwort, Greater: Ranunculus lingua
+  - Speedwell:
+      - Germander: Veronica chamaedrys
+      - Meadow: Veronica persica
+  - Stitchwort, Lesser: Stellaria graminea
+  - Teasel: Dipsacus fullonum
+  - Thistle, Creeping: Cirsium arvense
+  - Valerian: Valeriana officinalis
+  - Vetch, Common: Vicia sativa
+  - Willowherb:
+      - Broad-leaved: Epilobium montanum
+      - Great: Epilobium hirsutum
+      - Lesser: Epilobium palustre
+      - Rosebay: Epilobium angustifolium
+      - Square- stemmed: Epilobium tetragonum
+  - White Melilot: Memilotus alba
+  - Woody Nightshade: Solanum dulcamara
+  - Woundwort, Hedge: Stachys sylvatica
+  - Yarrow: Achillea millefolium
+Grasses:
+  - Cocksfoot: Dactylic glomerata
+  - Couch-grass: Elymus repens
+  - Common Bent: Agrostis tenuis
+  - Creeping Bent: Agrostis stolonifera
+  - Creeping soft-grass: Holcus mollis
+  - Crested Dog's-tail: Cynosurus cristatus
+  - False Oat-grass: Arrhenatherum elatius
+  - Field brome: Bromus arvensis
+  - Hairy Brome: Bromus ramosus
+  - Meadow Fox-tail: Alopecurus pratensis
+  - Perennial Rye-grass: Lolium perenne
+  - Giant Fescue: Fescua gigantea
+  - Red Fescue: Festuca rubra
+  - Timothy Grass/Cat's-tail: Phleum pratense
+  - Tufted Hair-grass or Tussock-grass: Deschampsia eaespitosa
+  - Yorkshire Fog: Holcus lanatus
+Trees & Shrubs:
+  - Apple: Malus sp
+  - Apple, Crab: Malus sylvestris
+  - Ash: Fraximus excelsior
+  - Blackthorn: Prunus spinosa
+  - Bramble:
+      - Blackberry: Rubus fruticosus
+      - Cut-leaved: Rubus fruticosus
+      - Himalayan Giant: Rubus fruticosus
+  - Buddleia: Buddleja davidii
+  - Elder: Sambacus sp
+  - Field Maple: Acer campestre
+  - Guelder Rose: Viburnum opulus
+  - Hawthorn, Common: Crataegus monogyna
+  - Hazel: Corylus avellana
+  - Honeysuckle: Lonicera periclymenum
+  - Hop, Wild: Humulus lupulus
+  - Hornbeam: Carpinus betulus
+  - Ivy: Hedera helix
+  - Laurel, Portugal: Prunus lusitanica
+  - Mallow: Lavatera arborea
+  - Oak:
+      - English: Quercus robur
+      - Holm: Quercus ilex
+  - Privet: Ligustrum ovalifolium
+  - Prunus species (various): ""
+  - Raspberry (cultivated): Rubus
+  - Rose:
+      - Dog: Rosa canina
+      - Field: Rosa arvesis
+  - Rowan: Sorbus aucuparia
+  - Small leaved Lime: Tilia cordata
+  - Spindle-tree: Euonymus europaeus
+  - Sycamore: Acer pseudoplatanus
+  - Willow:
+      - Goat or Great Sallow: Salix caprea
+      - Crack: Salix fragilis
+      - Weeping: Salix babylonica

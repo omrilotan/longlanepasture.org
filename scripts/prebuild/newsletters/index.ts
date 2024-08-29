@@ -18,5 +18,12 @@ export async function newsletters(): Promise<string> {
 			}
 			return 0;
 		});
-	return `export const newsletters = ${JSON.stringify(files, null, 2)};`;
+	return [
+		"/* This file is generated automatically from '/public/newsletters' */",
+		`export const newsletters: {url: string, issue?: string, date?: string}[] = ${JSON.stringify(
+			files,
+			null,
+			2,
+		)};`,
+	].join("\n");
 }

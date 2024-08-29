@@ -1,0 +1,20 @@
+- name: Home
+  path: /
+- name: Visitor Information
+- name: Checklist of Recorded Species
+  path: /species
+  nav: false
+- name: Regulations
+  nav: false
+- name: Contribute
+- name: History
+- name: Long Lane Pasture Trust
+- name: Friends
+- name: X
+  path: https://x.com/LLPasture
+- name: Source Code
+  path: https://github.com/omrilotan/longlanepasture.org
+  nav: false
+- name: Email Us
+  path: mailto:longlanepasture@gmail.com
+  nav: false
