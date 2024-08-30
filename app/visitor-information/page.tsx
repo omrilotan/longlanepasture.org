@@ -1,8 +1,8 @@
-import { PageLink } from "../components/navigation";
+import { NavigationLink } from "../components/navigation";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "Long Lane Pasture: Visitor Information",
+	title: "Visitor Information for Long Lane Pasture",
 	description:
 		"Everything you need to know about visiting Long Lane Pasture. Opening times, location, and how to get here.",
 };
@@ -118,8 +118,8 @@ export default () => {
 				</p>
 				<p>
 					Access is free of charge, but as a small registered charity we rely on{" "}
-					<PageLink to="contribute">donations and support</PageLink> to maintain
-					and restore the Pasture.
+					<NavigationLink to="contribute">donations and support</NavigationLink>{" "}
+					to maintain and restore the Pasture.
 				</p>
 				<h3>
 					Opening Times <small>† unless too wet</small>
@@ -154,8 +154,10 @@ export default () => {
 					<li>No fires</li>
 				</ul>
 				<p>
-					<PageLink to="regulations">Read the full regulations</PageLink> if you
-					are not sure your activity is allowed.
+					<NavigationLink to="regulations">
+						Read the full regulations
+					</NavigationLink>{" "}
+					if you are not sure your activity is allowed.
 				</p>
 				<img
 					src="/assets/long-lane-pasture-map.svg"
@@ -171,8 +173,9 @@ export default () => {
 				<h3>Throughout the Pasture</h3>
 				<p>Birds, Fox, Bank Vole, Field Mouse</p>
 				<p>
-					Check out our full <PageLink to="species">species checklist</PageLink>{" "}
-					for a complete list of wildlife spotted at Long Lane Pasture.
+					Check out our full{" "}
+					<NavigationLink to="species">species checklist</NavigationLink> for a
+					complete list of wildlife spotted at Long Lane Pasture.
 				</p>
 				<p>Seen something unusual? Let us know!</p>
 			</article>

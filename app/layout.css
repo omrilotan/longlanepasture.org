@@ -396,6 +396,11 @@ table {
 	}
 }
 
+.feature-image {
+	text-align: center;
+	font-style: italic;
+}
+
 .hidden {
 	display: none;
 }

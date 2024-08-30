@@ -1,11 +1,14 @@
 import { ClosureNotice } from "./components/ClosureNotice";
 import { CustomScriptLoader } from "./components/CustomScriptLoader";
-import { NavList, PageLink } from "./components/navigation";
+import { NavList, NavigationLink } from "./components/navigation";
 import "./layout.css";
 import type { Metadata, Viewport } from "next";
 
 export const metadata: Metadata = {
-	title: "Long Lane Pasture",
+	title: {
+		template: "%s",
+		default: "Long Lane Pasture",
+	},
 	description:
 		"Long Lane Pasture is a community-run nature reserve in Finchley, North London.",
 	keywords: [
@@ -50,7 +53,7 @@ export default function RootLayout({
 			<body>
 				<header>
 					<h1>
-						<PageLink to="home">Long Lane Pasture</PageLink>
+						<NavigationLink to="home">Long Lane Pasture</NavigationLink>
 					</h1>
 					<nav>
 						<a className="hamburger" href="#!">

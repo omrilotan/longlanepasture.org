@@ -1,10 +1,10 @@
+# List of navigation items with titles, paths and visibility flags
+# The order of the items is the order they will appear in the navigation bar
 - name: Home
   path: /
 - name: Visitor Information
 - name: Checklist of Recorded Species
-  path: /species
-  nav: false
-- name: Regulations
+  path: /species/
   nav: false
 - name: Contribute
 - name: History

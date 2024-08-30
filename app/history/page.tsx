@@ -1,11 +1,11 @@
 import { newsletters } from "../../dynamic/newsletters";
 import { ContactUsLink } from "../components/ContactUsLink";
-import { PageLink } from "../components/navigation";
+import { NavigationLink } from "../components/navigation";
 import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-	title: "Long Lane Pasture: About the Pasture",
+	title: "The history of Long Lane Pasture",
 	description:
 		"The Pasture is a meadow, which has remained largely undisturbed for centuries.",
 };
@@ -53,9 +53,13 @@ export default () => (
 				community use.
 			</p>
 			<p>
-				In 2005 the <PageLink to="trust" /> was granted a licence to access the
-				land, and work began to restore the Pasture, clear rubbish and improve
-				the land for wildlife.
+				In 2005 the <NavigationLink to="trust" /> was granted a licence to
+				access the land, and work began to restore the Pasture, clear rubbish
+				and improve the land for wildlife.{" "}
+				<NavigationLink to="the-future-for-long-lane-pasture">
+					Read all about it
+				</NavigationLink>
+				.
 				<img
 					src="/assets/LLP-RestorationPlan.webp"
 					alt="Long Lane Pasture Restoration Plan"
@@ -65,7 +69,11 @@ export default () => (
 			<p>
 				In June 2009 a 25-year lease to manage the Pasture was granted to the
 				Long Lane Pasture Trust (to an agreed Management Plan) for the benefit
-				of wildlife and the community.
+				of wildlife and the community.{" "}
+				<NavigationLink to="long-wait-is-over-for-long-lane-pasture">
+					Read all about it
+				</NavigationLink>
+				.
 			</p>
 		</article>
 		<article id="a-public-greenspace">
@@ -75,7 +83,7 @@ export default () => (
 				for public enjoyment and recreation on 22 February 1912. On 22 February
 				2012 the Mayor of Barnet planted an oak tree on the embankment area to
 				commemorate this landmark. It is an English oak, grown locally by one of
-				our <PageLink to="contribute">Friends</PageLink>.
+				our <NavigationLink to="contribute">Friends</NavigationLink>.
 			</p>
 			<p>
 				The Pasture has changed little in 100 years, except that its cut hay no

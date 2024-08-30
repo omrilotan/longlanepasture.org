@@ -1,10 +1,10 @@
 import { records } from "../../dynamic/records.ts";
 import { VideoWrapper } from "../components/VideoWrapper";
-import { PageLink } from "../components/navigation";
+import { NavigationLink } from "../components/navigation";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "Long Lane Pasture Trust",
+	title: "The Long Lane Pasture Trust",
 	description:
 		"Long Lane Pasture Trust is a charity registered in England & Wales (№ 1122236) and is run in accordance with its Trust Deed.",
 };
@@ -66,7 +66,7 @@ export default () => (
 			</p>
 			<p>
 				We appreciate all donations, large or small. If you would like to make a
-				donation, please visit our <PageLink to="contribute" /> page.
+				donation, please visit our <NavigationLink to="contribute" /> page.
 			</p>
 		</article>
 		<article id="aerial">

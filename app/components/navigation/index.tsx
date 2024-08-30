@@ -1,11 +1,10 @@
 import { navigation } from "../../../dynamic/navigation";
-import { normalizePath } from "../../../lib/navigation";
 import Link from "next/link";
 
 const linksList = navigation.map(
 	({ name, path, nav = true, footer = true }) => ({
 		name,
-		path: normalizePath(path || name),
+		path,
 		nav,
 		footer,
 	}),
@@ -48,12 +47,12 @@ export function NavList({
 /**
  * Get Link element for a page by substring of the page name or path.
  */
-export function PageLink({
+export function NavigationLink({
 	children,
 	to,
 }: {
 	to: string;
-	children?: string;
+	children?: React.ReactNode;
 	text?: string;
 }): JSX.Element | null {
 	const page = linksList.find((link) =>
@@ -73,13 +72,13 @@ export function PageLink({
 }
 
 function LinkItem({
+	children,
 	name,
 	path,
-	children,
 }: {
+	children?: React.ReactNode;
 	name: string;
 	path: string;
-	children?: string;
 }): JSX.Element {
 	const external = path.startsWith("http");
 	const rel = external ? "noopener" : "next";

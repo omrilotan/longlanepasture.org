@@ -1,3 +1,5 @@
+import { NavigationLink } from "../navigation";
+
 export const ContactUsLink = ({ children }: { children?: React.ReactNode }) => (
-	<a href="mailto:longlanepasture@gmail.com">{children || "contact us"}</a>
+	<NavigationLink to="email">{children || "contact us"}</NavigationLink>
 );

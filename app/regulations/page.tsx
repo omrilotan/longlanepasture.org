@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "Long Lane Pasture: Regulations and Guidelines",
+	title: "Regulations and Guidelines while visiting Long Lane Pasture",
 	description:
 		"Please respect the wildlife and other visitors by following these regulations and guidelines.",
 };
