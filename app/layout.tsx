@@ -28,7 +28,7 @@ export const metadata: Metadata = {
 	icons: {
 		shortcut: "/favicon.ico",
 	},
-	generator: "https://github.com/omrilotan/longlanepasture.org",
+	generator: "https://github.com/long-lane-pasture/longlanepasture.github.io",
 };
 export const viewport: Viewport = {
 	themeColor: "white",

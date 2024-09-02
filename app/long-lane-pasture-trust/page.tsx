@@ -2,6 +2,7 @@ import { records } from "../../dynamic/records.ts";
 import { VideoWrapper } from "../components/VideoWrapper";
 import { NavigationLink } from "../components/navigation";
 import type { Metadata } from "next";
+import Link from "next/link";
 
 export const metadata: Metadata = {
 	title: "The Long Lane Pasture Trust",
@@ -23,26 +24,39 @@ export default () => (
 							href="https://www.greenflagaward.org/park-summary/?park=1920"
 							target="_blank"
 							rel="noopener"
+							aria-label="Long Lane Pasture's page on the Green Flag Award website"
 						>
 							Green Flag Award Winners
 						</a>
+						<a
+							href="#green-flag-award-winners"
+							aria-label="Anchor link to Green Flag Award Winners"
+						></a>
 					</h2>
 				</figcaption>
 			</figure>
 			<p>We are absolutely delighted to have been awarded a Green Flag.</p>
 		</article>
 		<article id="long-lane-pasture-trust">
-			<h2>Long Lane Pasture Trust</h2>
+			<h2>
+				Long Lane Pasture Trust
+				<a
+					href="#long-lane-pasture-trust"
+					aria-label="Anchor link to Long Lane Pasture Trust"
+				></a>
+			</h2>
 			<p>
 				Long Lane Pasture Trust is a charity registered in England & Wales (№
 				1122236) and is run in accordance with its Trust Deed. Charity details
 				are available on{" "}
-				<a
+				<Link
 					href="https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/4035882"
+					target="_blank"
 					rel="noopener"
+					aria-label="Long Lane Pasture Trust on the registry"
 				>
 					the registry
-				</a>
+				</Link>
 			</p>
 			<p>
 				The Trust was established in April 2006 in order to protect, restore and
@@ -85,7 +99,13 @@ export default () => (
 			</VideoWrapper>
 		</article>
 		<article id="annual-reports-and-accounts">
-			<h2>Annual Reports and Accounts</h2>
+			<h2>
+				Annual Reports and Accounts
+				<a
+					href="#annual-reports-and-accounts"
+					aria-label="Anchor link to Annual Reports and Accounts"
+				></a>
+			</h2>
 			<p>
 				Details of the Trust's achievements and finances are available in its
 				annual reports and accounts.

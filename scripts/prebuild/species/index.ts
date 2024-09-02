@@ -9,7 +9,7 @@ export async function species() {
 	);
 	const data = parse(file);
 	return [
-		"/* This file is generated automativcally from '/src/species/index.yml' */",
+		"/* This file is generated automatically from '/src/species/index.yml' */",
 		`export const species: Record<string, Record<string, string|Record<string, string>[]>[]> = ${JSON.stringify(data, null, 2)};`,
 	].join("\n");
 }

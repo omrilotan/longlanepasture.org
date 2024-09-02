@@ -1,3 +1,4 @@
+import { ammenities } from "./ammenities/index.ts";
 import { friends } from "./friends/index.ts";
 import { gallery } from "./gallery/index.ts";
 import { humans } from "./humans/index.ts";
@@ -21,6 +22,7 @@ const setups: [string, Promise<string>][] = [
 		"./public/sitemap.xml",
 		sitemap({ base: "https://longlanepasture.org", datestamp }),
 	],
+	["./dynamic/ammenities.ts", ammenities()],
 	["./dynamic/friends.ts", friends()],
 	["./dynamic/gallery.ts", gallery()],
 	["./dynamic/navigation.ts", navigation()],

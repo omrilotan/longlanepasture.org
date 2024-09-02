@@ -13,7 +13,13 @@ export const metadata: Metadata = {
 export default () => (
 	<>
 		<article id="about-the-pasture">
-			<h2>About the Pasture</h2>
+			<h2>
+				About the Pasture
+				<a
+					href="#about-the-pasture"
+					aria-label="Anchor link to About the Pasture"
+				></a>
+			</h2>
 			<p>
 				The Pasture (1.05 ha, 2.6 acres) is a meadow, which has remained largely
 				undisturbed for centuries (apart from a small area under cultivation
@@ -77,7 +83,13 @@ export default () => (
 			</p>
 		</article>
 		<article id="a-public-greenspace">
-			<h2>A Public Greenspace for a Century</h2>
+			<h2>
+				A Public Greenspace for a Century
+				<a
+					href="#a-public-greenspace"
+					aria-label="Anchor link to A Public Greenspace for a Century"
+				></a>
+			</h2>
 			<p>
 				Long Lane Pasture was purchased by the Finchley Urban District Council
 				for public enjoyment and recreation on 22 February 1912. On 22 February
@@ -127,7 +139,10 @@ export default () => (
 			</p>
 		</article>
 		<article id="newsletters">
-			<h2>📰 Newsletters</h2>
+			<h2>
+				📰 Newsletters
+				<a href="#newsletters" aria-label="Anchor link to Newsletters"></a>
+			</h2>
 			<p>
 				We publish newsletters.
 				<br />

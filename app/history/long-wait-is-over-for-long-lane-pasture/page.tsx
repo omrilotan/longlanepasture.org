@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default () => (
 	<article id="long-wait-is-over-for-long-lane-pasture">
 		<h2>Long wait is over for Long Lane Pasture</h2>
-		<h3>By Diana Cormack</h3>
+		<h3>By Diana Cormack. August 2009</h3>
 		<p>
 			<i>
 				As published on{" "}
@@ -21,6 +21,7 @@ export default () => (
 					href="http://www.the-archer.co.uk/archive/2009/2009AugArcher.pdf"
 					target="_blank"
 					rel="noopener"
+					alia-label="Read the full article in The Archer"
 				>
 					The Archer
 				</Link>
@@ -45,12 +46,12 @@ export default () => (
 		</p>
 		<h4>Peppercorn Pasture</h4>
 		<p>
-			ow they have succeeded in obtaining a 25-year lease from Barnet Council at
-			a peppercorn rent. Ann Brown, chairwoman of the Trust, presented the Mayor
-			of Barnet Brian Coleman with 25 symbolic peppercorns when he performed the
-			opening ceremony on 19 June. In her speech she thanked the mayor for his
-			long and valued support of the scheme, which he described as “a dream come
-			true”.
+			Now they have succeeded in obtaining a 25-year lease from Barnet Council
+			at a peppercorn rent. Ann Brown, chairwoman of the Trust, presented the
+			Mayor of Barnet Brian Coleman with 25 symbolic peppercorns when he
+			performed the opening ceremony on 19 June. In her speech she thanked the
+			mayor for his long and valued support of the scheme, which he described as
+			“a dream come true”.
 		</p>
 		<p>
 			his remnant of historic Finchley Common is now a wildlife refuge. Its

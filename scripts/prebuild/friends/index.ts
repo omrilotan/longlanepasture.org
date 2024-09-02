@@ -9,7 +9,7 @@ export async function friends() {
 	);
 	const data = parse(file);
 	return [
-		"/* This file is generated automativcally from '/src/friends/index.yml' */",
+		"/* This file is generated automatically from '/src/friends/index.yml' */",
 		`export const friends: {name: string, href: string, description: string}[] = ${JSON.stringify(data, null, 2)};`,
 	].join("\n");
 }

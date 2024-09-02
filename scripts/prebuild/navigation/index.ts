@@ -49,7 +49,7 @@ export async function navigation() {
 	});
 
 	return [
-		"/* This file is generated automativcally from '/src/navigation/index.yml' */",
+		"/* This file is generated automatically from '/src/navigation/index.yml' */",
 		`export const navigation: {name: string, path: string, nav?: boolean, footer?: boolean}[] = ${JSON.stringify(data, null, 2)};`,
 	].join("\n");
 }

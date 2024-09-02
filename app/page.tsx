@@ -17,7 +17,13 @@ export default () => (
 					alt="A path in Long Lane Pasture"
 				/>
 				<figcaption>
-					<h2>A wildlife haven in the heart of Finchley.</h2>
+					<h2>
+						A wildlife haven in the heart of Finchley.
+						<a
+							href="#a-wildlife-haven"
+							aria-label="Anchor link to A wildlife haven in the heart of Finchley."
+						></a>
+					</h2>
 				</figcaption>
 			</figure>
 		</article>
@@ -35,7 +41,13 @@ export default () => (
 			</p>
 		</article>
 		<article id="volunteers-are-welcome">
-			<h2>Volunteers are welcome — Just Turn Up!</h2>
+			<h2>
+				Volunteers are welcome — Just Turn Up!
+				<a
+					href="#volunteers-are-welcome"
+					aria-label="Anchor link to Volunteers are welcome — Just Turn Up!"
+				></a>
+			</h2>
 			<p>
 				We meet every
 				<mark>

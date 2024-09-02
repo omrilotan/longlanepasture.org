@@ -8,7 +8,10 @@ export const metadata: Metadata = {
 
 export default () => (
 	<article id="regulations">
-		<h2>Regulations</h2>
+		<h2>
+			Regulations
+			<a href="#regulations" aria-label="Anchor link to Regulations"></a>
+		</h2>
 		<p>
 			You are invited to quietly enjoy Long Lane Pasture. Please respect the
 			environment and take care to keep any disturbance to a minimum. The

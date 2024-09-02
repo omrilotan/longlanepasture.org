@@ -255,6 +255,14 @@ a[href^="http"]::after {
 	vertical-align: middle;
 	font-family: sans-serif;
 }
+a[href^="#"] {
+	text-decoration: none;
+}
+*:hover > a[href^="#"]:before {
+	content: "🔗";
+	margin: 0 0.5em;
+	font-size: 0.75em;
+}
 p,
 h2,
 h3,

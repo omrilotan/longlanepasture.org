@@ -10,7 +10,13 @@ export const metadata: Metadata = {
 export default () => (
 	<>
 		<article id="species">
-			<h2>Checklist of Recorded Species</h2>
+			<h2>
+				Checklist of Recorded Species
+				<a
+					href="#species"
+					aria-label="Anchor link to Checklist of Recorded Species"
+				></a>
+			</h2>
 			<p>
 				This is a list of all species recorded at Long Lane Pasture.
 				<br />* indicates that this species is known to have bred on the

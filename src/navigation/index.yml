@@ -13,7 +13,7 @@
 - name: X
   path: https://x.com/LLPasture
 - name: Source Code
-  path: https://github.com/omrilotan/longlanepasture.org
+  path: https://github.com/long-lane-pasture/longlanepasture.github.io
   nav: false
 - name: Email Us
   path: mailto:longlanepasture@gmail.com

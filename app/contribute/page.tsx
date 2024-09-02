@@ -1,6 +1,7 @@
 import { volunteers } from "../../dynamic/volunteers.ts";
 import { ContactUsLink } from "../components/ContactUsLink";
 import { Randomise } from "../components/Randomise";
+import { NavigationLink } from "../components/navigation/index.tsx";
 import type { Metadata } from "next";
 import Link from "next/link";
 
@@ -19,12 +20,24 @@ export default () => (
 					alt="Volunteering in the pasture"
 				/>
 				<figcaption>
-					<h2>Contribute to Long Lane Pasture</h2>
+					<h2>
+						Contribute to Long Lane Pasture
+						<a
+							href="#contribute-to-long-lane-pasture"
+							aria-label="Anchor link to Contribute to Long Lane Pasture"
+						></a>
+					</h2>
 				</figcaption>
 			</figure>
 		</article>
 		<article id="the-pasture-is-a-community-space">
-			<h2>Volunteer — Just Turn Up!</h2>
+			<h2>
+				Volunteer — Just Turn Up!
+				<a
+					href="#the-pasture-is-a-community-space"
+					aria-label="Anchor link to Volunteer — Just Turn Up!"
+				></a>
+			</h2>
 			<p>
 				The pasture is a community space maintained by community members to the
 				benefit of all. There are many ways you can take part in caring for the
@@ -40,12 +53,14 @@ export default () => (
 				Long Lane Pasture Trust is a charity registered in England & Wales (№
 				1122236) and is run in accordance with its Trust Deed. Charity details
 				are available on{" "}
-				<a
+				<Link
 					href="https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/4035882"
+					target="_blank"
 					rel="noopener"
+					aria-label="Long Lane Pasture Trust on the registry"
 				>
 					the registry
-				</a>
+				</Link>
 				.{" "}
 				<strong>
 					We receive no funding from the local council and rely on donations to
@@ -62,12 +77,18 @@ export default () => (
 			</p>
 			<h3>Contibute to the website</h3>
 			<p>
-				This website is maintained as an open source project, and contributions
-				are welcome. If you have an idea for a feature, please.
+				This website is maintained as an open source project, and{" "}
+				<NavigationLink to="source">contributions are welcome</NavigationLink>.
 			</p>
 		</article>
 		<article id="meet-some-of-our-volunteers">
-			<h2>Meet some of our volunteers</h2>
+			<h2>
+				Meet some of our volunteers
+				<a
+					href="#meet-some-of-our-volunteers"
+					aria-label="Anchor link to Meet some of our volunteers"
+				></a>
+			</h2>
 			<p>
 				Here are some of the faces you might see on a Saturday morning. Come
 				have a buiscuit with us! 🍪
