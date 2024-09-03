@@ -78,9 +78,7 @@ export default function RootLayout({
 						<a className="hamburger" href="#!">
 							☰
 						</a>
-						<ul>
-							<NavList filter="nav" />
-						</ul>
+						<NavList filter="nav" />
 					</nav>
 				</header>
 				<main>

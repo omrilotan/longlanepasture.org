@@ -13,6 +13,7 @@
     "dev": "next",
     "prebuild": "npm run prepare",
     "build": "next build",
+    "postbuild": "node --experimental-strip-types ./scripts/postbuild/index.ts",
     "start": "serve out",
     "pages": "npx wrangler pages dev out",
     "format": "prettier --write ."

@@ -3,13 +3,15 @@
 - name: Home
   path: /
 - name: Visitor Information
-- name: Checklist of Recorded Species
-  path: /species/
-  nav: false
 - name: Contribute
 - name: History
 - name: The Trust
 - name: Friends
+- name: Regulations
+  nav: false
+- name: Recorded Species
+  path: /species/
+  nav: false
 - name: X
   path: https://x.com/LLPasture
 - name: Source Code

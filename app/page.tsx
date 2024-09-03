@@ -11,9 +11,9 @@ export const metadata: Metadata = {
 export default () => (
 	<>
 		<article id="a-wildlife-haven">
-			<figure className="banner">
+			<figure className="hero">
 				<img
-					src="/assets/homepage-banner.jpeg"
+					src="/assets/homepage-hero.jpeg"
 					alt="A path in Long Lane Pasture"
 				/>
 				<figcaption>

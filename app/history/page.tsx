@@ -13,13 +13,35 @@ export const metadata: Metadata = {
 export default () => (
 	<>
 		<article id="about-the-pasture">
-			<h2>
-				About the Pasture
-				<a
-					href="#about-the-pasture"
-					aria-label="Anchor link to About the Pasture"
-				></a>
-			</h2>
+			<figure className="hero">
+				<img
+					src="/assets/history-hero.jpg"
+					alt="A view of the main pond in Long Lane Pasture. November, 2007"
+				/>
+				<figcaption>
+					<h2>
+						Story of the Pasture
+						<a
+							href="#about-the-pasture"
+							aria-label="Anchor link to About the Pasture"
+						></a>
+					</h2>
+				</figcaption>
+			</figure>
+			<p className="end">
+				<sup>
+					<i>
+						Photo by{" "}
+						<a
+							href="https://martinaddison.photography/"
+							target="_blank"
+							rel="noopener"
+						>
+							Martin Addison
+						</a>
+					</i>
+				</sup>
+			</p>
 			<p>
 				The Pasture (1.05 ha, 2.6 acres) is a meadow, which has remained largely
 				undisturbed for centuries (apart from a small area under cultivation
@@ -35,13 +57,13 @@ export default () => (
 			</p>
 			<div className="spread">
 				{[
-					["/assets/history/history 1917-07-07 1280x720.jpg", "July 1917"],
-					["/assets/history/history 1977-04 1280x720.jpg", "April 1977"],
-					["/assets/history/history 2004-02 1280x720.jpg", "February 2004"],
+					["/assets/history/1917-07 history.jpg", "July 1917"],
+					["/assets/history/1977-04 history.jpg", "April 1977"],
+					["/assets/history/2007-11 Martin Addison.jpg", "November 2007"],
 				].map(([src, date]) => (
 					<figure
 						key={src}
-						style={{ maxWidth: "400px" }}
+						style={{ maxWidth: "480px", padding: "0 .25rem" }}
 						className="caption-on"
 					>
 						<img
@@ -130,7 +152,7 @@ export default () => (
 				green spaces. The Pasture is one of 43 community green flags awarded
 				across London, and that year the only one in London Borough of Barnet.
 				For more information visit:{" "}
-				<Link
+				<a
 					href="https://www.greenflagaward.org/"
 					rel="noopener"
 					target="_blank"
@@ -138,7 +160,7 @@ export default () => (
 				green spaces"
 				>
 					The Green Flag Award
-				</Link>
+				</a>
 				. We have since repeatedly been awarded the Green Flag, and are very
 				proud of this achievement.
 			</p>
@@ -152,9 +174,9 @@ export default () => (
 				We publish newsletters.
 				<br />
 				You can read the latest issue, {newsletters[0].date}:{" "}
-				<Link href={newsletters[0].url} target="_blank">
+				<a href={newsletters[0].url} target="_blank">
 					Issue № {newsletters[0].issue}
-				</Link>
+				</a>
 				.
 			</p>
 			<details>
@@ -164,9 +186,9 @@ export default () => (
 						newsletters.map(({ issue, url, date }) => (
 							<li key={date}>
 								{date}:{" "}
-								<Link href={url} target="_blank">
+								<a href={url} target="_blank">
 									Issue № {issue}
-								</Link>
+								</a>
 							</li>
 						))}
 				</ul>

@@ -15,9 +15,9 @@ export const metadata: Metadata = {
 export default () => (
 	<>
 		<article id="contribute-to-long-lane-pasture">
-			<figure className="banner">
+			<figure className="hero">
 				<img
-					src="/assets/volunteering-banner.jpeg"
+					src="/assets/volunteering-hero.jpeg"
 					alt="Volunteering in the pasture"
 				/>
 				<figcaption>
@@ -54,14 +54,14 @@ export default () => (
 				Long Lane Pasture Trust is a charity registered in England & Wales (№
 				1122236) and is run in accordance with its Trust Deed. Charity details
 				are available on{" "}
-				<Link
+				<a
 					href="https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/4035882"
 					target="_blank"
 					rel="noopener"
 					aria-label="Long Lane Pasture Trust on the registry"
 				>
 					the registry
-				</Link>
+				</a>
 				.{" "}
 				<strong>
 					We receive no funding from the local council and rely on donations to
@@ -82,7 +82,7 @@ export default () => (
 				<NavigationLink to="source">contributions are welcome</NavigationLink>.
 			</p>
 		</article>
-		<article id="meet-some-of-our-volunteers">
+		{/* <article id="meet-some-of-our-volunteers">
 			<h2>
 				Meet some of our volunteers
 				<a
@@ -104,6 +104,6 @@ export default () => (
 					))}
 				</Randomise>
 			</div>
-		</article>
+		</article> */}
 	</>
 );

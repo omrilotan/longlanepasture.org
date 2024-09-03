@@ -1,4 +1,5 @@
 import { ammenities } from "../../dynamic/ammenities";
+import { ContactUsLink } from "../components/ContactUsLink";
 import { NavigationLink } from "../components/navigation";
 import type { Metadata } from "next";
 
@@ -11,13 +12,21 @@ export const metadata: Metadata = {
 export default () => (
 	<>
 		<article id="come-visit-the-pasture">
-			<h2>
-				Come visit the Pasture
-				<a
-					href="#come-visit-the-pasture"
-					aria-label="Anchor link to Come visit the Pasture"
-				></a>
-			</h2>
+			<figure className="hero">
+				<img
+					src="/assets/visitor-information-hero.jpeg"
+					alt="Visitors at Long Lane Pasture"
+				/>
+				<figcaption>
+					<h2>
+						Come visit the Pasture
+						<a
+							href="#come-visit-the-pasture"
+							aria-label="Anchor link to Come visit the Pasture"
+						></a>
+					</h2>
+				</figcaption>
+			</figure>
 			<p>
 				The Pasture is a wild meadow. It is a bit rough in places and can be
 				very wet after rain and in the late autumn/winter/early spring months.
@@ -105,12 +114,13 @@ export default () => (
 			<p>Moorhen, Frog/tadpole, Toad, Newt, Dragonfly, Water Boatman</p>
 			<h3>Throughout the Pasture</h3>
 			<p>Birds, Fox, Bank Vole, Field Mouse</p>
+			<hr />
 			<p>
 				Check out our full{" "}
 				<NavigationLink to="species">species checklist</NavigationLink> for a
-				complete list of wildlife spotted at Long Lane Pasture.
+				complete list of wildlife spotted at Long Lane Pasture. Seen something
+				unusual? <ContactUsLink>Let us know!</ContactUsLink>
 			</p>
-			<p>Seen something unusual? Let us know!</p>
 		</article>
 		<article id="location">
 			<h2>Location</h2>

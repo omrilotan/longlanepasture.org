@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default () => (
 	<>
 		<article id="green-flag-award-winners">
-			<figure className="banner">
+			<figure className="hero">
 				<img
 					src="/assets/green-flag-award-2024-25.jpeg"
 					alt="Green Flag Award 2024-25"
@@ -30,14 +30,14 @@ export default () => (
 			</figure>
 			<p>
 				We are absolutely delighted to have been{" "}
-				<Link
+				<a
 					href="https://www.greenflagaward.org/park-summary/?park=1920"
 					target="_blank"
 					rel="noopener"
 					aria-label="Long Lane Pasture's page on the Green Flag Award website"
 				>
 					awarded a Green Flag.
-				</Link>
+				</a>
 			</p>
 		</article>
 		<article id="long-lane-pasture-trust">
@@ -51,18 +51,18 @@ export default () => (
 			<p>
 				Long Lane Pasture Trust is a charity registered in England & Wales (№
 				1122236) and is run in accordance with its{" "}
-				<Link href="/assets/documents/LLP-TrustDeed.pdf" target="_blank">
+				<a href="/assets/documents/LLP-TrustDeed.pdf" target="_blank">
 					Trust Deed
-				</Link>
+				</a>
 				. Charity details are available on{" "}
-				<Link
+				<a
 					href="https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/4035882"
 					target="_blank"
 					rel="noopener"
 					aria-label="Long Lane Pasture Trust on the registry"
 				>
 					the registry
-				</Link>
+				</a>
 			</p>
 			<p>
 				The Trust was established in April 2006 in order to protect, restore and
@@ -121,15 +121,15 @@ export default () => (
 					<p key={year}>
 						<strong>{year}</strong>:{" "}
 						{report ? (
-							<Link href={report} target="_blank">
+							<a href={report} target="_blank">
 								Annual Reports
-							</Link>
+							</a>
 						) : null}
 						{account && report ? ", " : null}
 						{account ? (
-							<Link href={account} target="_blank">
+							<a href={account} target="_blank">
 								Accounts
-							</Link>
+							</a>
 						) : null}
 					</p>
 				))}

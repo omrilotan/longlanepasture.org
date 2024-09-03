@@ -17,14 +17,14 @@ export default () => (
 		<p>
 			<i>
 				As published on{" "}
-				<Link
+				<a
 					href="http://www.the-archer.co.uk/archive/2009/2009AugArcher.pdf"
 					target="_blank"
 					rel="noopener"
 					alia-label="Read the full article in The Archer"
 				>
 					The Archer
-				</Link>
+				</a>
 				.
 			</i>
 		</p>

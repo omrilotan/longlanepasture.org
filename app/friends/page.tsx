@@ -34,14 +34,14 @@ export default () => (
 					<p>
 						<i>
 							Panoramic view from Octavia Hill in Long Lane Pasture. Designed by{" "}
-							<Link
+							<a
 								href="http://www.cwhbrown.com/"
 								target="_blank"
 								rel="noopener"
 								aria-label="Chris Brown's website and portfolio"
 							>
 								Chris Brown
-							</Link>
+							</a>
 						</i>
 					</p>
 				</figcaption>
@@ -57,14 +57,14 @@ export default () => (
 					{friends.map(({ name, href, description }) => (
 						<tr key={name}>
 							<td>
-								<Link
+								<a
 									href={href}
 									target="_blank"
 									rel="noopener"
 									aria-label={[name, description].join(": ")}
 								>
 									{name}
-								</Link>
+								</a>
 							</td>
 							<td>{description}</td>
 						</tr>
