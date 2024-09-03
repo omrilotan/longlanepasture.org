@@ -1,4 +1,4 @@
-import { friends } from "../../dynamic/friends.ts";
+import { friends } from "../../dynamic/friends";
 import type { Metadata } from "next";
 import Link from "next/link";
 

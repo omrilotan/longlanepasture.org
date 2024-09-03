@@ -1,4 +1,4 @@
-import { pictures } from "../dynamic/gallery.ts";
+import { pictures } from "../dynamic/gallery";
 import { PicturesGallery } from "./components/PicturesGallery/index.tsx";
 import type { Metadata } from "next";
 
@@ -10,8 +10,8 @@ export const metadata: Metadata = {
 
 export default () => (
 	<>
-		<article id="a-wildlife-haven" className="banner">
-			<figure>
+		<article id="a-wildlife-haven">
+			<figure className="banner">
 				<img
 					src="/assets/homepage-banner.jpeg"
 					alt="A path in Long Lane Pasture"
@@ -26,8 +26,6 @@ export default () => (
 					</h2>
 				</figcaption>
 			</figure>
-		</article>
-		<article id="nature-reserve">
 			<p>
 				The pasture is a nature reserve. It is managed by the Long Lane Pasture
 				Trust and is maintained by volunteers. Purchased for public recreation
@@ -42,17 +40,17 @@ export default () => (
 		</article>
 		<article id="volunteers-are-welcome">
 			<h2>
-				Volunteers are welcome — Just Turn Up!
+				Volunteers are welcome - Just Turn Up!
 				<a
 					href="#volunteers-are-welcome"
-					aria-label="Anchor link to Volunteers are welcome — Just Turn Up!"
+					aria-label="Anchor link to Volunteers are welcome - Just Turn Up!"
 				></a>
 			</h2>
 			<p>
 				We meet every
 				<mark>
 					{" "}
-					<strong>Saturday 10am—12noon</strong>{" "}
+					<strong>Saturday 10am-12noon</strong>{" "}
 				</mark>
 				and have a break for buiscuits and chatting at 11am.
 			</p>

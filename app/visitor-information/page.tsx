@@ -39,7 +39,7 @@ export default () => (
 				You will see that some areas are not to be walked across. These are
 				being kept as undisturbed areas for wildlife. Please observe the
 				boundaries of these areas and do not venture into them. Respect wildlife
-				at all times: do not pick flowers or take anything from the site — leave
+				at all times: do not pick flowers or take anything from the site - leave
 				for others to enjoy. If you see anything unusual, we would love to hear
 				from you.
 			</p>
@@ -55,18 +55,18 @@ export default () => (
 				<tbody>
 					<tr>
 						<td>☀️</td>
-						<td>April—October</td>
-						<td>Every Day: 10am—7pm or dusk</td>
+						<td>April-October</td>
+						<td>Every Day: 10am-7pm or dusk</td>
 					</tr>
 					<tr>
 						<td>🌧</td>
-						<td>November—March</td>
-						<td>Weekends, bank holidays: 10am—3pm</td>
+						<td>November-March</td>
+						<td>Weekends, bank holidays: 10am-3pm</td>
 					</tr>
 					<tr>
 						<td>📅</td>
 						<td>All Year</td>
-						<td>Saturday volunteering: 10am—12noon</td>
+						<td>Saturday volunteering: 10am-12noon</td>
 					</tr>
 				</tbody>
 			</table>

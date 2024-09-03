@@ -3,12 +3,12 @@ import { join } from "node:path";
 
 export async function newsletters(): Promise<string> {
 	const dirContent = await readdir(
-		join(process.cwd(), "public", "newsletters"),
+		join(process.cwd(), "public", "assets", "newsletters"),
 	);
 	const files = dirContent
 		.filter((file) => file.match(/\.(pdf)$/i))
 		.map((file) => ({
-			url: `/newsletters/${file}`,
+			url: `/assets/newsletters/${file}`,
 			issue: file.match(/^LLP-Newsletter(?<number>\w+)\s/)?.groups?.number, // could be 28a
 			date: file.match(/(?<date>[^\s]+\s+\d+)\.pdf/)?.groups?.date, // could be "June 2024", could be "Autumn/Winter 2014"
 		}))
@@ -19,7 +19,7 @@ export async function newsletters(): Promise<string> {
 			return 0;
 		});
 	return [
-		"/* This file is generated automatically from '/public/newsletters' */",
+		"/* This file is generated automatically from '/public/assets/newsletters' */",
 		`export const newsletters: {url: string, issue?: string, date?: string}[] = ${JSON.stringify(
 			files,
 			null,

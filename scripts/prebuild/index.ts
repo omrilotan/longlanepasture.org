@@ -22,14 +22,14 @@ const setups: [string, Promise<string>][] = [
 		"./public/sitemap.xml",
 		sitemap({ base: "https://longlanepasture.org", datestamp }),
 	],
-	["./dynamic/ammenities.ts", ammenities()],
-	["./dynamic/friends.ts", friends()],
-	["./dynamic/gallery.ts", gallery()],
-	["./dynamic/navigation.ts", navigation()],
-	["./dynamic/newsletters.ts", newsletters()],
-	["./dynamic/records.ts", records()],
-	["./dynamic/species.ts", species()],
-	["./dynamic/volunteers.ts", volunteers()],
+	["./dynamic/ammenities/index.ts", ammenities()],
+	["./dynamic/friends/index.ts", friends()],
+	["./dynamic/gallery/index.ts", gallery()],
+	["./dynamic/navigation/index.ts", navigation()],
+	["./dynamic/newsletters/index.ts", newsletters()],
+	["./dynamic/records/index.ts", records()],
+	["./dynamic/species/index.ts", species()],
+	["./dynamic/volunteers/index.ts", volunteers()],
 ];
 
 Promise.all(

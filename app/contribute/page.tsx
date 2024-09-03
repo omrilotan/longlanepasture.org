@@ -1,7 +1,8 @@
-import { volunteers } from "../../dynamic/volunteers.ts";
+import { volunteers } from "../../dynamic/volunteers";
 import { ContactUsLink } from "../components/ContactUsLink";
 import { Randomise } from "../components/Randomise";
 import { NavigationLink } from "../components/navigation/index.tsx";
+import "../components/styles/contributors.css";
 import type { Metadata } from "next";
 import Link from "next/link";
 
@@ -13,8 +14,8 @@ export const metadata: Metadata = {
 
 export default () => (
 	<>
-		<article id="contribute-to-long-lane-pasture" className="banner">
-			<figure>
+		<article id="contribute-to-long-lane-pasture">
+			<figure className="banner">
 				<img
 					src="/assets/volunteering-banner.jpeg"
 					alt="Volunteering in the pasture"
@@ -32,10 +33,10 @@ export default () => (
 		</article>
 		<article id="the-pasture-is-a-community-space">
 			<h2>
-				Volunteer — Just Turn Up!
+				Volunteer - Just Turn Up!
 				<a
 					href="#the-pasture-is-a-community-space"
-					aria-label="Anchor link to Volunteer — Just Turn Up!"
+					aria-label="Anchor link to Volunteer - Just Turn Up!"
 				></a>
 			</h2>
 			<p>
@@ -44,7 +45,7 @@ export default () => (
 				pasture.
 			</p>
 			<p>
-				We meet every Saturday 10am—12noon and have a break for biscuits and
+				We meet every Saturday 10am-12noon and have a break for biscuits and
 				chatting at 11am. Help with the maintenance of the pasture. Trim, Weed,
 				Cut, Rake, Mow, Plant, Prune, Clean, Maintain…
 			</p>
@@ -91,9 +92,9 @@ export default () => (
 			</h2>
 			<p>
 				Here are some of the faces you might see on a Saturday morning. Come
-				have a buiscuit with us! 🍪
+				have a biscuit with us! 🍪
 			</p>
-			<div className="figures">
+			<div className="contributors">
 				<Randomise>
 					{volunteers.map(({ src, alt }) => (
 						<figure key={alt}>

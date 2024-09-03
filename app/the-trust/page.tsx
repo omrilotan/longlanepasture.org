@@ -1,4 +1,4 @@
-import { records } from "../../dynamic/records.ts";
+import { records } from "../../dynamic/records";
 import { VideoWrapper } from "../components/VideoWrapper";
 import { NavigationLink } from "../components/navigation";
 import type { Metadata } from "next";
@@ -12,22 +12,15 @@ export const metadata: Metadata = {
 
 export default () => (
 	<>
-		<article id="green-flag-award-winners" className="banner">
-			<figure>
+		<article id="green-flag-award-winners">
+			<figure className="banner">
 				<img
 					src="/assets/green-flag-award-2024-25.jpeg"
 					alt="Green Flag Award 2024-25"
 				/>
 				<figcaption>
 					<h2>
-						<a
-							href="https://www.greenflagaward.org/park-summary/?park=1920"
-							target="_blank"
-							rel="noopener"
-							aria-label="Long Lane Pasture's page on the Green Flag Award website"
-						>
-							Green Flag Award Winners
-						</a>
+						Green Flag Award Winners
 						<a
 							href="#green-flag-award-winners"
 							aria-label="Anchor link to Green Flag Award Winners"
@@ -35,7 +28,17 @@ export default () => (
 					</h2>
 				</figcaption>
 			</figure>
-			<p>We are absolutely delighted to have been awarded a Green Flag.</p>
+			<p>
+				We are absolutely delighted to have been{" "}
+				<Link
+					href="https://www.greenflagaward.org/park-summary/?park=1920"
+					target="_blank"
+					rel="noopener"
+					aria-label="Long Lane Pasture's page on the Green Flag Award website"
+				>
+					awarded a Green Flag.
+				</Link>
+			</p>
 		</article>
 		<article id="long-lane-pasture-trust">
 			<h2>
@@ -47,8 +50,11 @@ export default () => (
 			</h2>
 			<p>
 				Long Lane Pasture Trust is a charity registered in England & Wales (№
-				1122236) and is run in accordance with its Trust Deed. Charity details
-				are available on{" "}
+				1122236) and is run in accordance with its{" "}
+				<Link href="/assets/documents/LLP-TrustDeed.pdf" target="_blank">
+					Trust Deed
+				</Link>
+				. Charity details are available on{" "}
 				<Link
 					href="https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/4035882"
 					target="_blank"
@@ -115,15 +121,15 @@ export default () => (
 					<p key={year}>
 						<strong>{year}</strong>:{" "}
 						{report ? (
-							<a href={report} target="_blank">
+							<Link href={report} target="_blank">
 								Annual Reports
-							</a>
+							</Link>
 						) : null}
 						{account && report ? ", " : null}
 						{account ? (
-							<a href={account} target="_blank">
+							<Link href={account} target="_blank">
 								Accounts
-							</a>
+							</Link>
 						) : null}
 					</p>
 				))}

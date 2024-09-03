@@ -6,10 +6,12 @@ import { join } from "node:path";
  */
 export async function records(): Promise<string> {
 	const accountFiles = (
-		await readdir(join(process.cwd(), "public", "records", "accounts"))
+		await readdir(
+			join(process.cwd(), "public", "assets", "records", "accounts"),
+		)
 	).filter((filename) => filename.match(/\.pdf$/));
 	const reportFiles = await readdir(
-		join(process.cwd(), "public", "records", "reports"),
+		join(process.cwd(), "public", "assets", "records", "reports"),
 	);
 
 	const collection = new Map();
@@ -25,12 +27,12 @@ export async function records(): Promise<string> {
 				collection.set(year, {});
 			}
 			const record = collection.get(year);
-			record[type] = ["", "records", folder, file].join("/");
+			record[type] = ["", "assets", "records", folder, file].join("/");
 		});
 	});
 
 	return [
-		"/* This file is generated automatically from '/public/records' */",
+		"/* This file is generated automatically from '/public/assets/records' */",
 		`export const records: [number,{account?:string,report?:string}][] = ${JSON.stringify(
 			Array.from(collection).sort(([a], [b]) => b - a),
 			null,

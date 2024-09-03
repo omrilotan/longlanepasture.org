@@ -21,9 +21,12 @@ jobs:
       - run: npm run format
       - name: commit auto fixes
         env:
+          USERNAME: ${{ github.actor }}
           BRANCH: ${{ github.ref_name }}
         run: |
           if [ "$(git diff --quiet && echo 0 || echo $?)" -gt 0 ]; then
+            git config --global user.email "${USERNAME}@users.noreply.github.com" --replace-all
+            git config --global user.name "$USERNAME" --replace-all
             git commit -am "😎 Autofix"
             git push origin $BRANCH
             exit 1

@@ -33,23 +33,26 @@ export default () => (
 				popular place. There is evidence of many activities on the land: kite
 				flying, picnics, pony riding, and nature walks by school children.
 			</p>
-			<p className="spread">
-				<img
-					src="/assets/history-july1917.jpg"
-					alt="Long Lane Pasture in July 1917"
-					loading="lazy"
-				/>
-				<img
-					src="/assets/history-april1977.jpg"
-					alt="Long Lane Pasture in April 1977"
-					loading="lazy"
-				/>
-				<img
-					src="/assets/history-february2004.jpg"
-					alt="Long Lane Pasture in February 2004"
-					loading="lazy"
-				/>
-			</p>
+			<div className="spread">
+				{[
+					["/assets/history/history 1917-07-07 1280x720.jpg", "July 1917"],
+					["/assets/history/history 1977-04 1280x720.jpg", "April 1977"],
+					["/assets/history/history 2004-02 1280x720.jpg", "February 2004"],
+				].map(([src, date]) => (
+					<figure
+						key={src}
+						style={{ maxWidth: "400px" }}
+						className="caption-on"
+					>
+						<img
+							src={src}
+							alt={`Long Lane Pasture in ${date}`}
+							loading="lazy"
+						/>
+						<figcaption>{date}</figcaption>
+					</figure>
+				))}
+			</div>
 			<p>The wildlife here is now of considerable local importance.</p>
 			<p>
 				In 1999, after years of neglect, the Council decided that the land was
@@ -66,8 +69,10 @@ export default () => (
 					Read all about it
 				</NavigationLink>
 				.
+			</p>
+			<p>
 				<img
-					src="/assets/LLP-RestorationPlan.webp"
+					src="/assets/LLP-RestorationPlan.jpg"
 					alt="Long Lane Pasture Restoration Plan"
 					loading="lazy"
 				/>
@@ -121,7 +126,7 @@ export default () => (
 			</p>
 			<p>
 				In 2012 / 2013 Long Lane Pasture was awarded a prestigious Community
-				Green Flag Award — the national award for well managed, high quality
+				Green Flag Award - the national award for well managed, high quality
 				green spaces. The Pasture is one of 43 community green flags awarded
 				across London, and that year the only one in London Borough of Barnet.
 				For more information visit:{" "}
@@ -129,7 +134,7 @@ export default () => (
 					href="https://www.greenflagaward.org/"
 					rel="noopener"
 					target="_blank"
-					aria-label="Green Flag Award — the national award for well managed, high quality
+					aria-label="Green Flag Award - the national award for well managed, high quality
 				green spaces"
 				>
 					The Green Flag Award
@@ -147,9 +152,9 @@ export default () => (
 				We publish newsletters.
 				<br />
 				You can read the latest issue, {newsletters[0].date}:{" "}
-				<a href={newsletters[0].url} target="_black">
+				<Link href={newsletters[0].url} target="_blank">
 					Issue № {newsletters[0].issue}
-				</a>
+				</Link>
 				.
 			</p>
 			<details>
@@ -159,9 +164,9 @@ export default () => (
 						newsletters.map(({ issue, url, date }) => (
 							<li key={date}>
 								{date}:{" "}
-								<a href={url} target="_blank">
+								<Link href={url} target="_blank">
 									Issue № {issue}
-								</a>{" "}
+								</Link>
 							</li>
 						))}
 				</ul>

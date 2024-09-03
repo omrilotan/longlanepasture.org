@@ -2,6 +2,11 @@
   "private": true,
   "type": "module",
   "license": "UNLICENSED",
+  "homepage": "https://longlanepasture.org",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/long-lane-pasture/longlanepasture.github.io"
+  },
   "scripts": {
     "prepare": "node --experimental-strip-types ./scripts/prebuild/index.ts",
     "predev": "npm run prepare",

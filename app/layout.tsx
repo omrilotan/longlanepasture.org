@@ -12,9 +12,9 @@ export const metadata: Metadata = {
 	description:
 		"Long Lane Pasture is a community-run nature reserve in Finchley, North London.",
 	keywords: [
+		"Long Lane Pasture",
 		"Finchley",
 		"green space",
-		"Long Lane Pasture",
 		"urban wildlife",
 		"barnet",
 		"meadow",
@@ -27,8 +27,19 @@ export const metadata: Metadata = {
 	],
 	icons: {
 		shortcut: "/favicon.ico",
+		apple: "/apple-touch-icon.png",
 	},
 	generator: "https://github.com/long-lane-pasture/longlanepasture.github.io",
+	openGraph: {
+		title: "Long Lane Pasture",
+		description: "Community-run nature reserve in Finchley, North London.",
+		locale: "en_GB",
+		type: "website",
+		images: {
+			url: "https://longlanepasture.org/assets/llpsquare.jpeg",
+			alt: "View from the medow at Long Lane Pasture",
+		},
+	},
 };
 export const viewport: Viewport = {
 	themeColor: "white",
@@ -42,6 +53,7 @@ export default function RootLayout({
 }: {
 	children: React.ReactElement;
 }) {
+	const dd = (num: number): string => (num < 10 ? `0${num}` : num.toString());
 	return (
 		<html lang="en-GB">
 			<head>
@@ -49,6 +61,13 @@ export default function RootLayout({
 				<meta httpEquiv="X-UA-Compatible" content="IE=edge, chrome=1" />
 				<meta name="geo.region" content="GB" />
 				<meta name="geo.placename" content="London Borough of Barnet" />
+				<meta
+					name="content_updated"
+					content={((d = new Date()) =>
+						[d.getFullYear(), dd(d.getMonth() + 1), dd(d.getDay())].join(
+							"-",
+						))()}
+				/>
 			</head>
 			<body>
 				<header>

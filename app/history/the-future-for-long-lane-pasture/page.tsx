@@ -36,7 +36,7 @@ export default () => (
 		</p>
 		<figure className="feature-image">
 			<img
-				src="/assets/articles/the-future-for-long-lane-pasture-2005.jpg"
+				src="/assets/history/the-future-for-long-lane-pasture-2005.jpg"
 				alt="Looking northbound over the land. Photo by Erini Rodis"
 				loading="lazy"
 			/>
