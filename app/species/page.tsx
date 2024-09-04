@@ -1,5 +1,5 @@
-import { species } from "../../dynamic/species";
 import type { Metadata } from "next";
+import { species } from "../../dynamic/species";
 
 export const metadata: Metadata = {
 	title: "Checklist of Recorded Species at Long Lane Pasture.",

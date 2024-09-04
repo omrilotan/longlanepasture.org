@@ -1,6 +1,5 @@
-import { friends } from "../../dynamic/friends";
 import type { Metadata } from "next";
-import Link from "next/link";
+import { friends } from "../../dynamic/friends";
 
 export const metadata: Metadata = {
 	title: "Friends of Long Lane Pasture",

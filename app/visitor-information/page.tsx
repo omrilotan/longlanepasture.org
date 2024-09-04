@@ -1,7 +1,7 @@
+import type { Metadata } from "next";
 import { ammenities } from "../../dynamic/ammenities";
 import { ContactUsLink } from "../components/ContactUsLink";
 import { NavigationLink } from "../components/navigation";
-import type { Metadata } from "next";
 
 export const metadata: Metadata = {
 	title: "Visitor Information for Long Lane Pasture",

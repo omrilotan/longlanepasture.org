@@ -1,5 +1,5 @@
-import { navigation } from "../../../dynamic/navigation";
 import Link from "next/link";
+import { navigation } from "../../../dynamic/navigation";
 
 const linksList = navigation.map(
 	({ name, path, nav = true, footer = true }) => ({

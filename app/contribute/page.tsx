@@ -1,10 +1,7 @@
-import { volunteers } from "../../dynamic/volunteers";
+import type { Metadata } from "next";
 import { ContactUsLink } from "../components/ContactUsLink";
-import { Randomise } from "../components/Randomise";
 import { NavigationLink } from "../components/navigation/index.tsx";
 import "../components/styles/contributors.css";
-import type { Metadata } from "next";
-import Link from "next/link";
 
 export const metadata: Metadata = {
 	title: "Contribute to Long Lane Pasture",
@@ -73,8 +70,12 @@ export default () => (
 			<h3>Initiate educational or community projects</h3>
 			<p>
 				We welcome proposals for educational or community projects that can
-				benefit the Long Lane Pasture Trust. If you have an idea for a project
-				you'd like us to assist with, please <ContactUsLink />.
+				benefit the community and the pasture. We regularly{" "}
+				<NavigationLink to="eco-warriors-plant-for-the-future">
+					host school groups
+				</NavigationLink>{" "}
+				. If you have an idea for a project you'd like us to assist with, please{" "}
+				<ContactUsLink />.
 			</p>
 			<h3>Contibute to the website</h3>
 			<p>

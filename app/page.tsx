@@ -1,6 +1,6 @@
+import type { Metadata } from "next";
 import { pictures } from "../dynamic/gallery";
 import { PicturesGallery } from "./components/PicturesGallery/index.tsx";
-import type { Metadata } from "next";
 
 export const metadata: Metadata = {
 	title: "Long Lane Pasture. A wildlife haven in the heart of Finchley.",

@@ -1,8 +1,7 @@
+import type { Metadata } from "next";
 import { newsletters } from "../../dynamic/newsletters";
 import { ContactUsLink } from "../components/ContactUsLink";
 import { NavigationLink } from "../components/navigation";
-import type { Metadata } from "next";
-import Link from "next/link";
 
 export const metadata: Metadata = {
 	title: "The history of Long Lane Pasture",
@@ -46,7 +45,9 @@ export default () => (
 				The Pasture (1.05 ha, 2.6 acres) is a meadow, which has remained largely
 				undisturbed for centuries (apart from a small area under cultivation
 				during World War 2). It has never been built on. It is within an area
-				defined as being 'deprived of public open space'.
+				defined as being 'deprived of public open space'. The land is owned by
+				the London Borough of Barnet. It was purchased in 1912 for 'public
+				recreation and enjoyment'.
 			</p>
 			<p>
 				Up to the early 1980s (when it was closed to the public because of
@@ -125,20 +126,21 @@ export default () => (
 				our <NavigationLink to="contribute">Friends</NavigationLink>.
 			</p>
 			<p>
-				The Pasture has changed little in 100 years, except that its cut hay no
-				longer provides fodder for London's horses, and horses no longer graze
-				here. Many of the wildflowers on the restored damp meadowland are now
-				thriving again and although there is no public footpath leading to a
-				bridge across the railway (one of its old names was Iron Bridge Field),
-				there is a network of paths for visitors to make a less hurried visits.
-				Some Finchley residents can recall varied leisure activities here: it
-				was the home ground of the local football team 'Squires United; many
-				enjoyed family picnics; children used to fly their kites; and classes
-				from Manorside School came for nature study and afterwards made displays
-				of grasses and wild flowers. It is proving as popular today as it was at
-				the turn of the 20th century. The Pasture has outlived many threats and
-				is now half its original size, but continues as a delightful greenspace
-				for both people and wildlife.
+				The Pasture has changed little in{" "}
+				<NavigationLink to="100 years">100 years</NavigationLink>, except that
+				its cut hay no longer provides fodder for London's horses, and horses no
+				longer graze here. Many of the wildflowers on the restored damp
+				meadowland are now thriving again and although there is no public
+				footpath leading to a bridge across the railway (one of its old names
+				was Iron Bridge Field), there is a network of paths for visitors to make
+				a less hurried visits. Some Finchley residents can recall varied leisure
+				activities here: it was the home ground of the local football team
+				'Squires United; many enjoyed family picnics; children used to fly their
+				kites; and classes from Manorside School came for nature study and
+				afterwards made displays of grasses and wild flowers. It is proving as
+				popular today as it was at the turn of the 20th century. The Pasture has
+				outlived many threats and is now half its original size, but continues
+				as a delightful greenspace for both people and wildlife.
 			</p>
 			<p>
 				In 2012 Long Lane Pasture has launched a Centenary Photo & Art

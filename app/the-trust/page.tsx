@@ -1,8 +1,7 @@
+import type { Metadata } from "next";
 import { records } from "../../dynamic/records";
 import { VideoWrapper } from "../components/VideoWrapper";
 import { NavigationLink } from "../components/navigation";
-import type { Metadata } from "next";
-import Link from "next/link";
 
 export const metadata: Metadata = {
 	title: "The Long Lane Pasture Trust",

@@ -1,7 +1,7 @@
+import { mkdir, rmdir, writeFile } from "node:fs/promises";
+import { dirname, resolve } from "node:path";
 import { headers } from "./headers/index.ts";
 import { redirects } from "./redirects/index.ts";
-import { mkdir, writeFile, rmdir } from "node:fs/promises";
-import { dirname, resolve } from "node:path";
 
 /**
  * Example: 1970-01-01

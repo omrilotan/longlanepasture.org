@@ -349,6 +349,10 @@ table {
 .feature-image {
 	text-align: center;
 	font-style: italic;
+	margin-bottom: 1rem;
+	img {
+		border-radius: 0.5rem;
+	}
 }
 
 hr {
