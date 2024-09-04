@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { NavigationLink } from "../../components/navigation";
 
 export const metadata: Metadata = {
 	title: "Award-winning pasture open in winter months",
@@ -46,6 +47,11 @@ export default () => (
 			Long Lane Pasture Trust Chair Donald Lyven and Harriet Duffield, Barnet
 			Council's Biodiversity & Conservation Officer, travelled to Southampton to
 			collect the award.
+		</p>
+		<p className="end">
+			<i>
+				<NavigationLink to="stories">More stories</NavigationLink>
+			</i>
 		</p>
 	</article>
 );

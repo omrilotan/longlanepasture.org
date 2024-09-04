@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { ContactUsLink } from "../../components/ContactUsLink";
+import { NavigationLink } from "../../components/navigation";
 
 export const metadata: Metadata = {
 	title: "Pasture is perfect for exercise in the fresh air",
@@ -98,6 +99,11 @@ export default () => (
 			off the pathway that starts on the opposite side of Long Lane to the fire
 			station. We would love to see you, you would be most welcome. If you have
 			any questions, please <ContactUsLink />.
+		</p>
+		<p className="end">
+			<i>
+				<NavigationLink to="stories">More stories</NavigationLink>
+			</i>
 		</p>
 	</article>
 );

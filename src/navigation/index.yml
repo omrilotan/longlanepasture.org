@@ -6,13 +6,15 @@
 - name: Contribute
 - name: History
 - name: The Trust
-- name: Friends
-- name: Regulations
+- name: Stories
   nav: false
+- name: Friends
 - name: Recorded Species
   path: /species/
   nav: false
-- name: X
+- name: Regulations
+  nav: false
+- name: "@LLPasture"
   path: https://x.com/LLPasture
 - name: Source Code
   path: https://github.com/long-lane-pasture/longlanepasture.github.io

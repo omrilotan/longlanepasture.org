@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { NavigationLink } from "../../components/navigation";
 
 export const metadata: Metadata = {
 	title: "Early birds deliver a delightful earful at dawn",
@@ -113,6 +114,11 @@ export default () => (
 				this time of the year, located on Long Lane, opposite the fire station.
 				To know more, pop in on a Saturday morning or look for our stall at East
 				Finchley Festival this month.
+			</i>
+		</p>
+		<p className="end">
+			<i>
+				<NavigationLink to="stories">More stories</NavigationLink>
 			</i>
 		</p>
 	</article>

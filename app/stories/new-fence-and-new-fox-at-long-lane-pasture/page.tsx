@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { NavigationLink } from "../../components/navigation";
 
 export const metadata: Metadata = {
 	title: "New fence and new fox at Long Lane Pasture",
@@ -78,6 +79,11 @@ export default () => (
 			<i>
 				For more information, including a photo gallery of the pasture through
 				the seasons, visit www.longlanepasture.org.
+			</i>
+		</p>
+		<p className="end">
+			<i>
+				<NavigationLink to="stories">More stories</NavigationLink>
 			</i>
 		</p>
 	</article>

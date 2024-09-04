@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { NavigationLink } from "../../components/navigation";
 
 export const metadata: Metadata = {
 	title: "Kestrel keeps keen eye on pasture prey",
@@ -50,6 +51,11 @@ export default () => (
 			the loving care of volunteers 12 years ago. The pasture, opposite the fire
 			station on Long Lane, is open every day from 10am to dusk and you can find
 			special events at www. longlanepasture.org.
+		</p>
+		<p className="end">
+			<i>
+				<NavigationLink to="stories">More stories</NavigationLink>
+			</i>
 		</p>
 	</article>
 );

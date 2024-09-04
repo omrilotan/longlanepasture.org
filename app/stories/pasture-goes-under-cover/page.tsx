@@ -82,5 +82,10 @@ export default () => (
 			For information visit the website, www.longlanepasture. org and follow on
 			Twitter <NavigationLink to="x">@LLPasture</NavigationLink>.
 		</p>
+		<p className="end">
+			<i>
+				<NavigationLink to="stories">More stories</NavigationLink>
+			</i>
+		</p>
 	</article>
 );

@@ -85,5 +85,10 @@ export default () => (
 				<NavigationLink to="visitor information"></NavigationLink>
 			</i>
 		</p>
+		<p className="end">
+			<i>
+				<NavigationLink to="stories">More stories</NavigationLink>
+			</i>
+		</p>
 	</article>
 );

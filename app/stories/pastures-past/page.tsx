@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { NavigationLink } from "../../components/navigation";
 
 export const metadata: Metadata = {
 	title: "Pasture's past",
@@ -80,6 +81,11 @@ export default () => (
 			Long Lane Pasture is always open at weekends from 10am until 5pm, and
 			entries can be handed in on Saturdays between 10am and noon. Full details
 			from www.longlanepasture.org/centenary. We hope to see you there.
+		</p>
+		<p className="end">
+			<i>
+				<NavigationLink to="stories">More stories</NavigationLink>
+			</i>
 		</p>
 	</article>
 );

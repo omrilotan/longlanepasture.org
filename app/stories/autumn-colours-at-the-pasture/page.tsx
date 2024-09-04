@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { NavigationLink } from "../../components/navigation";
 
 export const metadata: Metadata = {
 	title: "Autumn colours at the Pasture",
@@ -73,6 +74,11 @@ export default () => (
 			Anybody can come along and help. There is also an unusual job for somebody
 			special: going out in a canoe to clear the large pond of the ubiquitous
 			pondweed, which threatens to choke it.
+		</p>
+		<p className="end">
+			<i>
+				<NavigationLink to="stories">More stories</NavigationLink>
+			</i>
 		</p>
 	</article>
 );

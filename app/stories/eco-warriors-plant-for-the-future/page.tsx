@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { ContactUsLink } from "../../components/ContactUsLink";
+import { NavigationLink } from "../../components/navigation";
 
 export const metadata: Metadata = {
 	title: "Eco-warriors plant for the future",
@@ -83,6 +84,11 @@ export default () => (
 				“For example, it is not uncommon for a child to be averse to touching
 				mud. But by the end of the sessions, they love the sensation and have
 				overcome a personal challenge.”
+			</p>
+			<p className="end">
+				<i>
+					<NavigationLink to="stories">More stories</NavigationLink>
+				</i>
 			</p>
 		</article>
 		<article>

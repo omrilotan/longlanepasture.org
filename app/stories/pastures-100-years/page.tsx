@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { NavigationLink } from "../../components/navigation";
 
 export const metadata: Metadata = {
 	title: "Pasture's 100 years",
@@ -64,6 +65,11 @@ export default () => (
 			was purchased by the council in 1912 for public enjoyment and recreation.
 			Local residents had a long struggle to make it what it is today. For
 			further details visit: www.longlanepasture.org
+		</p>
+		<p className="end">
+			<i>
+				<NavigationLink to="stories">More stories</NavigationLink>
+			</i>
 		</p>
 	</article>
 );

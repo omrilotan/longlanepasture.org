@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { NavigationLink } from "../../components/navigation";
 
 export const metadata: Metadata = {
 	title: "Long Lane Pasture",
@@ -49,6 +50,11 @@ export default () => (
 		<p>
 			For further information, please contact The Finchley Society's Derek
 			Warren on [REDACTED].
+		</p>
+		<p className="end">
+			<i>
+				<NavigationLink to="stories">More stories</NavigationLink>
+			</i>
 		</p>
 	</article>
 );

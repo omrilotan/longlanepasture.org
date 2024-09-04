@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { NavigationLink } from "../../components/navigation";
 
 export const metadata: Metadata = {
 	title: "The future for Long Lane Pasture?",
@@ -93,6 +94,11 @@ export default () => (
 			The action group is calling on Finchley residents to show their support
 			for the wildlife plan by registering as a friend of the pasture. This can
 			be done by contacting Ann Brown on [REDACTED].
+		</p>
+		<p className="end">
+			<i>
+				<NavigationLink to="stories">More stories</NavigationLink>
+			</i>
 		</p>
 	</article>
 );

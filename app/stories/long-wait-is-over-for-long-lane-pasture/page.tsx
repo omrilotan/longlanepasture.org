@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { NavigationLink } from "../../components/navigation";
 
 export const metadata: Metadata = {
 	title: "Long wait is over for Long Lane Pasture",
@@ -67,6 +68,11 @@ export default () => (
 			Groups, particularly schools and youth groups, are welcome by arrangement.
 			Volunteer work is on Saturdays at 10am. If you wish to join in, make a
 			donation or need more information call [REDACTED].
+		</p>
+		<p className="end">
+			<i>
+				<NavigationLink to="stories">More stories</NavigationLink>
+			</i>
 		</p>
 	</article>
 );

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { navigation } from "../../dynamic/navigation";
 import { newsletters } from "../../dynamic/newsletters";
 import { ContactUsLink } from "../components/ContactUsLink";
 import { NavigationLink } from "../components/navigation";
@@ -198,6 +199,21 @@ export default () => (
 			<p>
 				To receive the newsletter by email, please <ContactUsLink />.
 			</p>
+		</article>
+		<article>
+			<h2>More stories</h2>
+			<details>
+				<summary>More stories about Long Lane Pasture</summary>{" "}
+				<ul>
+					{navigation
+						.filter(({ path }) => path.match(/^\/stories\/.+/))
+						.map(({ name, path }) => (
+							<li key={path}>
+								<NavigationLink to={path}></NavigationLink>
+							</li>
+						))}
+				</ul>
+			</details>
 		</article>
 	</>
 );

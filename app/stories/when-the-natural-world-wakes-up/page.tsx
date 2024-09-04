@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { NavigationLink } from "../../components/navigation";
 
 export const metadata: Metadata = {
 	title: "When the natural world wakes up",
@@ -71,6 +72,11 @@ export default () => (
 			on Long Lane, N3, but the clarity of the dawn chorus before the cacophony
 			of traffic began and the privilege of seeing the colourful sunrise on a
 			new day made the effort worthwhile.
+		</p>
+		<p className="end">
+			<i>
+				<NavigationLink to="stories">More stories</NavigationLink>
+			</i>
 		</p>
 	</article>
 );

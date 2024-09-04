@@ -81,5 +81,10 @@ export default () => (
 			WITH YOUR ENTRIES
 		</p>
 		<h4>Closing date: 15th September 2012</h4>
+		<p className="end">
+			<i>
+				<NavigationLink to="stories">More stories</NavigationLink>
+			</i>
+		</p>
 	</article>
 );

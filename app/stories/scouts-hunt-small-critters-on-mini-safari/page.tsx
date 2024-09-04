@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { NavigationLink } from "../../components/navigation";
 
 export const metadata: Metadata = {
 	title: "Scouts hunt small critters on mini safari",
@@ -71,6 +72,11 @@ export default () => (
 			It was great to be outside on a warm evening. I wonder how many others
 			know about this hidden pocket of greenery, just opposite the fire station
 			on Long Lane, N3.
+		</p>
+		<p className="end">
+			<i>
+				<NavigationLink to="stories">More stories</NavigationLink>
+			</i>
 		</p>
 	</article>
 );

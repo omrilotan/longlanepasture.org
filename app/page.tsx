@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { pictures } from "../dynamic/gallery";
 import { PicturesGallery } from "./components/PicturesGallery/index.tsx";
+import { NavigationLink } from "./components/navigation/index.tsx";
 
 export const metadata: Metadata = {
 	title: "Long Lane Pasture. A wildlife haven in the heart of Finchley.",
@@ -66,6 +67,8 @@ export default () => (
 					strength or skill.
 				</li>
 			</ul>
+			More information about ways to help available on{" "}
+			<NavigationLink to="contribute">Contribute page</NavigationLink>.
 		</article>
 		<article id="pictures-gallery">
 			<PicturesGallery pictures={pictures} />
