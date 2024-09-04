@@ -27,7 +27,7 @@ export const metadata: Metadata = {
 	],
 	icons: {
 		shortcut: "/favicon.ico",
-		apple: "/apple-touch-icon.png",
+		apple: "/assets/apple-touch-icon.png",
 	},
 	generator: "https://github.com/long-lane-pasture/longlanepasture.github.io",
 	openGraph: {
