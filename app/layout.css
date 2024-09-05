@@ -361,6 +361,9 @@ hr {
 	width: 20px;
 	margin: 1rem auto;
 }
+.tagline {
+	font-style: italic;
+}
 .end {
 	text-align: end;
 }

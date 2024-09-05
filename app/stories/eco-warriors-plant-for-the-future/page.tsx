@@ -21,20 +21,17 @@ export default () => (
 					aria-label="Anchor link to Eco-warriors plant for the future"
 				></a>
 			</h2>
-			<h3>By Jacqueline Lotan. April 2024</h3>
-			<p>
-				<i>
-					As published on{" "}
-					<a
-						href="http://www.the-archer.co.uk/archive/2024/2024Apr08.pdf"
-						target="_blank"
-						rel="noopener"
-						alia-label="Read the full article in The Archer"
-					>
-						The Archer
-					</a>
-					.
-				</i>
+			<p className="tagline">
+				By Jacqueline Lotan. As published on{" "}
+				<a
+					href="http://www.the-archer.co.uk/archive/2024/2024Apr08.pdf"
+					target="_blank"
+					rel="noopener"
+					alia-label="Read the full article in The Archer"
+				>
+					The Archer
+				</a>
+				, April 2024
 			</p>
 			<figure className="feature-image">
 				<img

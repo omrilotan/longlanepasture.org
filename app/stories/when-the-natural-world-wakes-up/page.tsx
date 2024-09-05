@@ -13,20 +13,17 @@ export const metadata: Metadata = {
 export default () => (
 	<article>
 		<h2>When the natural world wakes up</h2>
-		<h3>By Donald Lyven, July 2024</h3>
-		<p>
-			<i>
-				As published on{" "}
-				<a
-					href="http://www.the-archer.co.uk/archive/2010/2010Oct09.pdf"
-					target="_blank"
-					rel="noopener"
-					alia-label="Read the full article in The Archer"
-				>
-					The Archer
-				</a>
-				.
-			</i>
+		<p className="tagline">
+			By Donald Lyven. As published on{" "}
+			<a
+				href="http://www.the-archer.co.uk/archive/2010/2010Oct09.pdf"
+				target="_blank"
+				rel="noopener"
+				alia-label="Read the full article in The Archer"
+			>
+				The Archer
+			</a>
+			, July 2024
 		</p>
 
 		<figure className="feature-image">

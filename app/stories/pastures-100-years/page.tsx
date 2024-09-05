@@ -13,20 +13,17 @@ export const metadata: Metadata = {
 export default () => (
 	<article id="pastures-100-years">
 		<h2>Pasture's 100 years</h2>
-		<h3>November 2012</h3>
-		<p>
-			<i>
-				As published on{" "}
-				<a
-					href="http://www.the-archer.co.uk/archive/2012/2012Nov05.pdf"
-					target="_blank"
-					rel="noopener"
-					alia-label="Read the full article in The Archer"
-				>
-					The Archer
-				</a>
-				.
-			</i>
+		<p className="tagline">
+			As published on{" "}
+			<a
+				href="http://www.the-archer.co.uk/archive/2012/2012Nov05.pdf"
+				target="_blank"
+				rel="noopener"
+				alia-label="Read the full article in The Archer"
+			>
+				The Archer
+			</a>
+			, November 2012
 		</p>
 		<figure className="feature-image">
 			<img

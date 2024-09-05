@@ -14,20 +14,17 @@ export const metadata: Metadata = {
 export default () => (
 	<article id="plea-to-preserve-pasture">
 		<h2>Plea to preserve pasture</h2>
-		<h3>By John Lawrence. August 2012</h3>
-		<p>
-			<i>
-				As published on{" "}
-				<a
-					href="http://the-archer.co.uk/archive/2012/2012Aug05.pdf"
-					target="_blank"
-					rel="noopener"
-					alia-label="Read the full article in The Archer"
-				>
-					The Archer
-				</a>
-				.
-			</i>
+		<p className="tagline">
+			By John Lawrence. As published on{" "}
+			<a
+				href="http://the-archer.co.uk/archive/2012/2012Aug05.pdf"
+				target="_blank"
+				rel="noopener"
+				alia-label="Read the full article in The Archer"
+			>
+				The Archer
+			</a>
+			, August 2012
 		</p>
 		<p>
 			<strong>

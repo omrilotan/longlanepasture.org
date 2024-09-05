@@ -13,22 +13,19 @@ export const metadata: Metadata = {
 export default () => (
 	<article id="pasture-goes-under-cover">
 		<h2>Pasture goes under cover</h2>
-		<h3>By Neil McNaughton, July 2015</h3>
-		<p>
-			<i>
-				As published on{" "}
-				<a
-					href="http://www.the-archer.co.uk/archive/2015/2015Jul09.pdf"
-					target="_blank"
-					rel="noopener"
-					alia-label="Read the full article in The Archer"
-				>
-					The Archer
-				</a>
-				.
-			</i>
+		<p className="tagline">
+			By Neil McNaughton. As published on{" "}
+			<a
+				href="http://www.the-archer.co.uk/archive/2015/2015Jul09.pdf"
+				target="_blank"
+				rel="noopener"
+				alia-label="Read the full article in The Archer"
+			>
+				The Archer
+			</a>
+			, July 2015
 		</p>
-		<figure>
+		<figure className="feature-image">
 			<img
 				src="/assets/history/pasture-goes-under-cover.jpg"
 				alt="Barnet Mayor, Councillor Mark Shooter and the Lady Mayoress, Melissa Shooter at the Long Lane Pasture garden party. Photo Neil McNaughton"

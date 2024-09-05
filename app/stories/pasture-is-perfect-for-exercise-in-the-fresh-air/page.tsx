@@ -14,20 +14,17 @@ export const metadata: Metadata = {
 export default () => (
 	<article id="pasture-is-perfect-for-exercise-in-the-fresh-air">
 		<h2>Pasture is perfect for exercise in the fresh air</h2>
-		<h3>By Linda Dolata, November 2020</h3>
-		<p>
-			<i>
-				As published on{" "}
-				<a
-					href="http://www.the-archer.co.uk/archive/2020/2020Nov12.pdf"
-					target="_blank"
-					rel="noopener"
-					alia-label="Read the full article in The Archer"
-				>
-					The Archer
-				</a>
-				.
-			</i>
+		<p className="tagline">
+			By Linda Dolata. As published on{" "}
+			<a
+				href="http://www.the-archer.co.uk/archive/2020/2020Nov12.pdf"
+				target="_blank"
+				rel="noopener"
+				alia-label="Read the full article in The Archer"
+			>
+				The Archer
+			</a>
+			, November 2020
 		</p>
 		<figure className="feature-image">
 			<img

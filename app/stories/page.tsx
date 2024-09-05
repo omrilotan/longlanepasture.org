@@ -17,7 +17,7 @@ export default () => (
 			/>
 			<figcaption>
 				<h2>
-					Stories
+					Stories and articles
 					<a href="#stories" aria-label="Anchor link to Stories"></a>
 				</h2>
 			</figcaption>

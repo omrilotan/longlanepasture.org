@@ -13,20 +13,17 @@ export const metadata: Metadata = {
 export default () => (
 	<article id="scouts-hunt-small-critters-on-mini-safari">
 		<h2>Scouts hunt small critters on mini safari</h2>
-		<h3>By Joshua Thomas, 1st Finchley Scout Group, June 2022</h3>
-		<p>
-			<i>
-				As published on{" "}
-				<a
-					href="http://www.the-archer.co.uk/archive/2022/2022June12.pdf"
-					target="_blank"
-					rel="noopener"
-					alia-label="Read the full article in The Archer"
-				>
-					The Archer
-				</a>
-				.
-			</i>
+		<p className="tagline">
+			By Joshua Thomas, 1st Finchley Scout Group. As published on{" "}
+			<a
+				href="http://www.the-archer.co.uk/archive/2022/2022June12.pdf"
+				target="_blank"
+				rel="noopener"
+				alia-label="Read the full article in The Archer"
+			>
+				The Archer
+			</a>
+			, June 2022
 		</p>
 		<figure className="feature-image">
 			<img

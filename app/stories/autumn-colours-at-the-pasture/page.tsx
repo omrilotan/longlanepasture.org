@@ -13,20 +13,17 @@ export const metadata: Metadata = {
 export default () => (
 	<article>
 		<h2>Autumn colours at the Pasture</h2>
-		<h3>By Linda Dolata, October 2010</h3>
-		<p>
-			<i>
-				As published on{" "}
-				<a
-					href="http://www.the-archer.co.uk/archive/2010/2010Oct09.pdf"
-					target="_blank"
-					rel="noopener"
-					alia-label="Read the full article in The Archer"
-				>
-					The Archer
-				</a>
-				.
-			</i>
+		<p className="tagline">
+			By Linda Dolata. As published on{" "}
+			<a
+				href="http://www.the-archer.co.uk/archive/2010/2010Oct09.pdf"
+				target="_blank"
+				rel="noopener"
+				alia-label="Read the full article in The Archer"
+			>
+				The Archer
+			</a>
+			. October 2010
 		</p>
 		<p>
 			<strong>
