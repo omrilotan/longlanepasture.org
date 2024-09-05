@@ -6,15 +6,24 @@ const GOOGLE_MAPS_DOMAIN = "https://maps.googleapis.com";
 export async function headers(): Promise<string> {
 	const table: string[][] = [
 		["Access-Control-Allow-Origin", "*"],
+		["X-Robots-Tag", "all"],
+		["X-Frame-Options", "DENY"],
+		["X-XSS-Protection", "1"],
+		["X-Content-Type-Options", "nosniff"],
+		[
+			"Strict-Transport-Security",
+			`max-age=${60 * 60 * 24 * 7}; includeSubDomains`,
+		],
+		// Must include 'unsafe-inline' because Next uses inline scripts
 		[
 			"Content-Security-Policy",
 			`default-src 'self' ${GOOGLE_MAPS_DOMAIN} 'unsafe-inline'`,
+			`script-src 'self' ${GOOGLE_MAPS_DOMAIN} 'unsafe-inline'`,
 			"object-src 'self'",
 			"frame-src https://www.google.com/",
 			`img-src 'self' ${GOOGLE_MAPS_DOMAIN}`,
-			"frame-ancestors 'none'",
+			`child-src ${GOOGLE_MAPS_DOMAIN}`,
 		],
-		["X-XSS-Protection", "1", "mode=block"],
 		["Permissions-Policy", `geolocation=("${GOOGLE_MAPS_DOMAIN}")`],
 	];
 	const headers = table

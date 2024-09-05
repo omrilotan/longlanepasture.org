@@ -68,6 +68,12 @@ export default function RootLayout({
 							"-",
 						))()}
 				/>
+				<link
+					rel="sitemap"
+					type="application/xml"
+					title="Sitemap"
+					href="/sitemap.xml"
+				/>
 			</head>
 			<body>
 				<header>
