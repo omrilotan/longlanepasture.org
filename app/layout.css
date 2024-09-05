@@ -163,6 +163,14 @@ nav {
 		}
 	}
 }
+@media (prefers-reduced-motion: reduce) {
+	nav {
+		ul,
+		.hamburger {
+			transition: none;
+		}
+	}
+}
 main {
 	overflow: auto;
 	grid-row: 2;
