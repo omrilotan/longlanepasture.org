@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import dynamic from "next/dynamic";
 import { pictures } from "../dynamic/gallery";
 import { NavigationLink } from "./components/navigation";
+import { OpeningTimes } from "./components/OpeningTimes";
+import { Volunteer } from "./components/Volunteer";
 
 export const metadata: Metadata = {
 	title: "Long Lane Pasture. A wildlife haven in the heart of Finchley.",
@@ -40,39 +42,17 @@ export default () => (
 			<p>
 				Come and enjoy the tranquility of the pasture and the wildlife. It is a
 				haven for birds, butterflies and wild flowers. Please respect the
-				wildlife and keep dogs on a lead. Check our{" "}
+				wildlife and keep dogs on a lead.
+			</p>
+			<OpeningTimes />
+			<p>
+				Check our{" "}
 				<NavigationLink to="visit">visitor information page</NavigationLink> for
-				opening times, how to get there and what to expect.
+				more information on how to get there and what to expect.
 			</p>
 		</article>
 		<article id="volunteers-are-welcome">
-			<h2>
-				Volunteers are welcome - Just Turn Up!
-				<a
-					href="#volunteers-are-welcome"
-					aria-label="Anchor link to Volunteers are welcome - Just Turn Up!"
-				></a>
-			</h2>
-			<p>
-				We meet every
-				<mark>
-					{" "}
-					<strong>Saturday 10am-12noon</strong>{" "}
-				</mark>
-				and have a break for buiscuits and chatting at 11am.
-			</p>
-			<p>
-				Help with the maintenance of the pasture. Trim, Weed, Cut, Rake, Mow,
-				Plant, Prune, Clean, Maintain…
-			</p>
-			<ul>
-				<li>Necessary tools and equipment provided.</li>
-				<li>Volunteering is suitable for all ages.</li>
-				<li>
-					Most jobs require some physical effort but do not require great
-					strength or skill.
-				</li>
-			</ul>
+			<Volunteer />
 			More information about ways to help available on{" "}
 			<NavigationLink to="contribute">Contribute page</NavigationLink>.
 		</article>

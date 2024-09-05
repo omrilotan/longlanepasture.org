@@ -18,7 +18,7 @@ export default () => {
 				/>
 				<figcaption>
 					<h2>
-						10 family-friendly activity ideas to consider for your next visit
+						10 Family-Friendly Activity Ideas to Consider for Your Next Visit
 					</h2>
 				</figcaption>
 			</figure>
@@ -56,7 +56,7 @@ export default () => {
 				<img
 					src="/assets/stories/stories-insects.jpeg"
 					alt="Insects at Long Lane Pasture"
-					style={{ maxWidth: "640px" }}
+					width="640"
 				/>
 			</figure>
 			<h3>{++i}. Mindfulness Walk with Storytelling</h3>
@@ -94,7 +94,7 @@ export default () => {
 				<img
 					src="/assets/stories/stories-clouds.jpeg"
 					alt="Find shapes in the clouds at Long Lane Pasture"
-					style={{ maxWidth: "640px" }}
+					width="640"
 				/>
 			</figure>
 			<h3>{++i}. Pasture Photography Contest</h3>
@@ -122,7 +122,7 @@ export default () => {
 				<img
 					src="/assets/stories/stories-swing.jpeg"
 					alt="Swing at Long Lane Pasture"
-					style={{ maxWidth: "640px" }}
+					width="640"
 				/>
 			</figure>
 			<p>

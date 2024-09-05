@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { ammenities } from "../../dynamic/ammenities";
 import { ContactUsLink } from "../components/ContactUsLink";
 import { NavigationLink } from "../components/navigation";
+import { OpeningTimes } from "../components/OpeningTimes";
 
 export const metadata: Metadata = {
 	title: "Visitor Information for Long Lane Pasture",
@@ -37,6 +38,7 @@ export default () => (
 				is posted on the Noticeboard by the entrance, where there is a map of
 				the site.
 			</p>
+			<OpeningTimes />
 			<p>
 				There is one short hard surfaced all-weather footpath, which takes you
 				alongside butterfly border and the pond to a seating area. This is
@@ -57,28 +59,6 @@ export default () => (
 				<NavigationLink to="contribute">donations and support</NavigationLink>{" "}
 				to maintain and restore the Pasture.
 			</p>
-			<h3>
-				Opening Times <small>† unless too wet</small>
-			</h3>
-			<table className="data">
-				<tbody>
-					<tr>
-						<td>☀️</td>
-						<td>April-October</td>
-						<td>Every Day: 10am-7pm or dusk</td>
-					</tr>
-					<tr>
-						<td>🌧</td>
-						<td>November-March</td>
-						<td>Weekends, bank holidays: 10am-3pm</td>
-					</tr>
-					<tr>
-						<td>📅</td>
-						<td>All Year</td>
-						<td>Saturday volunteering: 10am-12noon</td>
-					</tr>
-				</tbody>
-			</table>
 			<p>Please,</p>
 			<ul>
 				<li>

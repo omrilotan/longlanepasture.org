@@ -1,7 +1,10 @@
 import type { Metadata } from "next";
+import dynamic from "next/dynamic";
+import { volunteers } from "../../dynamic/volunteers/index.ts";
 import { ContactUsLink } from "../components/ContactUsLink";
 import { NavigationLink } from "../components/navigation/index.tsx";
 import "../components/styles/contributors.css";
+import { Volunteer } from "../components/Volunteer/index.tsx";
 
 export const metadata: Metadata = {
 	title: "Contribute to Long Lane Pasture",
@@ -9,10 +12,9 @@ export const metadata: Metadata = {
 		"Caring for the Long Lane Pasture is a community effort. Find out how you can help support the Trust's work.",
 };
 
-// TODO: Add volunteers
-// const Randomise = dynamic(() => import("../components/Randomise"), {
-// 	ssr: false,
-// });
+const Randomise = dynamic(() => import("../components/Randomise"), {
+	ssr: false,
+});
 
 export default () => (
 	<>
@@ -34,23 +36,40 @@ export default () => (
 			</figure>
 		</article>
 		<article id="the-pasture-is-a-community-space">
-			<h2>
-				Volunteer - Just Turn Up!
-				<a
-					href="#the-pasture-is-a-community-space"
-					aria-label="Anchor link to Volunteer - Just Turn Up!"
-				></a>
-			</h2>
+			<Volunteer>
+				<p>
+					The pasture is a community space maintained by community members to
+					the benefit of all. There are many ways you can take part in caring
+					for the pasture.
+				</p>
+				<p>
+					Help with the maintenance of the pasture. Trim, Weed, Cut, Rake, Mow,
+					Plant, Prune, Clean, Maintain…
+				</p>
+				<ul className="checks">
+					<li>Necessary tools and equipment provided.</li>
+					<li>Volunteering is suitable for all ages.</li>
+					<li>
+						Most jobs require some physical effort but do not require great
+						strength or skill.
+					</li>
+				</ul>
+			</Volunteer>
+			<hr />
 			<p>
-				The pasture is a community space maintained by community members to the
-				benefit of all. There are many ways you can take part in caring for the
-				pasture.
+				Here are some of the faces you might see on a Saturday morning. Come
+				have a biscuit with us! 🍪
 			</p>
-			<p>
-				We meet every Saturday 10am-12noon and have a break for biscuits and
-				chatting at 11am. Help with the maintenance of the pasture. Trim, Weed,
-				Cut, Rake, Mow, Plant, Prune, Clean, Maintain…
-			</p>
+			<div className="contributors">
+				<Randomise>
+					{volunteers.map(({ src, alt }) => (
+						<figure key={alt}>
+							<img src={src} alt={alt} loading="lazy" />
+							<figcaption>{alt}</figcaption>
+						</figure>
+					))}
+				</Randomise>
+			</div>
 			<h3>Make a charitable donation</h3>
 			<p>
 				Long Lane Pasture Trust is a charity registered in England & Wales (№
@@ -88,28 +107,5 @@ export default () => (
 				<NavigationLink to="source">contributions are welcome</NavigationLink>.
 			</p>
 		</article>
-		{/* <article id="meet-some-of-our-volunteers">
-			<h2>
-				Meet some of our volunteers
-				<a
-					href="#meet-some-of-our-volunteers"
-					aria-label="Anchor link to Meet some of our volunteers"
-				></a>
-			</h2>
-			<p>
-				Here are some of the faces you might see on a Saturday morning. Come
-				have a biscuit with us! 🍪
-			</p>
-			<div className="contributors">
-				<Randomise>
-					{volunteers.map(({ src, alt }) => (
-						<figure key={alt}>
-							<img src={src} alt={alt} loading="lazy" />
-							<figcaption>{alt}</figcaption>
-						</figure>
-					))}
-				</Randomise>
-			</div>
-		</article> */}
 	</>
 );
