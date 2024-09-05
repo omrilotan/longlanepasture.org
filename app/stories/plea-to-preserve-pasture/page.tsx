@@ -82,7 +82,7 @@ export default () => (
 		<p>
 			<i>
 				† Please note opening hours may vary. Please check{" "}
-				<NavigationLink to="visitor information"></NavigationLink>
+				<NavigationLink to="visit">visitor information</NavigationLink>
 			</i>
 		</p>
 		<p className="end">

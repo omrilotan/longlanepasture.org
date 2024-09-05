@@ -33,7 +33,7 @@ export default () => (
 		<p>
 			Artists and photographers are very welcome at the Pasture every weekend
 			and Bank Holidays (10am-6pm), and at other times on request. View location
-			in <NavigationLink to="visitor information" />.
+			in <NavigationLink to="visit">visitor information page</NavigationLink>.
 		</p>
 		<p>
 			The Competition is open to everyone, but must be photographs, paintings or

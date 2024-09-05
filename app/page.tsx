@@ -1,13 +1,17 @@
 import type { Metadata } from "next";
+import dynamic from "next/dynamic";
 import { pictures } from "../dynamic/gallery";
-import { PicturesGallery } from "./components/PicturesGallery/index.tsx";
-import { NavigationLink } from "./components/navigation/index.tsx";
+import { NavigationLink } from "./components/navigation";
 
 export const metadata: Metadata = {
 	title: "Long Lane Pasture. A wildlife haven in the heart of Finchley.",
 	description:
 		"Come enjoy the tranquility of the pasture and the wildlife. It is a haven for birds, butterflies and wild flowers.",
 };
+
+const PicturesGallery = dynamic(() => import("./components/PicturesGallery"), {
+	ssr: false,
+});
 
 export default () => (
 	<>
@@ -36,7 +40,9 @@ export default () => (
 			<p>
 				Come and enjoy the tranquility of the pasture and the wildlife. It is a
 				haven for birds, butterflies and wild flowers. Please respect the
-				wildlife and keep dogs on a lead.
+				wildlife and keep dogs on a lead. Check our{" "}
+				<NavigationLink to="visit">visitor information page</NavigationLink> for
+				opening times, how to get there and what to expect.
 			</p>
 		</article>
 		<article id="volunteers-are-welcome">

@@ -6,7 +6,8 @@
  */
 export async function redirects() {
 	return [
-		["/visitorinfo.html", "/visitor-information/", "301"],
+		["/visitor-information/", "/visit/", "301"],
+		["/visitorinfo.html", "/visit/", "301"],
 		["/aboutthepasture.html", "/history/", "301"],
 		["/getinvolved.html", "/contribute/", "301"],
 		["/news.html", "/", "301"],

@@ -2,7 +2,7 @@
 # The order of the items is the order they will appear in the navigation bar
 - name: Home
   path: /
-- name: Visitor Information
+- name: Visit
 - name: Contribute
 - name: History
 - name: The Trust

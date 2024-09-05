@@ -9,6 +9,11 @@ export const metadata: Metadata = {
 		"Caring for the Long Lane Pasture is a community effort. Find out how you can help support the Trust's work.",
 };
 
+// TODO: Add volunteers
+// const Randomise = dynamic(() => import("../components/Randomise"), {
+// 	ssr: false,
+// });
+
 export default () => (
 	<>
 		<article id="contribute-to-long-lane-pasture">
