@@ -6,10 +6,17 @@ import { NavigationLink } from "../components/navigation/index.tsx";
 import "../components/styles/contributors.css";
 import { Volunteer } from "../components/Volunteer/index.tsx";
 
+const title = "Contribute to Long Lane Pasture";
+const description =
+	"Caring for the Long Lane Pasture is a community effort. Find out how you can help support the Trust's work.";
+
 export const metadata: Metadata = {
-	title: "Contribute to Long Lane Pasture",
-	description:
-		"Caring for the Long Lane Pasture is a community effort. Find out how you can help support the Trust's work.",
+	title,
+	description,
+	openGraph: {
+		title,
+		description,
+	},
 };
 
 const Randomise = dynamic(() => import("../components/Randomise"), {

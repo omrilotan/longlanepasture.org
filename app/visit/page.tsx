@@ -4,10 +4,17 @@ import { ContactUsLink } from "../components/ContactUsLink";
 import { NavigationLink } from "../components/navigation";
 import { OpeningTimes } from "../components/OpeningTimes";
 
+const title = "Visitor Information for Long Lane Pasture";
+const description =
+	"Everything you need to know about visiting Long Lane Pasture. Opening times, location, and how to get here.";
+
 export const metadata: Metadata = {
-	title: "Visitor Information for Long Lane Pasture",
-	description:
-		"Everything you need to know about visiting Long Lane Pasture. Opening times, location, and how to get here.",
+	title,
+	description,
+	openGraph: {
+		title,
+		description,
+	},
 };
 
 export default () => (

@@ -1,9 +1,16 @@
 import type { Metadata } from "next";
 
+const title = "Regulations and Guidelines while visiting Long Lane Pasture";
+const description =
+	"Please respect the wildlife and other visitors by following these regulations and guidelines.";
+
 export const metadata: Metadata = {
-	title: "Regulations and Guidelines while visiting Long Lane Pasture",
-	description:
-		"Please respect the wildlife and other visitors by following these regulations and guidelines.",
+	title,
+	description,
+	openGraph: {
+		title,
+		description,
+	},
 };
 
 export default () => (

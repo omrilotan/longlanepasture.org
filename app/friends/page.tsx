@@ -1,9 +1,16 @@
 import type { Metadata } from "next";
 import { friends } from "../../dynamic/friends";
 
+const title = "Friends of Long Lane Pasture";
+const description = "Follow the links to find out more about our friends.";
+
 export const metadata: Metadata = {
-	title: "Friends of Long Lane Pasture",
-	description: "Follow the links to find out more about our friends.",
+	title,
+	description,
+	openGraph: {
+		title,
+		description,
+	},
 };
 
 export default () => (

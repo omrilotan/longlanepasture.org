@@ -4,10 +4,17 @@ import { newsletters } from "../../dynamic/newsletters";
 import { ContactUsLink } from "../components/ContactUsLink";
 import { NavigationLink } from "../components/navigation";
 
+const title = "The history of Long Lane Pasture";
+const description =
+	"The Pasture is a meadow, which has remained largely undisturbed for centuries.";
+
 export const metadata: Metadata = {
-	title: "The history of Long Lane Pasture",
-	description:
-		"The Pasture is a meadow, which has remained largely undisturbed for centuries.",
+	title,
+	description,
+	openGraph: {
+		title,
+		description,
+	},
 };
 
 export default () => (

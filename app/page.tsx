@@ -5,10 +5,17 @@ import { NavigationLink } from "./components/navigation";
 import { OpeningTimes } from "./components/OpeningTimes";
 import { Volunteer } from "./components/Volunteer";
 
+const title = "Long Lane Pasture. A wildlife haven in the heart of Finchley.";
+const description =
+	"Long Lane Pasture is a volunteer-run nature reserve in Finchley, North London. This peaceful green space provides a home for birds, insects, and wildflowers, serving as an urban sanctuary that connects visitors with nature and supports local conservation.";
+
 export const metadata: Metadata = {
-	title: "Long Lane Pasture. A wildlife haven in the heart of Finchley.",
-	description:
-		"Come enjoy the tranquility of the pasture and the wildlife. It is a haven for birds, butterflies and wild flowers.",
+	title,
+	description,
+	openGraph: {
+		title,
+		description,
+	},
 };
 
 const PicturesGallery = dynamic(() => import("./components/PicturesGallery"), {
@@ -34,15 +41,15 @@ export default () => (
 				</figcaption>
 			</figure>
 			<p>
-				The pasture is a nature reserve. It is managed by the Long Lane Pasture
-				Trust and is maintained by volunteers. Purchased for public recreation
-				in 1912, it was neglected for many years and recently threatened by a
-				housing development.
+				Long Lane Pasture is a volunteer-run nature reserve in Finchley, North
+				London. This peaceful green space provides a home for birds, insects,
+				and wildflowers, serving as an urban sanctuary that connects visitors
+				with nature and supports local conservation.
 			</p>
 			<p>
-				Come and enjoy the tranquility of the pasture and the wildlife. It is a
-				haven for birds, butterflies and wild flowers. Please respect the
-				wildlife and keep dogs on a lead.
+				Discover the beauty of Long Lane Pasture, where birds, butterflies, and
+				wildflowers thrive. Enjoy a peaceful escape from the city. Please
+				respect the wildlife and keep dogs on a lead.
 			</p>
 			<OpeningTimes />
 			<p>

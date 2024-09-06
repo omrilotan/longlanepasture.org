@@ -3,10 +3,17 @@ import { records } from "../../dynamic/records";
 import { VideoWrapper } from "../components/VideoWrapper";
 import { NavigationLink } from "../components/navigation";
 
+const title = "The Long Lane Pasture Trust";
+const description =
+	"Long Lane Pasture Trust is a charity registered in England & Wales (№ 1122236) and is run in accordance with its Trust Deed.";
+
 export const metadata: Metadata = {
-	title: "The Long Lane Pasture Trust",
-	description:
-		"Long Lane Pasture Trust is a charity registered in England & Wales (№ 1122236) and is run in accordance with its Trust Deed.",
+	title,
+	description,
+	openGraph: {
+		title,
+		description,
+	},
 };
 
 export default () => (

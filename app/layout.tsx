@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 		default: "Long Lane Pasture",
 	},
 	description:
-		"Long Lane Pasture is a community-run nature reserve in Finchley, North London.",
+		"Long Lane Pasture is a wildlife and nature reserve in North London, maintained entirely by volunteers. This community green space offers a peaceful retreat within the city, providing a habitat for diverse wildlife, including birds, insects, and wildflowers. Preserved through local efforts, the pasture serves as a vital urban sanctuary, promoting conservation and education while fostering a connection to nature for visitors of all ages.",
 	keywords: [
 		"Long Lane Pasture",
 		"Finchley",
@@ -31,8 +31,10 @@ export const metadata: Metadata = {
 	},
 	generator: "https://github.com/long-lane-pasture/longlanepasture.github.io",
 	openGraph: {
-		title: "Long Lane Pasture",
-		description: "Community-run nature reserve in Finchley, North London.",
+		title:
+			"Long Lane Pasture: A community-run nature reserve in Finchley, North London.",
+		description:
+			"Long Lane Pasture is a wildlife and nature reserve in North London, maintained entirely by volunteers. This community green space offers a peaceful retreat within the city, providing a habitat for diverse wildlife, including birds, insects, and wildflowers. Preserved through local efforts, the pasture serves as a vital urban sanctuary, promoting conservation and education while fostering a connection to nature for visitors of all ages.",
 		locale: "en_GB",
 		type: "website",
 		images: {
