@@ -1,12 +1,12 @@
-import type { Metadata } from "next";
 import { navigation } from "../../dynamic/navigation";
+import { mergeMetadata } from "../../lib/helpers";
 import { NavigationLink } from "../components/navigation";
 
-export const metadata: Metadata = {
+export const metadata = mergeMetadata({
 	title: "Stories about Long Lane Pasture",
 	description:
 		"Read stories about the Long Lane Pasture and the people who care for it.",
-};
+});
 
 export default () => (
 	<article id="stories">

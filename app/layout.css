@@ -258,9 +258,6 @@ main ul ul {
 }
 ul {
 	list-style-position: inside;
-	li::marker {
-		color: var(--text-highlight);
-	}
 }
 ol {
 	list-style-position: outside;

@@ -1,26 +1,23 @@
-import type { Metadata } from "next";
+import { mergeMetadata } from "../../../lib/helpers";
 import { ContactUsLink } from "../../components/ContactUsLink";
 import { NavigationLink } from "../../components/navigation";
 
-const title = "Eco-warriors plant for the future";
-const description =
-	"An article about the school activities in Long Lane Pasture, April 2024, as appeared in The Archer newspaper.";
-
-export const metadata: Metadata = {
-	title,
-	description,
+export const metadata = mergeMetadata({
+	title: "Eco-warriors plant for the future",
+	description:
+		"An article about the school activities in Long Lane Pasture, April 2024, as appeared in The Archer newspaper.",
 	alternates: {
 		canonical: "http://www.the-archer.co.uk/archive/2024/2024Apr08.pdf",
 	},
 	openGraph: {
-		title,
-		description,
-		images: {
-			url: "/assets/history/2024-04 eco-warriors-plant-for-the-future.jpg",
-			alt: "Eco-warriors plant for the future",
-		},
+		images: [
+			{
+				url: "https://longlanepasture.org/assets/history/2024-04 eco-warriors-plant-for-the-future.jpg",
+				alt: "Eco-warriors plant for the future",
+			},
+		],
 	},
-};
+});
 
 export default () => (
 	<>

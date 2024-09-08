@@ -5,10 +5,7 @@ import { NavList, NavigationLink } from "./components/navigation";
 import "./layout.css";
 
 export const metadata: Metadata = {
-	title: {
-		template: "%s",
-		default: "Long Lane Pasture",
-	},
+	title: "Long Lane Pasture",
 	description:
 		"Long Lane Pasture is a wildlife and nature reserve in North London, maintained entirely by volunteers. This community green space offers a peaceful retreat within the city, providing a habitat for diverse wildlife, including birds, insects, and wildflowers. Preserved through local efforts, the pasture serves as a vital urban sanctuary, promoting conservation and education while fostering a connection to nature for visitors of all ages.",
 	keywords: [
@@ -59,7 +56,6 @@ export default function RootLayout({
 	return (
 		<html lang="en-GB">
 			<head>
-				<meta charSet="utf-8" />
 				<meta httpEquiv="X-UA-Compatible" content="IE=edge, chrome=1" />
 				<meta name="geo.region" content="GB" />
 				<meta name="geo.placename" content="London Borough of Barnet" />

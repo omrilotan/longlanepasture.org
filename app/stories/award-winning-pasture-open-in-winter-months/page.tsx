@@ -1,14 +1,14 @@
-import type { Metadata } from "next";
+import { mergeMetadata } from "../../../lib/helpers";
 import { NavigationLink } from "../../components/navigation";
 
-export const metadata: Metadata = {
+export const metadata = mergeMetadata({
 	title: "Award-winning pasture open in winter months",
 	description:
 		"An article about the Long Lane Pasture in 2023, as appeared in The Archer newspaper.",
 	alternates: {
 		canonical: "http://the-archer.co.uk/archive/2023/2023Dec11.pdf",
 	},
-};
+});
 
 export default () => (
 	<article id="award-winning-pasture-open-in-winter-months">

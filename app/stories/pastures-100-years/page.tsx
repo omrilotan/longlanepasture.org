@@ -1,14 +1,22 @@
-import type { Metadata } from "next";
+import { mergeMetadata } from "../../../lib/helpers";
 import { NavigationLink } from "../../components/navigation";
 
-export const metadata: Metadata = {
+export const metadata = mergeMetadata({
 	title: "Pasture's 100 years",
 	description:
 		"An article about the Long Lane Pasture in 2012, as appeared in The Archer newspaper.",
 	alternates: {
 		canonical: "http://www.the-archer.co.uk/archive/2012/2012Nov05.pdf",
 	},
-};
+	openGraph: {
+		images: [
+			{
+				url: "https://longlanepasture.org/assets/history/2012-11 pastures-100-years.jpg",
+				alt: "Pasture friend Linda Dolata shows off some of the art work. Photo by Diana Walsh.",
+			},
+		],
+	},
+});
 
 export default () => (
 	<article id="pastures-100-years">

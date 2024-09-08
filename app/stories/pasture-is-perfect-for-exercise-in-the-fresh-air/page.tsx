@@ -1,15 +1,23 @@
-import type { Metadata } from "next";
+import { mergeMetadata } from "../../../lib/helpers";
 import { ContactUsLink } from "../../components/ContactUsLink";
 import { NavigationLink } from "../../components/navigation";
 
-export const metadata: Metadata = {
+export const metadata = mergeMetadata({
 	title: "Pasture is perfect for exercise in the fresh air",
 	description:
 		"An article about the Long Lane Pasture in 2020, as appeared in The Archer newspaper.",
 	alternates: {
 		canonical: "http://www.the-archer.co.uk/archive/2020/2020Nov12.pdf",
 	},
-};
+	openGraph: {
+		images: [
+			{
+				url: "https://longlanepasture.org/assets/history/pasture-is-perfect-for-exercise-in-the-fresh-air.jpg",
+				alt: "Team work: The Good Gym volunteers were regular volunteers at Long Lane Pasture this year. It remains open to visitors on Saturdays and most Sundays through the winter. Photo Donald Lyven.",
+			},
+		],
+	},
+});
 
 export default () => (
 	<article id="pasture-is-perfect-for-exercise-in-the-fresh-air">

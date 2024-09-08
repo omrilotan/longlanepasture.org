@@ -14,7 +14,7 @@ export async function redirects() {
 		],
 		["/events*", "/", "301"],
 		["/getinvolved.html", "/contribute/", "301"],
-		["/news.html", "/", "301"],
+		["/news*", "/history/", "301"],
 		["/newsletters*", "/history/#newsletters", "301"],
 		["/photogallery*", "/", "301"],
 		["/thetrust.html", "/long-lane-pasture-trust/", "301"],

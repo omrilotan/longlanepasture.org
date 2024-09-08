@@ -1,14 +1,22 @@
-import type { Metadata } from "next";
+import { mergeMetadata } from "../../../lib/helpers";
 import { NavigationLink } from "../../components/navigation";
 
-export const metadata: Metadata = {
+export const metadata = mergeMetadata({
 	title: "Kestrel keeps keen eye on pasture prey",
 	description:
 		"An article about the Long Lane Pasture in 2017, as appeared in The Archer newspaper.",
 	alternates: {
 		canonical: "http://www.the-archer.co.uk/archive/2017/2017Oct03.pdf",
 	},
-};
+	openGraph: {
+		images: [
+			{
+				url: "https://longlanepasture.org/assets/history/kestrel-keeps-keen-eye-on-pasture-prey.jpg",
+				alt: "Let us prey: The kestrel on the hunt in Long Lane Pasture. Photo Donald Lyven.",
+			},
+		],
+	},
+});
 
 export default () => (
 	<article id="kestrel-keeps-keen-eye-on-pasture-prey">

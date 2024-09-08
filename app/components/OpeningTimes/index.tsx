@@ -4,7 +4,7 @@ export function OpeningTimes() {
 			<h3>
 				Opening Times <sub>† unless too wet</sub>
 			</h3>
-			<table className="data">
+			<table className="data" role="presentation">
 				<tbody>
 					<tr>
 						<td>☀️</td>

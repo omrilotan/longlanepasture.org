@@ -1,14 +1,22 @@
-import type { Metadata } from "next";
+import { mergeMetadata } from "../../../lib/helpers";
 import { NavigationLink } from "../../components/navigation";
 
-export const metadata: Metadata = {
+export const metadata = mergeMetadata({
 	title: "Centenary Photo & Art Competition",
 	description:
 		"A competition to celebrate the centenary of the Long Lane Pasture nature reserve",
 	alternates: {
 		canonical: "http://the-archer.co.uk/archive/2012/2012Jul04.pdf",
 	},
-};
+	openGraph: {
+		images: [
+			{
+				url: "https://longlanepasture.org/assets/history/centenary-photo-art-competition.jpg",
+				alt: "Centenary Photo & Art Competition",
+			},
+		],
+	},
+});
 
 export default () => (
 	<article id="centenary-photo-art-competition">

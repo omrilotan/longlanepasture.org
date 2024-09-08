@@ -1,14 +1,22 @@
-import type { Metadata } from "next";
+import { mergeMetadata } from "../../../lib/helpers";
 import { NavigationLink } from "../../components/navigation";
 
-export const metadata: Metadata = {
+export const metadata = mergeMetadata({
 	title: "Pasture goes under cover",
 	description:
 		"An article about the Long Lane Pasture in 2015, as appeared in The Archer newspaper.",
 	alternates: {
 		canonical: "http://www.the-archer.co.uk/archive/2015/2015Jul09.pdf",
 	},
-};
+	openGraph: {
+		images: [
+			{
+				url: "https://longlanepasture.org/assets/history/pasture-goes-under-cover.jpg",
+				alt: "Barnet Mayor, Councillor Mark Shooter and the Lady Mayoress, Melissa Shooter at the Long Lane Pasture garden party. Photo Neil McNaughton",
+			},
+		],
+	},
+});
 
 export default () => (
 	<article id="pasture-goes-under-cover">

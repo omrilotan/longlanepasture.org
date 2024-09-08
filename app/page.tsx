@@ -1,22 +1,15 @@
-import type { Metadata } from "next";
 import dynamic from "next/dynamic";
 import { pictures } from "../dynamic/gallery";
+import { mergeMetadata } from "../lib/helpers";
 import { NavigationLink } from "./components/navigation";
 import { OpeningTimes } from "./components/OpeningTimes";
 import { Volunteer } from "./components/Volunteer";
 
-const title = "Long Lane Pasture. A wildlife haven in the heart of Finchley.";
-const description =
-	"Long Lane Pasture is a volunteer-run nature reserve in Finchley, North London. This peaceful green space provides a home for birds, insects, and wildflowers, serving as an urban sanctuary that connects visitors with nature and supports local conservation.";
-
-export const metadata: Metadata = {
-	title,
-	description,
-	openGraph: {
-		title,
-		description,
-	},
-};
+export const metadata = mergeMetadata({
+	title: "Long Lane Pasture. A wildlife haven in the heart of Finchley.",
+	description:
+		"Long Lane Pasture is a volunteer-run nature reserve in Finchley, North London. This peaceful green space provides a home for birds, insects, and wildflowers, serving as an urban sanctuary that connects visitors with nature and supports local conservation.",
+});
 
 const PicturesGallery = dynamic(() => import("./components/PicturesGallery"), {
 	ssr: false,
@@ -64,6 +57,7 @@ export default () => (
 			<NavigationLink to="contribute">Contribute page</NavigationLink>.
 		</article>
 		<article id="pictures-gallery">
+			<h3>Pictures taken at Long Lane Pasture</h3>
 			<PicturesGallery pictures={pictures} />
 		</article>
 	</>

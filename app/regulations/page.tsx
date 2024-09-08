@@ -1,17 +1,10 @@
-import type { Metadata } from "next";
+import { mergeMetadata } from "../../lib/helpers";
 
-const title = "Regulations and Guidelines while visiting Long Lane Pasture";
-const description =
-	"Please respect the wildlife and other visitors by following these regulations and guidelines.";
-
-export const metadata: Metadata = {
-	title,
-	description,
-	openGraph: {
-		title,
-		description,
-	},
-};
+export const metadata = mergeMetadata({
+	title: "Regulations and Guidelines while visiting Long Lane Pasture",
+	description:
+		"Please respect the wildlife and other visitors by following these regulations and guidelines.",
+});
 
 export default () => (
 	<article id="regulations">
@@ -98,7 +91,7 @@ export default () => (
 			</li>
 			<li>
 				Photography if it is for publication or commercial purposes. Such
-				photography requires LLPT’s permission and a charge will be made. This
+				photography requires LLPT's permission and a charge will be made. This
 				restriction does not apply to private, non-commercial and non-published
 				photography.
 			</li>

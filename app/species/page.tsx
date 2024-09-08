@@ -1,18 +1,11 @@
-import type { Metadata } from "next";
 import { species } from "../../dynamic/species";
+import { mergeMetadata } from "../../lib/helpers";
 
-const title = "Checklist of Recorded Species at Long Lane Pasture.";
-const description =
-	"A checklist of species recorded at Long Lane Pasture, including plants, birds, mammals, insects, and other wildlife.";
-
-export const metadata: Metadata = {
-	title,
-	description,
-	openGraph: {
-		title,
-		description,
-	},
-};
+export const metadata = mergeMetadata({
+	title: "Checklist of Recorded Species at Long Lane Pasture.",
+	description:
+		"A checklist of species recorded at Long Lane Pasture, including plants, birds, mammals, insects, and other wildlife.",
+});
 
 export default () => (
 	<>
@@ -31,7 +24,7 @@ export default () => (
 			</p>
 		</article>
 		{Object.entries(species).map(([title, list]) => (
-			<article key={title} id={title}>
+			<article key={title} id={title.replace(/\s*/g, "-")}>
 				<h3>{title}</h3>
 				<ul>
 					{list

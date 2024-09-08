@@ -1,21 +1,22 @@
-import type { Metadata } from "next";
 import { navigation } from "../../dynamic/navigation";
 import { newsletters } from "../../dynamic/newsletters";
+import { mergeMetadata } from "../../lib/helpers";
 import { ContactUsLink } from "../components/ContactUsLink";
 import { NavigationLink } from "../components/navigation";
 
-const title = "The history of Long Lane Pasture";
-const description =
-	"The Pasture is a meadow, which has remained largely undisturbed for centuries.";
-
-export const metadata: Metadata = {
-	title,
-	description,
+export const metadata = mergeMetadata({
+	title: "The history of Long Lane Pasture",
+	description:
+		"The Pasture is a meadow, which has remained largely undisturbed for centuries.",
 	openGraph: {
-		title,
-		description,
+		images: [
+			{
+				url: "https://longlanepasture.org/assets/LLP-RestorationPlan.jpg",
+				alt: "Long Lane Pasture Restoration Plan",
+			},
+		],
 	},
-};
+});
 
 export default () => (
 	<>
@@ -66,9 +67,9 @@ export default () => (
 			</p>
 			<div className="spread">
 				{[
-					["/assets/history/1917-07 history.jpg", "July 1917"],
-					["/assets/history/1977-04 history.jpg", "April 1977"],
-					["/assets/history/2007-11 Martin Addison.jpg", "November 2007"],
+					["/assets/history/1917-07%20history.jpg", "July 1917"],
+					["/assets/history/1977-04%20history.jpg", "April 1977"],
+					["/assets/history/2007-11%20Martin Addison.jpg", "November 2007"],
 				].map(([src, date]) => (
 					<figure
 						key={src}
@@ -196,7 +197,7 @@ export default () => (
 						newsletters.map(({ issue, url, date }) => (
 							<li key={date}>
 								{date}:{" "}
-								<a href={url} target="_blank">
+								<a href={url.replace(/\s/g, "%20")} target="_blank">
 									Issue № {issue}
 								</a>
 							</li>

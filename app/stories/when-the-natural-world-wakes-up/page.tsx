@@ -1,14 +1,22 @@
-import type { Metadata } from "next";
+import { mergeMetadata } from "../../../lib/helpers";
 import { NavigationLink } from "../../components/navigation";
 
-export const metadata: Metadata = {
+export const metadata = mergeMetadata({
 	title: "When the natural world wakes up",
 	description:
 		"An article about the Long Lane Pasture in 2024, as appeared in The Archer newspaper.",
 	alternates: {
 		canonical: "http://www.the-archer.co.uk/archive/2010/2010Oct09.pdf",
 	},
-};
+	openGraph: {
+		images: [
+			{
+				url: "https://longlanepasture.org/assets/history/when-the-natural-world-wakes-up.jpg",
+				alt: "Morning has broken: A wren sings in the early dawn light on Long Lane Pasture. Photo Donald Lyven",
+			},
+		],
+	},
+});
 
 export default () => (
 	<article>

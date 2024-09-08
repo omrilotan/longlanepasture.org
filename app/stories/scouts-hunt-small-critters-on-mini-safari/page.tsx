@@ -1,14 +1,26 @@
-import type { Metadata } from "next";
+import { mergeMetadata } from "../../../lib/helpers";
 import { NavigationLink } from "../../components/navigation";
 
-export const metadata: Metadata = {
+export const metadata = mergeMetadata({
 	title: "Scouts hunt small critters on mini safari",
 	description:
 		"An article about the Long Lane Pasture in 2022, as appeared in The Archer newspaper.",
 	alternates: {
 		canonical: "http://www.the-archer.co.uk/archive/2022/2022June12.pdf",
 	},
-};
+	openGraph: {
+		images: [
+			{
+				url: "https://longlanepasture.org/assets/history/scouts-hunt-small-critters-on-mini-safari-cubs.jpg",
+				alt: "Ground level: Cub scouts explore Long Lane Pasture in extreme close-up",
+			},
+			{
+				url: "https://longlanepasture.org/assets/history/scouts-hunt-small-critters-on-mini-safari-pond.jpg",
+				alt: "Pond life: Young Cubs enjoying the wildlife haven",
+			},
+		],
+	},
+});
 
 export default () => (
 	<article id="scouts-hunt-small-critters-on-mini-safari">

@@ -1,14 +1,14 @@
-import type { Metadata } from "next";
+import { mergeMetadata } from "../../../lib/helpers";
 import { NavigationLink } from "../../components/navigation";
 
-export const metadata: Metadata = {
+export const metadata = mergeMetadata({
 	title: "Long Lane Pasture",
 	description:
 		"An article about the Long Lane Pasture in 2007, as appeared in The Archer newspaper.",
 	alternates: {
 		canonical: "http://www.the-archer.co.uk/archive/2007/2007Mar04.pdf",
 	},
-};
+});
 
 export default () => (
 	<article id="long-lane-pasture">

@@ -1,23 +1,16 @@
-import type { Metadata } from "next";
 import dynamic from "next/dynamic";
 import { volunteers } from "../../dynamic/volunteers/index.ts";
+import { mergeMetadata } from "../../lib/helpers/index.ts";
 import { ContactUsLink } from "../components/ContactUsLink";
 import { NavigationLink } from "../components/navigation/index.tsx";
 import "../components/styles/contributors.css";
 import { Volunteer } from "../components/Volunteer/index.tsx";
 
-const title = "Contribute to Long Lane Pasture";
-const description =
-	"Caring for the Long Lane Pasture is a community effort. Find out how you can help support the Trust's work.";
-
-export const metadata: Metadata = {
-	title,
-	description,
-	openGraph: {
-		title,
-		description,
-	},
-};
+export const metadata = mergeMetadata({
+	title: "Contribute to Long Lane Pasture",
+	description:
+		"Caring for the Long Lane Pasture is a community effort. Find out how you can help support the Trust's work.",
+});
 
 const Randomise = dynamic(() => import("../components/Randomise"), {
 	ssr: false,

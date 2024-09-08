@@ -1,23 +1,17 @@
-import type { Metadata } from "next";
+import { mergeMetadata } from "../../../lib/helpers";
 import { NavigationLink } from "../../components/navigation";
 
-const title =
-	"Creative, family-friendly activity ideas to do at Long Lane Pasture";
-const description =
-	"10 creative, family-friendly activity ideas you can do on your next visit to Long Lane Pasture";
-
-export const metadata: Metadata = {
-	title,
-	description,
+export const metadata = mergeMetadata({
+	title: "Creative, family-friendly activity ideas to do at Long Lane Pasture",
+	description:
+		"10 creative, family-friendly activity ideas you can do on your next visit to Long Lane Pasture",
 	openGraph: {
-		title,
-		description,
 		images: {
 			url: "https://longlanepasture.org/assets/stories/stories-clouds.jpeg",
 			alt: "Find shapes in the clouds at Long Lane Pasture",
 		},
 	},
-};
+});
 
 export default () => {
 	let i = 0;

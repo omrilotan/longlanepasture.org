@@ -1,21 +1,22 @@
-import type { Metadata } from "next";
 import { ammenities } from "../../dynamic/ammenities";
+import { mergeMetadata } from "../../lib/helpers";
 import { ContactUsLink } from "../components/ContactUsLink";
 import { NavigationLink } from "../components/navigation";
 import { OpeningTimes } from "../components/OpeningTimes";
 
-const title = "Visitor Information for Long Lane Pasture";
-const description =
-	"Everything you need to know about visiting Long Lane Pasture. Opening times, location, and how to get here.";
-
-export const metadata: Metadata = {
-	title,
-	description,
+export const metadata = mergeMetadata({
+	title: "Visitor Information for Long Lane Pasture",
+	description:
+		"Everything you need to know about visiting Long Lane Pasture. Opening times, location, and how to get here.",
 	openGraph: {
-		title,
-		description,
+		images: [
+			{
+				url: "https://longlanepasture.org/assets/long-lane-pasture-map.svg",
+				alt: "Long Lane Pasture Map",
+			},
+		],
 	},
-};
+});
 
 export default () => (
 	<>
@@ -87,7 +88,7 @@ export default () => (
 				alt="Long Lane Pasture Map"
 			/>
 		</article>
-		<article id="wildlife you might see">
+		<article id="wildlife-you-might-see">
 			<h2>
 				Wildlife you might see
 				<a
@@ -110,7 +111,10 @@ export default () => (
 			</p>
 		</article>
 		<article id="location">
-			<h2>Location</h2>
+			<h2>
+				Location
+				<a href="#location" aria-label="Anchor link to Location"></a>
+			</h2>
 			<p>
 				Long Lane Pasture lies in North London, in the London Borough of Barnet,
 				on the border between postal districts N3 and N2. It is bounded by the
@@ -121,11 +125,10 @@ export default () => (
 			</p>
 			<iframe
 				src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1429.6774081860665!2d-0.1822392865961423!3d51.59659596521669!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761a02481df38b%3A0x9d4d3e1b839bb764!2sLong%20Lane%20Pasture!5e0!3m2!1sen!2suk!4v1721736907974!5m2!1sen!2suk"
-				width="100%"
+				style={{ width: "100%", border: "none" }}
 				height="450"
 				allowFullScreen={true}
 				loading="lazy"
-				frameBorder={0}
 				referrerPolicy="no-referrer-when-downgrade"
 				title="Long Lane Pasture Location on Google Maps"
 			></iframe>
