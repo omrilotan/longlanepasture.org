@@ -1,6 +1,6 @@
 import { navigation } from "../../dynamic/navigation";
 import { newsletters } from "../../dynamic/newsletters";
-import { mergeMetadata } from "../../lib/helpers";
+import { mergeMetadata, URLify } from "../../lib/helpers";
 import { ContactUsLink } from "../components/ContactUsLink";
 import { NavigationLink } from "../components/navigation";
 
@@ -197,7 +197,7 @@ export default () => (
 						newsletters.map(({ issue, url, date }) => (
 							<li key={date}>
 								{date}:{" "}
-								<a href={url.replace(/\s/g, "%20")} target="_blank">
+								<a href={URLify(url)} target="_blank">
 									Issue № {issue}
 								</a>
 							</li>

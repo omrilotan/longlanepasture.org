@@ -6,18 +6,18 @@
  */
 export async function redirects() {
 	return [
-		["/aboutthepasture.html", "/history/", "301"],
 		[
 			"/aboutthepasture/LLP-ManagementPlan.pdf",
 			"/assets/documents/LLP-ManagementPlan.pdf",
 			"301",
 		],
+		["/aboutthepasture*", "/history/", "301"],
 		["/events*", "/", "301"],
 		["/getinvolved.html", "/contribute/", "301"],
 		["/news*", "/history/", "301"],
+		["/thetrust*", "/the-trust/", "301"],
 		["/newsletters*", "/history/#newsletters", "301"],
-		["/photogallery*", "/", "301"],
-		["/thetrust.html", "/long-lane-pasture-trust/", "301"],
+		["/photogallery*", "/photos/", "301"],
 		["/visitor-information/", "/visit/", "301"],
 		["/visitorinfo.html", "/visit/", "301"],
 	]

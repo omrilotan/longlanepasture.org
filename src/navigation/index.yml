@@ -22,3 +22,6 @@
 - name: Email Us
   path: mailto:longlanepasture@gmail.com
   nav: false
+- name: Photos
+  nav: false
+  footer: false
