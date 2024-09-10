@@ -14,6 +14,8 @@
   nav: false
 - name: Regulations
   nav: false
+- name: Privacy
+  nav: false
 - name: "@LLPasture"
   path: https://x.com/LLPasture
 - name: Source Code
