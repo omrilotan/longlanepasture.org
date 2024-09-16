@@ -8,7 +8,7 @@ export async function redirects() {
 	return [
 		[
 			"/aboutthepasture/LLP-ManagementPlan.pdf",
-			"/assets/documents/LLP-ManagementPlan.pdf",
+			"/assets/documents/llp-management-plan.pdf",
 			"301",
 		],
 		["/aboutthepasture*", "/history/", "301"],

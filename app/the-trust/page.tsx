@@ -50,7 +50,7 @@ export default () => (
 			<p>
 				Long Lane Pasture Trust is a charity registered in England & Wales (№
 				1122236) and is run in accordance with its{" "}
-				<a href="/assets/documents/LLP-TrustDeed.pdf" target="_blank">
+				<a href="/assets/documents/llp-trust-deed.pdf" target="_blank">
 					Trust Deed
 				</a>
 				. Charity details are available on{" "}

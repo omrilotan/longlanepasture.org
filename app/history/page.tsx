@@ -11,7 +11,7 @@ export const metadata = mergeMetadata({
 	openGraph: {
 		images: [
 			{
-				url: "https://longlanepasture.org/assets/LLP-RestorationPlan.jpg",
+				url: "https://longlanepasture.org/assets/llp-restoration-plan.jpg",
 				alt: "Long Lane Pasture Restoration Plan",
 			},
 		],
@@ -104,7 +104,7 @@ export default () => (
 			</p>
 			<p>
 				<img
-					src="/assets/LLP-RestorationPlan.jpg"
+					src="/assets/llp-restoration-plan.jpg"
 					alt="Long Lane Pasture Restoration Plan"
 					loading="lazy"
 				/>

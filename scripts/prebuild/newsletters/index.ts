@@ -9,8 +9,11 @@ export async function newsletters(): Promise<string> {
 		.filter((file) => file.match(/\.(pdf)$/i))
 		.map((file) => ({
 			url: `/assets/newsletters/${file}`,
-			issue: file.match(/^LLP-Newsletter(?<number>\w+)\s/)?.groups?.number, // could be 28a
-			date: file.match(/(?<date>[^\s]+\s+\d+)\.pdf/)?.groups?.date, // could be "June 2024", could be "Autumn/Winter 2014"
+			issue: file.match(/^llp-newsletter(?<number>\w+)-/)?.groups?.number, // could be 28a
+			date: file
+				.match(/(?<date>[^-]+-+\d+)\.pdf/)
+				?.groups?.date.replace(/-/g, " ")
+				.replace(/^(.)/, (letter) => letter.toUpperCase()), // could be "June 2024", could be "Autumn/Winter 2014"
 		}))
 		.sort((a, b) => {
 			if (a.issue && b.issue) {
