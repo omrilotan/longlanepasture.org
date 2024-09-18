@@ -1,4 +1,4 @@
-import { mkdir, rmdir, writeFile } from "node:fs/promises";
+import { mkdir, rm, writeFile } from "node:fs/promises";
 import { dirname, resolve } from "node:path";
 import { headers } from "./headers/index.ts";
 import { redirects } from "./redirects/index.ts";
@@ -18,7 +18,7 @@ Promise.all([
 		async ([path, content]): Promise<void> =>
 			await writeFileWithDirs(resolve(path), await content),
 	),
-	rmdir("./out/404", { recursive: true }),
+	rm("./out/404", { recursive: true }),
 ]);
 
 async function writeFileWithDirs(

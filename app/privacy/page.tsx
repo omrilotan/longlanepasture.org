@@ -1,5 +1,6 @@
 import { mergeMetadata } from "../../lib/helpers";
 import { ContactUsLink } from "../components/ContactUsLink";
+import { NavigationLink } from "../components/navigation";
 
 export const metadata = mergeMetadata({
 	title: "Privacy Notice for Long Lane Pasture website",
@@ -55,6 +56,14 @@ export default () => (
 			updates. Please note that this privacy notice applies only to this
 			website. If you follow a link to another website, please review their
 			privacy notice.
+		</p>
+		<hr />
+		<p>
+			Now that you're familiar with our Privacy Policy, why not plan your visit
+			to Long Lane Pasture? Check out our{" "}
+			<NavigationLink to="visit">Visitor Information page</NavigationLink> to
+			learn about opening times, how to get here, and the wildlife you can
+			expect to see.
 		</p>
 	</article>
 );

@@ -1,4 +1,5 @@
 import { mergeMetadata } from "../../lib/helpers";
+import { NavigationLink } from "../components/navigation";
 
 export const metadata = mergeMetadata({
 	title: "Regulations and Guidelines while visiting Long Lane Pasture",
@@ -110,5 +111,10 @@ export default () => (
 		<h3>Amendment to Regulations</h3>
 
 		<p>LLPT or its management may amend these Regulations at any time.</p>
+		<hr />
+		<p>
+			Check our <NavigationLink to="visit">visitor information</NavigationLink>{" "}
+			and come enjoy the pasture!
+		</p>
 	</article>
 );

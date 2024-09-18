@@ -44,7 +44,7 @@ export default () => (
 		</ul>
 		<p>
 			Do you have a story to share?{" "}
-			<NavigationLink to="/contribute">Contact us</NavigationLink>.
+			<NavigationLink to="/contribute">let us know</NavigationLink>.
 		</p>
 	</article>
 );

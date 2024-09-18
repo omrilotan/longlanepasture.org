@@ -1,5 +1,6 @@
 import { species } from "../../dynamic/species";
 import { mergeMetadata } from "../../lib/helpers";
+import { NavigationLink } from "../components/navigation";
 
 export const metadata = mergeMetadata({
 	title: "Checklist of Recorded Species at Long Lane Pasture.",
@@ -50,6 +51,12 @@ export default () => (
 							</li>
 						))}
 				</ul>
+				<hr />
+				<p>
+					Check our{" "}
+					<NavigationLink to="visit">visitor information</NavigationLink> and
+					come by see how many you can spot for yourself!
+				</p>
 			</article>
 		))}
 	</>

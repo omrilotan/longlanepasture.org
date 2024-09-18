@@ -1,5 +1,6 @@
 import { friends } from "../../dynamic/friends";
 import { mergeMetadata } from "../../lib/helpers";
+import { NavigationLink } from "../components/navigation";
 
 export const metadata = mergeMetadata({
 	title: "Friends of Long Lane Pasture",
@@ -70,6 +71,12 @@ export default () => (
 					))}
 				</tbody>
 			</table>
+			<hr />
+			<p>
+				Interested in contibuting to Long Lane Pasture? Check out our{" "}
+				<NavigationLink to="contribute">Contribute page</NavigationLink> to
+				learn more.
+			</p>
 		</article>
 	</>
 );
