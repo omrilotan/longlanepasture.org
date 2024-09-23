@@ -119,12 +119,10 @@ export default () => (
 				Long Lane Pasture lies in North London, in the London Borough of Barnet,
 				on the border between postal districts N3 and N2. It is bounded by the
 				North Circular Road, the Northern Line railway, Pointalls Allotments
-				land and Long Lane. It is accessed by a pedestrian gate which leads off
-				a footpath at the end of a short access road (opposite Finchley Fire
-				Station) just by the North Circular Road bridge over Long Lane.
+				land and Long Lane.
 			</p>
 			<p>
-				what3words:{" "}
+				<strong>what3words:</strong>{" "}
 				<a
 					href="https://w3w.co/risks.assume.forest"
 					target="_blank"
@@ -143,24 +141,144 @@ export default () => (
 				referrerPolicy="no-referrer-when-downgrade"
 				title="Long Lane Pasture Location on Google Maps"
 			></iframe>
-			<h4>Get Here By Bus</h4>
+			<h3>Get Here On Foot</h3>
 			<p>
-				The 143 stops in Long Lane just past Squires Lane cross roads. From
-				here, cross Squires Lane and continue down Long Lane until just before
-				the North Circular Road bridge, turn right and at the end of the short
-				access road to a garage you will see the pedestrian entrance gate to the
-				Pasture.
+				The entrance to the Pasture is on an access road leading between <strong>280
+				Long Lane</strong>, opposite the fire station and next to the underpass under the
+				North Circular Road, and <strong>84 Rosemary Avenue</strong>. Rosemary Avenue is the
+				continuation of Station Road which runs from Finchley Central Station.
 			</p>
-			<h4>Get Here By Tube</h4>
+			<h3>Get Here By Bus</h3>
+			<p>Closest bus stops are:</p>
+			<ul>
+				<li>
+					<strong>North circular (406)</strong>
+					<ul>
+						<li>
+							East:{" "}
+							<a
+								href="https://tfl.gov.uk/bus/stop/490009321E/long-lane/"
+								target="_blank"
+								rel="noopener"
+							>
+								Long Lane towards Arnos Grove Or North Finchley
+							</a>
+							. 0.1 miles walk.
+						</li>
+						<li>
+							West:{" "}
+							<a
+								href="https://tfl.gov.uk/bus/stop/490009321W/long-lane/"
+								target="_blank"
+								rel="noopener"
+							>
+								Long Lane towards Brent Cross
+							</a>
+							. 0.1 miles walk.
+						</li>
+					</ul>
+				</li>
+				<li>
+					<strong>East End Rd.</strong>
+					<ul>
+						<li>
+							South:{" "}
+							<a
+								href="https://tfl.gov.uk/bus/stop/490003670E/basing-way/"
+								target="_blank"
+								rel="noopener"
+							>
+								Basing Way towards Highgate
+							</a>
+							. 0.4 miles walk.
+						</li>
+						<li>
+							North:{" "}
+							<a
+								href="https://tfl.gov.uk/bus/stop/490003670W/basing-way/"
+								target="_blank"
+								rel="noopener"
+							>
+								Basing Way towards Finchley Central
+							</a>
+							. 0.4 miles walk.
+						</li>
+					</ul>
+				</li>
+				<li>
+					<strong>Squires Lane</strong>
+					<ul>
+						<li>
+							East:
+							<ul>
+								<li>
+									<a
+										href="https://tfl.gov.uk/bus/stop/490009327W1/long-lane"
+										target="_blank"
+										rel="noopener"
+									>
+										Long Lane towards towards Finchley Central
+									</a>
+									. 0.3 miles walk.
+								</li>
+								<li>
+									<a
+										href="https://tfl.gov.uk/bus/stop/490009327W/squires-lane-long-lane/"
+										target="_blank"
+										rel="noopener"
+									>
+										Squires Lane / Long Lane towards East Finchley Station
+									</a>
+									. 0.3 miles walk.
+								</li>
+							</ul>
+						</li>
+						<li>
+							West:
+							<ul>
+								<li>
+									<a
+										href="https://tfl.gov.uk/bus/stop/490019117E/vineyard-grove"
+										target="_blank"
+										rel="noopener"
+									>
+										{" "}
+										Vineyard Grove towards Finchley Central
+									</a>
+									. 0.3 miles walk.
+								</li>
+								<li>
+									<a
+										href="https://tfl.gov.uk/bus/stop/490019118E/avondale-road"
+										target="_blank"
+										rel="noopener"
+									>
+										Avondale Road towards Friern Barnet
+									</a>
+									. 0.3 miles walk.
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<h3>Get Here By Tube</h3>
 			<p>
-				Finchley Central Station on the Northern Line. It is a 15 minute walk
-				from here.
+				<strong>Northern Line:</strong>{" "}
+				<a
+					href="https://tfl.gov.uk/tube/stop/940GZZLUFYC/finchley-central-underground-station"
+					target="_blank"
+					rel="noopener"
+				>
+					Finchley Central Station
+				</a>{" "}
+				is a 15 minute walk (0.7 miles) via Station Road.
 			</p>
-			<h4>Get Here By Car</h4>
+			<h3>Get Here By Car</h3>
 			<p>
-				There is free parking in Long Lane. Do not park in the access road
-				leading up to the Pasture. This is for the use of the adjacent
-				householder only.
+				There is <strong>free parking in Long Lane</strong>. Do not park in the
+				access road leading up to the Pasture. This is for the use of the
+				adjacent householder only.
 			</p>
 		</article>
 		<article id="ammenities">
