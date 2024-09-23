@@ -143,10 +143,11 @@ export default () => (
 			></iframe>
 			<h3>Get Here On Foot</h3>
 			<p>
-				The entrance to the Pasture is on an access road leading between <strong>280
-				Long Lane</strong>, opposite the fire station and next to the underpass under the
-				North Circular Road, and <strong>84 Rosemary Avenue</strong>. Rosemary Avenue is the
-				continuation of Station Road which runs from Finchley Central Station.
+				The entrance to the Pasture is on an access road leading between{" "}
+				<strong>280 Long Lane</strong>, opposite the fire station and next to
+				the underpass under the North Circular Road, and{" "}
+				<strong>84 Rosemary Avenue</strong>. Rosemary Avenue is the continuation
+				of Station Road which runs from Finchley Central Station.
 			</p>
 			<h3>Get Here By Bus</h3>
 			<p>Closest bus stops are:</p>
