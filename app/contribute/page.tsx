@@ -1,6 +1,7 @@
 import dynamic from "next/dynamic";
 import { volunteers } from "../../dynamic/volunteers/index.ts";
 import { mergeMetadata } from "../../lib/helpers/index.ts";
+import { Campaign } from "../components/Campaign/index.tsx";
 import { ContactUsLink } from "../components/ContactUsLink";
 import { NavigationLink } from "../components/navigation/index.tsx";
 import "../components/styles/contributors.css";
@@ -36,6 +37,44 @@ export default () => (
 			</figure>
 		</article>
 		<article id="the-pasture-is-a-community-space">
+			<h3>Make a charitable donation</h3>
+			<Campaign />
+			<p className="highlight">
+				Our{" "}
+				<a
+					href="https://www.gofundme.com/f/buy-long-lane-pastures-new-equipment"
+					target="_blank"
+					rel="noopener"
+				>
+					GoFundMe campaign
+				</a>{" "}
+				is raising funds to replace vital equipment. Help us sustain this
+				valuable community reserve 🌻. Every contribution helps.
+			</p>
+			<p>
+				Long Lane Pasture Trust is a charity registered in England & Wales (№
+				1122236) and is run in accordance with its Trust Deed. Charity details
+				are available on{" "}
+				<a
+					href="https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/4035882"
+					target="_blank"
+					rel="noopener"
+					aria-label="Long Lane Pasture Trust on the registry"
+				>
+					the registry
+				</a>
+				.{" "}
+			</p>
+			<p>
+				<strong>
+					We receive no funding from the local council and rely on donations to
+					undertake our work. We accept donations of any size.
+				</strong>
+			</p>
+			<p>
+				Cheques can be sent by mail to No. 256 Long Lane, London N3 2RN. If you
+				would like to make a donation any other way, please <ContactUsLink />.
+			</p>
 			<Volunteer>
 				<p>
 					The pasture is a community space maintained by community members to
@@ -70,27 +109,6 @@ export default () => (
 					))}
 				</Randomise>
 			</div>
-			<h3>Make a charitable donation</h3>
-			<p>
-				Long Lane Pasture Trust is a charity registered in England & Wales (№
-				1122236) and is run in accordance with its Trust Deed. Charity details
-				are available on{" "}
-				<a
-					href="https://register-of-charities.charitycommission.gov.uk/charity-search/-/charity-details/4035882"
-					target="_blank"
-					rel="noopener"
-					aria-label="Long Lane Pasture Trust on the registry"
-				>
-					the registry
-				</a>
-				.{" "}
-				<strong>
-					We receive no funding from the local council and rely on donations to
-					undertake our work.
-				</strong>{" "}
-				We accept donations of any size. If you would like to make a donation,
-				please contact us at <ContactUsLink />.
-			</p>
 			<h3>Initiate educational or community projects</h3>
 			<p>
 				We welcome proposals for educational or community projects that can

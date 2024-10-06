@@ -1,6 +1,7 @@
 import dynamic from "next/dynamic";
 import { pictures } from "../dynamic/gallery";
 import { mergeMetadata } from "../lib/helpers";
+import { Campaign } from "./components/Campaign";
 import { NavigationLink } from "./components/navigation";
 import { OpeningTimes } from "./components/OpeningTimes";
 import { Volunteer } from "./components/Volunteer";
@@ -46,6 +47,19 @@ export default () => (
 				Discover the beauty of Long Lane Pasture, where birds, butterflies, and
 				wildflowers thrive. Enjoy a peaceful escape from the city. Please
 				respect the wildlife and keep dogs on a lead.
+			</p>
+			<Campaign />
+			<p className="highlight">
+				Our{" "}
+				<a
+					href="https://www.gofundme.com/f/buy-long-lane-pastures-new-equipment"
+					target="_blank"
+					rel="noopener"
+				>
+					GoFundMe campaign
+				</a>{" "}
+				is raising funds to replace vital equipment. Help us sustain this
+				valuable community reserve 🌿. Every contribution helps.
 			</p>
 			<OpeningTimes />
 			<p>
