@@ -5,7 +5,7 @@ export function Campaign() {
 		<>
 			<center>
 				<a
-					href="https://www.gofundme.com/f/buy-long-lane-pastures-new-equipment/donate"
+					href="https://www.gofundme.com/f/buy-long-lane-pastures-new-equipment"
 					target="_blank"
 					rel="noopener"
 					className="donate-button"

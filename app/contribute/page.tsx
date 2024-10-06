@@ -46,10 +46,10 @@ export default () => (
 					target="_blank"
 					rel="noopener"
 				>
-					GoFundMe campaign
+					GoFundMe
 				</a>{" "}
 				is raising funds to replace vital equipment. Help us sustain this
-				valuable community reserve 🌻. Every contribution helps.
+				community nature reserve 🌻. Every contribution helps.
 			</p>
 			<p>
 				Long Lane Pasture Trust is a charity registered in England & Wales (№

@@ -21,8 +21,13 @@ export async function redirects() {
 		["/visitor-information/", "/visit/", "301"],
 		["/visitorinfo.html", "/visit/", "301"],
 		[
+			"/donate/",
+			"https://www.gofundme.com/f/buy-long-lane-pastures-new-equipment",
+			"307",
+		],
+		[
 			"/donate",
-			"https://www.gofundme.com/f/buy-long-lane-pastures-new-equipment/donate",
+			"https://www.gofundme.com/f/buy-long-lane-pastures-new-equipment",
 			"307",
 		],
 	]
