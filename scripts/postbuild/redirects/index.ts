@@ -20,6 +20,11 @@ export async function redirects() {
 		["/photogallery*", "/photos/", "301"],
 		["/visitor-information/", "/visit/", "301"],
 		["/visitorinfo.html", "/visit/", "301"],
+		[
+			"/donate",
+			"https://www.gofundme.com/f/buy-long-lane-pastures-new-equipment/donate",
+			"307",
+		],
 	]
 		.map((line) => line.join(" "))
 		.join("\n");

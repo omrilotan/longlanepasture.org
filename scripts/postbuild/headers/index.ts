@@ -1,3 +1,4 @@
+const GOOGLE_DOMAIN = "https://www.google.com";
 const GOOGLE_MAPS_DOMAIN = "https://maps.googleapis.com";
 
 /**
@@ -20,7 +21,7 @@ export async function headers(): Promise<string> {
 			`default-src 'self' ${GOOGLE_MAPS_DOMAIN} 'unsafe-inline'`,
 			`script-src 'self' ${GOOGLE_MAPS_DOMAIN} 'unsafe-inline'`,
 			"object-src 'self'",
-			"frame-src https://www.google.com/",
+			`frame-src ${GOOGLE_DOMAIN}`,
 			`img-src 'self' ${GOOGLE_MAPS_DOMAIN}`,
 			`child-src ${GOOGLE_MAPS_DOMAIN}`,
 		],
