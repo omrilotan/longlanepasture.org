@@ -1,5 +1,5 @@
 import { mergeMetadata } from "../../../lib/helpers";
-import { NavigationLink } from "../../components/navigation";
+import { NavigationLink } from "../../components/NavigationLink";
 
 export const metadata = mergeMetadata({
 	title: "Long wait is over for Long Lane Pasture",

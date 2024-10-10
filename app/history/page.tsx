@@ -2,7 +2,7 @@ import { navigation } from "../../dynamic/navigation";
 import { newsletters } from "../../dynamic/newsletters";
 import { mergeMetadata, URLify } from "../../lib/helpers";
 import { ContactUsLink } from "../components/ContactUsLink";
-import { NavigationLink } from "../components/navigation";
+import { NavigationLink } from "../components/NavigationLink";
 
 export const metadata = mergeMetadata({
 	title: "The history of Long Lane Pasture",

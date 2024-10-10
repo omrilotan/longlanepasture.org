@@ -1,7 +1,7 @@
 import dynamic from "next/dynamic";
 import { pictures } from "../../dynamic/gallery";
 import { ContactUsLink } from "../components/ContactUsLink";
-import { NavigationLink } from "../components/navigation";
+import { NavigationLink } from "../components/NavigationLink";
 
 const PicturesGallery = dynamic(() => import("../components/PicturesGallery"), {
 	ssr: false,

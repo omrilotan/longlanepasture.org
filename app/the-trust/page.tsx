@@ -1,7 +1,7 @@
 import { records } from "../../dynamic/records";
 import { mergeMetadata } from "../../lib/helpers";
+import { NavigationLink } from "../components/NavigationLink";
 import { VideoWrapper } from "../components/VideoWrapper";
-import { NavigationLink } from "../components/navigation";
 
 export const metadata = mergeMetadata({
 	title: "The Long Lane Pasture Trust",

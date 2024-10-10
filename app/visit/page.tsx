@@ -1,7 +1,7 @@
 import { ammenities } from "../../dynamic/ammenities";
 import { mergeMetadata } from "../../lib/helpers";
 import { ContactUsLink } from "../components/ContactUsLink";
-import { NavigationLink } from "../components/navigation";
+import { NavigationLink } from "../components/NavigationLink";
 import { OpeningTimes } from "../components/OpeningTimes";
 
 export const metadata = mergeMetadata({

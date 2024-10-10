@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { NavigationLink } from "../../components/navigation";
+import { NavigationLink } from "../../components/NavigationLink";
 
 export const metadata: Metadata = {
 	title: "Autumn colours at the Pasture",

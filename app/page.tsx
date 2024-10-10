@@ -2,7 +2,7 @@ import dynamic from "next/dynamic";
 import { pictures } from "../dynamic/gallery";
 import { mergeMetadata } from "../lib/helpers";
 import { Campaign } from "./components/Campaign";
-import { NavigationLink } from "./components/navigation";
+import { NavigationLink } from "./components/NavigationLink";
 import { OpeningTimes } from "./components/OpeningTimes";
 import { Volunteer } from "./components/Volunteer";
 

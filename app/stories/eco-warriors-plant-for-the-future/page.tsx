@@ -1,6 +1,6 @@
 import { mergeMetadata } from "../../../lib/helpers";
 import { ContactUsLink } from "../../components/ContactUsLink";
-import { NavigationLink } from "../../components/navigation";
+import { NavigationLink } from "../../components/NavigationLink";
 
 export const metadata = mergeMetadata({
 	title: "Eco-warriors plant for the future",

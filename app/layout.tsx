@@ -1,7 +1,8 @@
 import type { Metadata, Viewport } from "next";
 import { ClosureNotice } from "./components/ClosureNotice";
 import { CustomScriptLoader } from "./components/CustomScriptLoader";
-import { NavList, NavigationLink } from "./components/navigation";
+import { NavigationLink } from "./components/NavigationLink";
+import { NavList } from "./components/NavList";
 import "./layout.css";
 
 export const metadata: Metadata = {

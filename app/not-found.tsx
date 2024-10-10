@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { navigation } from "../dynamic/navigation";
 import { ContactUsLink } from "./components/ContactUsLink";
-import { NavigationLink } from "./components/navigation";
+import { NavigationLink } from "./components/NavigationLink";
 
 export const metadata: Metadata = {
 	title: "Page not found",

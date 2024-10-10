@@ -3,7 +3,7 @@ import { volunteers } from "../../dynamic/volunteers/index.ts";
 import { mergeMetadata } from "../../lib/helpers/index.ts";
 import { Campaign } from "../components/Campaign/index.tsx";
 import { ContactUsLink } from "../components/ContactUsLink";
-import { NavigationLink } from "../components/navigation/index.tsx";
+import { NavigationLink } from "../components/NavigationLink/index.tsx";
 import "../components/styles/contributors.css";
 import { Volunteer } from "../components/Volunteer/index.tsx";
 

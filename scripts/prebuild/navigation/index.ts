@@ -23,6 +23,8 @@ export async function navigation() {
 		if (!page.path) {
 			page.path = normalizePath(page.name);
 		}
+		page.nav = page.nav ?? true;
+		page.footer = page.footer ?? true;
 	});
 
 	paths.forEach((path) => {
