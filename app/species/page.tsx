@@ -1,9 +1,12 @@
 import { species } from "../../dynamic/species";
 import { mergeMetadata } from "../../lib/helpers";
 import pkg from "../../package.json" with { type: "json" };
-import { HorizontalLine } from "../components/HorizontalLine";
 import { NavigationLink } from "../components/NavigationLink";
 const { homepage } = pkg;
+
+/** Anchor id for a species category */
+const slug = (title: string): string =>
+	title.trim().toLowerCase().replace(/\s+/g, "-");
 
 export const metadata = mergeMetadata({
 	title: "Checklist of Recorded Species at Long Lane Pasture.",
@@ -29,11 +32,27 @@ export default () => (
 				<br />* indicates that this species is known to have bred on the
 				Pasture.
 			</p>
+			<nav aria-label="Species categories" className="jump-nav">
+				<h3>Jump to</h3>
+				<ul>
+					{Object.keys(species).map((title) => (
+						<li key={title}>
+							<a href={`#${slug(title)}`}>{title}</a>
+						</li>
+					))}
+				</ul>
+			</nav>
 		</article>
 		{Object.entries(species).map(([title, list]) => (
-			<article key={title} id={title.replace(/\s*/g, "-")}>
-				<h3>{title}</h3>
-				<ul>
+			<article key={title} id={slug(title)}>
+				<h3>
+					{title}
+					<a
+						href={`#${slug(title)}`}
+						aria-label={`Anchor link to ${title}`}
+					></a>
+				</h3>
+				<ul className="species-list">
 					{list
 						.map((item) => Object.entries(item))
 						.map(([[commonName, scientificName]]) => (
@@ -57,13 +76,14 @@ export default () => (
 							</li>
 						))}
 				</ul>
-				<HorizontalLine />
-				<p>
-					Check our{" "}
-					<NavigationLink to="visit">visitor information</NavigationLink> and
-					come by see how many you can spot for yourself!
-				</p>
 			</article>
 		))}
+		<article>
+			<p className="highlight">
+				Check our{" "}
+				<NavigationLink to="visit">visitor information</NavigationLink> and come
+				by see how many you can spot for yourself!
+			</p>
+		</article>
 	</>
 );

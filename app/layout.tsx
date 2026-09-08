@@ -50,7 +50,10 @@ export const metadata: Metadata = {
 	],
 };
 export const viewport: Viewport = {
-	themeColor: "white",
+	themeColor: [
+		{ media: "(prefers-color-scheme: light)", color: "rgb(253, 253, 251)" },
+		{ media: "(prefers-color-scheme: dark)", color: "rgb(20, 23, 26)" },
+	],
 	width: "device-width",
 	initialScale: 1,
 	userScalable: true,
@@ -108,23 +111,35 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
 				/>
 			</head>
 			<body>
+				<a className="skip-link" href="#main">
+					Skip to content
+				</a>
 				<header>
-					<h1>
-						<NavigationLink to="home">Long Lane Pasture</NavigationLink>
-					</h1>
-					<nav>
-						<a className="hamburger" href="#!">
-							☰
-						</a>
-						<NavList filter="nav" />
-					</nav>
+					<div className="header-inner">
+						<h1>
+							<NavigationLink to="home">Long Lane Pasture</NavigationLink>
+						</h1>
+						<nav aria-label="Main">
+							<a
+								className="hamburger"
+								href="#!"
+								role="button"
+								aria-label="Open menu"
+							>
+								☰
+							</a>
+							<NavList filter="nav" />
+						</nav>
+					</div>
 				</header>
-				<main>
+				<main id="main" tabIndex={-1}>
 					{children}
-					<footer>
-						<NavList filter="footer" />
-					</footer>
 				</main>
+				<footer>
+					<nav aria-label="Footer">
+						<NavList filter="footer" />
+					</nav>
+				</footer>
 				<CustomScriptLoader path="scripts" />
 			</body>
 		</html>

@@ -38,7 +38,7 @@ export default () => (
 			post stories about us every once in a while. Read stories about the Long
 			Lane Pasture and the people who care for it.
 		</p>
-		<ul>
+		<ul className="link-list">
 			{navigation
 				.filter(({ path }) => path.match(/^\/stories\/.+/))
 				.map(({ name, path }) => (
