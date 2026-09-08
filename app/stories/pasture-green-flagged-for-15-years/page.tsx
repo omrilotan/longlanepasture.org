@@ -14,7 +14,7 @@ export default () => (
 	<article id="pasture-green-flagged-for-15-years">
 		<h2>Pasture green flagged for 15 years</h2>
 		<p className="tagline">
-			By Maureen Delandro. As published on{" "}
+			As published on{" "}
 			<a
 				href="https://www.the-archer.co.uk/archive/2026/2026Sep08.pdf"
 				target="_blank"
