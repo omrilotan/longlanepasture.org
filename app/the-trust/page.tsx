@@ -18,7 +18,7 @@ export default () => (
 		<article id="green-flag-award-winners">
 			<figure className="hero">
 				<img
-					src="/assets/green-flag-award-2024-25.jpeg"
+					src="/assets/banners/2026-green-flag-banner.jpeg"
 					alt="Green Flag Award 2024-25"
 				/>
 				<figcaption>
