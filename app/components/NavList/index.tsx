@@ -10,12 +10,14 @@ import { LinkItem } from "../LinkItem";
  */
 export function NavList({
 	filter,
+	id,
 }: {
 	filter?: "nav" | "footer" | "internal";
+	id?: string;
 }): JSX.Element {
 	const pathname = usePathname();
 	return (
-		<ul>
+		<ul id={id}>
 			{navigation
 				.filter(({ path, footer, nav }) => {
 					switch (filter) {

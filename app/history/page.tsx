@@ -104,7 +104,7 @@ export default () => (
 				access the land, and work began to restore the Pasture, clear rubbish
 				and improve the land for wildlife.{" "}
 				<NavigationLink to="the-future-for-long-lane-pasture">
-					Read all about it
+					Read about the restoration
 				</NavigationLink>
 				.
 			</p>
@@ -120,7 +120,7 @@ export default () => (
 				Long Lane Pasture Trust (to an agreed Management Plan) for the benefit
 				of wildlife and the community.{" "}
 				<NavigationLink to="long-wait-is-over-for-long-lane-pasture">
-					Read all about it
+					Read about the lease
 				</NavigationLink>
 				.
 			</p>
@@ -138,7 +138,7 @@ export default () => (
 				for public enjoyment and recreation on 22 February 1912. On 22 February
 				2012 the Mayor of Barnet planted an oak tree on the embankment area to
 				commemorate this landmark. It is an English oak, grown locally by one of
-				our <NavigationLink to="contribute">Friends</NavigationLink>.
+				our <NavigationLink to="contribute">volunteers</NavigationLink>.
 			</p>
 			<p>
 				The Pasture has changed little in{" "}
@@ -173,10 +173,9 @@ export default () => (
 					href="https://www.greenflagaward.org/"
 					rel="noopener"
 					target="_blank"
-					aria-label="Green Flag Award - the national award for well managed, high quality
-				green spaces"
 				>
 					The Green Flag Award
+					<span className="visually-hidden"> (opens in a new tab)</span>
 				</a>
 				. We have since repeatedly been awarded the Green Flag, and are very
 				proud of this achievement.

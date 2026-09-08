@@ -388,7 +388,7 @@ export default () => (
 					available: boolean;
 				}) => (
 					<div key={name}>
-						<h4 className={available ? "check" : "uncheck"}>{name}</h4>
+						<h3 className={available ? "check" : "uncheck"}>{name}</h3>
 						<p>{description}</p>
 					</div>
 				),

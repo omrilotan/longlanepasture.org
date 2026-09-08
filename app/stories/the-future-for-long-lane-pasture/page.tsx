@@ -73,7 +73,7 @@ export default () => (
 			exploring, although the aim would be to keep it as close to nature as
 			possible.
 		</p>
-		<h4>A forgotten resource</h4>
+		<h3>A forgotten resource</h3>
 		<p>
 			A public meeting was held on 28 April at the Sea Cadets Hall in Long Lane
 			to present the site plans to residents and around 35 people attended. Many

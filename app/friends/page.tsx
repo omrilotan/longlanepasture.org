@@ -55,8 +55,8 @@ export default () => (
 			<table className="links">
 				<thead>
 					<tr>
-						<th>Name</th>
-						<th>Description</th>
+						<th scope="col">Name</th>
+						<th scope="col">Description</th>
 					</tr>
 				</thead>
 				<tbody>

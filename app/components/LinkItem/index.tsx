@@ -19,18 +19,21 @@ export function LinkItem({
 	const external = path.startsWith("http");
 	const rel = external ? "noopener" : "next";
 	const target = external ? "_blank" : undefined;
-	const label = external ? `${name} (external link)` : `${name} page`;
 	return (
 		<Link
 			href={path + (anchor ? `#${anchor}` : "")}
 			rel={rel}
 			target={target}
-			aria-label={label}
 			aria-current={current ? "page" : undefined}
 			prefetch={!external}
 			style={style}
 		>
 			{children ?? name}
+			{/* The accessible name must start with the visible text (WCAG 2.5.3),
+			    so the new-tab warning is appended rather than replacing it. */}
+			{external ? (
+				<span className="visually-hidden"> (opens in a new tab)</span>
+			) : null}
 		</Link>
 	);
 }

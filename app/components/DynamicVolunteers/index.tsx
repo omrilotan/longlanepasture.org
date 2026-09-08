@@ -9,8 +9,8 @@ const Randomise = dynamic(() => import("../Randomise/index.tsx"), {
 
 export const DynamicVolunteers = () => (
 	<Randomise>
-		{volunteers.map(({ src, alt }) => (
-			<figure key={alt}>
+		{volunteers.map(({ src, id, alt }) => (
+			<figure key={id}>
 				<img src={src} alt={alt} loading="lazy" />
 				<figcaption>{alt}</figcaption>
 			</figure>

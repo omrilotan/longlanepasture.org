@@ -41,7 +41,7 @@ export default () => (
 			local donations, the group has worked hard to prepare the overgrown site
 			for the community to visit.
 		</p>
-		<h4>Peppercorn Pasture</h4>
+		<h3>Peppercorn Pasture</h3>
 		<p>
 			Now they have succeeded in obtaining a 25-year lease from Barnet Council
 			at a peppercorn rent. Ann Brown, chairwoman of the Trust, presented the

@@ -1,16 +1,44 @@
 start();
 function start() {
-	document.querySelector("nav")?.addEventListener("click", (event) => {
+	const nav = document.querySelector("header nav");
+	nav?.addEventListener("click", (event) => {
 		if ((event.target as any)?.getAttribute("href")?.startsWith("#!")) {
 			event.preventDefault();
 			return;
 		}
 		(event.target as HTMLAnchorElement)?.blur();
 	});
+	menuState(nav);
 
 	notice("#closure-notice", false).then(
 		(shown) => shown || notice("#temporary-notice", true),
 	);
+}
+
+/**
+ * The menu is opened by focus (CSS `:focus-within`), so mirror that state onto
+ * the toggle for assistive technology and let Escape close it.
+ */
+function menuState(nav: Element | null | undefined) {
+	if (!nav) return;
+	const toggle = nav.querySelector<HTMLAnchorElement>(".hamburger");
+	if (!toggle) return;
+	const set = (open: boolean) => {
+		toggle.setAttribute("aria-expanded", open.toString());
+		toggle.setAttribute("aria-label", open ? "Close menu" : "Open menu");
+	};
+	set(false);
+	nav.addEventListener("focusin", () => set(true));
+	nav.addEventListener("focusout", () => {
+		// Focus moves between children before landing, so check on the next tick
+		setTimeout(() => set(nav.contains(document.activeElement)));
+	});
+	nav.addEventListener("keydown", (event) => {
+		if ((event as KeyboardEvent).key !== "Escape") return;
+		(document.activeElement as HTMLElement)?.blur();
+		toggle.blur();
+		set(false);
+	});
 }
 
 async function notice(selector: string, force = false): Promise<boolean> {

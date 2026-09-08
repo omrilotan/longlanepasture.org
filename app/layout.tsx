@@ -125,10 +125,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
 								href="#!"
 								role="button"
 								aria-label="Open menu"
+								aria-expanded="false"
+								aria-controls="main-navigation"
 							>
 								☰
 							</a>
-							<NavList filter="nav" />
+							<NavList filter="nav" id="main-navigation" />
 						</nav>
 					</div>
 				</header>

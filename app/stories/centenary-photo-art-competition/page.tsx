@@ -51,7 +51,7 @@ export default () => (
 			There will be prizes in each category for 1st (Ł50), 2nd (Ł25) and 3rd
 			(Ł10).
 		</p>
-		<h4>Photographs</h4>
+		<h3>Photographs</h3>
 		<ul>
 			<li>Prints must be between 7x5ins and A4 size</li>
 			<li>
@@ -59,12 +59,14 @@ export default () => (
 				paper with the entrants name clearly on the back
 			</li>
 		</ul>
-		<h4>Paintings / Drawings</h4>
-		<li>Maximum size A3</li>
-		<li>
-			Framed, preferably glazed and ready to hang with the entrants name clearly
-			on the back
-		</li>
+		<h3>Paintings / Drawings</h3>
+		<ul>
+			<li>Maximum size A3</li>
+			<li>
+				Framed, preferably glazed and ready to hang with the entrants name
+				clearly on the back
+			</li>
+		</ul>
 		<p>
 			Entries can be for sale at the Arts Depot, but we request that 50% of sale
 			income is donated to the Long Lane Pasture Trust. Copyright will be
@@ -88,7 +90,7 @@ export default () => (
 			</a>{" "}
 			WITH YOUR ENTRIES
 		</p>
-		<h4>Closing date: 15th September 2012</h4>
+		<h3>Closing date: 15th September 2012</h3>
 		<p className="end">
 			<i>
 				<NavigationLink to="stories">More stories</NavigationLink>

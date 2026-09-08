@@ -9,6 +9,7 @@ export async function volunteers(): Promise<string> {
 		.filter((file) => file.match(/\.(jpe?g|png|gif|webp|svg)$/i))
 		.map((file) => ({
 			src: `/assets/volunteers/${file}`,
+			id: file.replace(/'\.[\w]+$'/, ""),
 			alt: file.replace(/\..*/, ""),
 		}));
 	return [
